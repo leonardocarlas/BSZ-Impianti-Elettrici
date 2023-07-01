@@ -1,0 +1,130 @@
+﻿<data>
+  <debug>0</debug><referral>lca99dabe3a9271b1</referral>
+  <project_settings>
+    <width>840</width>
+    <height>361</height>
+  </project_settings>
+  <settings>
+    <folder_images>images</folder_images>
+    <folder_fonts>fonts</folder_fonts>
+    <background>
+      <color transparent="true">0xffffff</color>
+      <image use_image="true" align_to="stage" align_pos="BC" x="0" y="0">
+        <url><![CDATA[example2_bg.png]]></url>
+      </image>
+    </background>
+    <start_slide>1</start_slide>
+    <auto_play>true</auto_play>
+    <randomize_slides>false</randomize_slides>
+    <pause_on_rollover>true</pause_on_rollover>
+    <branding align_to="stage" align_pos="TR" x="-10" y="10">
+      <remove_logo_loader>false</remove_logo_loader>
+      <remove_right_menu_info>false</remove_right_menu_info>
+      <remove_right_menu_licence>false</remove_right_menu_licence>
+    </branding>
+    <camera x="0" y="0" z="0" angleX="0" angleY="0" angleZ="0"/>
+  </settings>
+  <fonts/>
+  <preloader type="circular" align_pos="MC" width="200" height="20" x="-395" y="-114" radius="26">
+    <background padding="5">
+      <tweenShow tint="0x2185C5" alpha="0.85" x="0" y="0" scaleX="1" scaleY="1"/>
+      <tweenOver alpha="1" x="0" y="0" scaleX="1" scaleY="1"/>
+      <tweenHide alpha="0" x="0" y="0" scaleX="1" scaleY="1"/>
+    </background>
+    <loader>
+      <tweenShow tint="0xFFFFFF" alpha="0.8"/>
+      <tweenOver tint="0xFFFFFF" alpha="1"/>
+      <tweenHide tint="0xFFFFFF" alpha="0"/>
+    </loader>
+    <hide_on_transition>true</hide_on_transition>
+    <auto_hide time="3">true</auto_hide>
+  </preloader>
+  <controls/>
+  <defaults>
+    <slide time="5" color="0x000000">
+      <image align_pos="MC" x="0" y="0" fit="outside" scaleX="1" scaleY="1"/>
+      <link target="_blank"/>
+      <description>
+        <link target="_blank"/>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+    </slide>
+    <transition type="3D" columns="5" rows="1" type2D="slide" flipAngle="180" flipOrder="315" flipShader="none" flipOrderFromCenter="false" flipDirection="up,left,right,down" flipColor="0x2b1601" flipBoxDepth="20" flipDepth="250" flipEasing="Sine.easeOut" flipDuration="0.8" flipDelay="0.2"/>
+  </defaults>
+  <slides width="840" height="280" align_pos="TL" x="0" y="0" corner_TL="0,0" corner_TR="840,0" corner_BL="0,280" corner_BR="840,280">
+    <slide time="3.0000000000000027">
+      <url><![CDATA[1233057_163077560551453_377216402_o.jpg]]></url>
+      <link target="_self"/>
+      <description>
+        <heading><![CDATA[Unique.]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="0.52" scaleY="0.28" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition rows="3" columns="5"/>
+    <slide time="3.0000000000000027">
+      <url><![CDATA[1157572_162905220568687_361778060_n.jpg]]></url>
+      <link target="_blank"/>
+      <description>
+        <heading><![CDATA[Awesome.]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="1" scaleY="1" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition flipOrder="0" flipOrderFromCenter="true" flipDirection="up"/>
+    <slide>
+      <url><![CDATA[1184912_162905300568679_1109212191_n.jpg]]></url>
+      <link target="_blank"/>
+      <description>
+        <heading><![CDATA[Cool.]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="0.88" scaleY="0.59" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[energie_rinnovabili.jpg]]></url>
+      <link target="_blank"/>
+      <description>
+        <heading><![CDATA[Customizable.]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="1.07" scaleY="0.66" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition flipDirection="up,down" rows="5" columns="1"/>
+    <slide>
+      <url><![CDATA[ENERGIE-RINNOVABILI1.jpg]]></url>
+      <link target="_blank"/>
+      <description>
+        <heading><![CDATA[Easy.]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="1.87" scaleY="0.96" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[fonti-rinnovabili1.jpg]]></url>
+      <link target="_blank"/>
+      <description>
+        <heading><![CDATA[Wanna play?]]></heading>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <image x="0" y="0" scaleX="1.48" scaleY="0.71" align_pos="MC" fit="custom"/>
+    </slide>
+    <transition/>
+  </slides>
+</data>

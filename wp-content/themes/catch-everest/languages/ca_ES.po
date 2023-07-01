@@ -1,0 +1,1467 @@
+# Copyright (C) 2012-2020 the Catch Themes Team
+# This file is distributed under the  GNU General Public License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Catch Everest\n"
+"Report-Msgid-Bugs-To: https://catchthemes.com/contact-us/\n"
+"POT-Creation-Date: 2020-11-17 14:22-0500\n"
+"PO-Revision-Date: 2020-11-17 14:22-0500\n"
+"Last-Translator: Jaume Albaigès <jaumealbaiges@hotmail.com>\n"
+"Language-Team: Jaume Albaigès <jaumealbaiges@hotmail.com>\n"
+"Language: ca_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;esc_attr_e;esc_attr__\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Aquesta pàgina no existeix."
+
+#: ../404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Sembla que aquí no hi ha res. Potser pots provar un dels enllaços de més "
+"avall o bé fer una cerca..."
+
+#: ../404.php:29
+msgid "Most Used Categories"
+msgstr "Categories més utilitzades"
+
+#: ../404.php:37
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Intenta cercar a l'arxiu mensual. %1$s"
+
+#: ../comments.php:35
+#, fuzzy, php-format
+#| msgid "One thought on &ldquo;%2$s&rdquo;"
+#| msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgctxt "comments title"
+msgid "One Reply to &ldquo;%s&rdquo;"
+msgstr "Un comentari a &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:55 ../comments.php:75
+msgid "Comment navigation"
+msgstr "Navegació dels comentaris"
+
+#: ../comments.php:56 ../comments.php:76
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentaris anteriors"
+
+#: ../comments.php:57 ../comments.php:77
+msgid "Newer Comments &rarr;"
+msgstr "Comentaris posteriors &rarr;"
+
+#: ../comments.php:87
+msgid "Comments are closed."
+msgstr "Els comentaris estan tancats."
+
+#: ../content-aside.php:21 ../content-audio.php:26 ../content-gallery.php:37
+#: ../content-image.php:26 ../content-link.php:20 ../content-quote.php:16
+#: ../content-status.php:24 ../content-video.php:26 ../content.php:50
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Segueix llegint <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../content-aside.php:29 ../content-audio.php:35 ../content-chat.php:34
+#: ../content-gallery.php:45 ../content-image.php:35 ../content-link.php:27
+#: ../content-quote.php:23 ../content-status.php:31 ../content-video.php:35
+#: ../content.php:60
+msgid "Leave a reply"
+msgstr "Deixa un comentari"
+
+#: ../content-aside.php:29 ../content-audio.php:35 ../content-chat.php:34
+#: ../content-gallery.php:45 ../content-image.php:35 ../content-link.php:27
+#: ../content-quote.php:23 ../content-status.php:31 ../content-video.php:35
+#: ../content.php:60
+msgid "1 Reply"
+msgstr "1 resposta"
+
+#: ../content-aside.php:29 ../content-audio.php:35 ../content-chat.php:34
+#: ../content-gallery.php:45 ../content-image.php:35 ../content-link.php:27
+#: ../content-quote.php:23 ../content-status.php:31 ../content-video.php:35
+msgid "% Replies;"
+msgstr "% respostes;"
+
+#: ../content-aside.php:31 ../content-audio.php:37 ../content-chat.php:36
+#: ../content-gallery.php:47 ../content-image.php:37 ../content-link.php:29
+#: ../content-page.php:18 ../content-quote.php:25 ../content-status.php:33
+#: ../content-video.php:37 ../content.php:63 ../image.php:34 ../image.php:100
+#: ../inc/template-tags.php:194
+msgid "Edit"
+msgstr "Edita"
+
+#: ../content-audio.php:17
+msgid "All Audio Posts"
+msgstr "Totes les entrades d'àudio"
+
+#: ../content-audio.php:27 ../content-gallery.php:38 ../content-image.php:27
+#: ../content-page.php:17 ../content-video.php:27 ../content.php:51
+#: ../image.php:86
+msgid "Pages:"
+msgstr "Pàgines:"
+
+#: ../content-chat.php:17
+msgid "All Chat Posts"
+msgstr "Totes les entrades de xat"
+
+#: ../content-gallery.php:17
+msgid "All Gallery Posts"
+msgstr "Totes les entrades de galeria"
+
+#: ../content-gallery.php:29 ../content-gallery.php:33 ../content.php:19
+#, php-format
+msgid "Permalink to %s"
+msgstr "Enllaç permanent a %s"
+
+#: ../content-gallery.php:32
+#, php-format
+msgid "This gallery contains <a %1$s>%2$s photo</a>."
+msgid_plural "This gallery contains <a %1$s>%2$s photos</a>."
+msgstr[0] "Aquesta galeria conté <a %1$s>%2$s foto</a>."
+msgstr[1] "Aquesta galeria conté <a %1$s>%2$s fotos</a>."
+
+#: ../content-image.php:17
+msgid "All Image Posts"
+msgstr "Totes les entrades d'imatge"
+
+#: ../content-link.php:16
+msgid "All Link Posts"
+msgstr "Totes les entrades d'enllaç"
+
+#: ../content-status.php:20
+msgid "All Status Posts"
+msgstr "Totes les entrades d'estat"
+
+#: ../content-video.php:17
+msgid "All Video Posts"
+msgstr "Totes les entrades de vídeo"
+
+#: ../content.php:14
+msgid "Featured"
+msgstr ""
+
+#: ../content.php:60
+msgid "% Replies"
+msgstr "% respostes"
+
+#: ../content.php:70
+#, php-format
+msgid "About %s"
+msgstr "Quant a %s"
+
+#: ../content.php:74
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Mostra totes les entrades de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../functions.php:117 ../inc/catcheverest-functions.php:400
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#: ../image.php:24
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\" pubdate>%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-"
+"size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s"
+"\" rel=\"gallery\">%7$s</a>"
+msgstr ""
+"Publicat el <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\" pubdate>%2$s</time></span> a <a href=\"%3$s\" title=\"Enllaç a la "
+"imatge de mida completa\">%4$s &times; %5$s</a> a <a href=\"%6$s\" title="
+"\"Torna a %7$s\" rel=\"gallery\">%7$s</a>"
+
+#: ../image.php:38
+msgid "&larr; Previous"
+msgstr "&larr; Anterior"
+
+#: ../image.php:39
+msgid "Next &rarr;"
+msgstr "Següent &rarr;"
+
+#: ../image.php:92
+#, php-format
+msgid ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Post a comment\">Post a "
+"comment</a> or leave a trackback: <a class=\"trackback-link\" href=\"%s\" "
+"title=\"Trackback URL for your post\" rel=\"trackback\">Trackback URL</a>."
+msgstr ""
+"<a class=\"comment-link\" href=\"#respond\" title=\"Escriu un comentari"
+"\">Escriu un comentari</a> o deixa un retroenllaç: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"URL del retroenllaç per a la teva entrada\" rel="
+"\"trackback\">URL del retroenllaç</a>."
+
+#: ../image.php:94
+#, php-format
+msgid ""
+"Comments are closed, but you can leave a trackback: <a class=\"trackback-link"
+"\" href=\"%s\" title=\"Trackback URL for your post\" rel=\"trackback"
+"\">Trackback URL</a>."
+msgstr ""
+"Els comentaris estan tancats, però pots deixar un retroenllaç: <a class="
+"\"trackback-link\" href=\"%s\" title=\"URL del retroenllaç per a la teva "
+"entrada\" rel=\"trackback\">URL del retroenllaç</a>."
+
+#: ../image.php:96
+msgid ""
+"Trackbacks are closed, but you can <a class=\"comment-link\" href=\"#respond"
+"\" title=\"Post a comment\">post a comment</a>."
+msgstr ""
+"Els retroenllaços estan tancats, però pots <a class=\"comment-link\" href="
+"\"#respond\" title=\"Escriu un comentari\">escriure un comentari</a>."
+
+#: ../image.php:98
+msgid "Both comments and trackbacks are currently closed."
+msgstr "Els comentaris i els retroenllaços estan tancats."
+
+#: ../inc/catcheverest-functions.php:153
+msgid "Skip to content"
+msgstr "Vés al contingut"
+
+#: ../inc/catcheverest-functions.php:925
+#: ../inc/panel/customizer/customizer.php:555
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../inc/catcheverest-functions.php:930
+#: ../inc/panel/customizer/customizer.php:565
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../inc/catcheverest-functions.php:935
+#: ../inc/panel/customizer/customizer.php:575
+msgid "Google+"
+msgstr "Google+"
+
+#: ../inc/catcheverest-functions.php:940
+#: ../inc/panel/customizer/customizer.php:615
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: ../inc/catcheverest-functions.php:945
+#: ../inc/panel/customizer/customizer.php:585
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: ../inc/catcheverest-functions.php:950
+msgid "YouTube"
+msgstr "YouTube"
+
+#: ../inc/catcheverest-functions.php:955
+#: ../inc/panel/customizer/customizer.php:605
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: ../inc/catcheverest-functions.php:960
+msgid "SlideShare"
+msgstr "SlideShare"
+
+#: ../inc/catcheverest-functions.php:965
+msgid "FourSquare"
+msgstr "FourSquare"
+
+#: ../inc/catcheverest-functions.php:970
+#: ../inc/panel/customizer/customizer.php:645
+msgid "Flickr"
+msgstr "Flickr"
+
+#: ../inc/catcheverest-functions.php:975
+#: ../inc/panel/customizer/customizer.php:655
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: ../inc/catcheverest-functions.php:980
+#: ../inc/panel/customizer/customizer.php:665
+msgid "deviantART"
+msgstr "deviantART"
+
+#: ../inc/catcheverest-functions.php:985
+#: ../inc/panel/customizer/customizer.php:675
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: ../inc/catcheverest-functions.php:990
+#: ../inc/panel/customizer/customizer.php:685
+msgid "MySpace"
+msgstr "MySpace"
+
+#: ../inc/catcheverest-functions.php:995
+#: ../inc/panel/customizer/customizer.php:695
+#: ../inc/panel/customizer/customizer.php:1316
+msgid "WordPress"
+msgstr "WordPress"
+
+#: ../inc/catcheverest-functions.php:1000
+#: ../inc/panel/customizer/customizer.php:705
+msgid "RSS"
+msgstr "RSS"
+
+#: ../inc/catcheverest-functions.php:1005
+#: ../inc/panel/customizer/customizer.php:715
+msgid "Delicious"
+msgstr "Delicious"
+
+#: ../inc/catcheverest-functions.php:1010
+#: ../inc/panel/customizer/customizer.php:725
+msgid "Last.fm"
+msgstr "Last.fm"
+
+#: ../inc/catcheverest-functions.php:1015
+#: ../inc/panel/customizer/customizer.php:735
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../inc/catcheverest-functions.php:1020
+#: ../inc/panel/customizer/customizer.php:745
+msgid "GitHub"
+msgstr "GitHub"
+
+#: ../inc/catcheverest-functions.php:1025
+#: ../inc/panel/customizer/customizer.php:755
+msgid "Vkontakte"
+msgstr "Vkontakte"
+
+#: ../inc/catcheverest-functions.php:1030
+#: ../inc/panel/customizer/customizer.php:765
+msgid "My World"
+msgstr "My World"
+
+#: ../inc/catcheverest-functions.php:1035
+#: ../inc/panel/customizer/customizer.php:775
+msgid "Odnoklassniki"
+msgstr "Odnoklassniki"
+
+#: ../inc/catcheverest-functions.php:1040
+msgid "GoodReads"
+msgstr "GoodReads"
+
+#: ../inc/catcheverest-functions.php:1045
+#: ../inc/panel/customizer/customizer.php:795
+msgid "Skype"
+msgstr "Skype"
+
+#: ../inc/catcheverest-functions.php:1050
+msgid "SoundCloud"
+msgstr "SoundCloud"
+
+#: ../inc/catcheverest-functions.php:1055
+#: ../inc/panel/customizer/customizer.php:815
+msgid "Email"
+msgstr "Correu-e"
+
+#: ../inc/catcheverest-functions.php:1060
+#: ../inc/panel/customizer/customizer.php:825
+msgid "Contact"
+msgstr "Contacte"
+
+#: ../inc/catcheverest-functions.php:1065
+#: ../inc/panel/customizer/customizer.php:835
+msgid "Xing"
+msgstr "Xing"
+
+#: ../inc/catcheverest-functions.php:1160
+msgid "ID"
+msgstr "ID"
+
+#: ../inc/catcheverest-functions.php:1196
+#: ../inc/catcheverest-functions.php:1210
+msgid "Menu"
+msgstr "Menú"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:24
+msgid "Continue Reading &rarr;"
+msgstr ""
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:26
+msgid "Search &hellip;"
+msgstr ""
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:28
+msgid "Homepage Headline"
+msgstr "Homepage Headline"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:29
+msgid "You can edit or disable it through Theme Options"
+msgstr ""
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:100
+msgid "Right Sidebar"
+msgstr "Barra lateral dreta"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:101
+msgid "Left Sidebar"
+msgstr "Barra lateral esquerra"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:102
+msgid "No Sidebar"
+msgstr "Sense barres laterals"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:103
+msgid "No Sidebar, Full Width"
+msgstr "Amplada completa, sense barra lateral"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:117
+#: ../inc/panel/customizer/customizer.php:332
+msgid "Full Content Display"
+msgstr "Mostrar tot el contingut"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:118
+msgid "Excerpt/Blog Display"
+msgstr "Mostrar resum/blog"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:131
+msgid "Homepage / Frontpage"
+msgstr "Homepage / Frontpage"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:132
+#: ../inc/panel/customizer/customizer.php:212
+msgid "Entire Site"
+msgstr "El lloc sencer"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:133
+msgid "Disable"
+msgstr "Desactiva"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:147
+msgid "fade"
+msgstr "fade"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:148
+msgid "wipe"
+msgstr "wipe"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:149
+#: ../inc/panel/catcheverest-theme-options-defaults.php:151
+msgid "scrollUp"
+msgstr "scrollUp"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:150
+msgid "scrollDown"
+msgstr "scrollDown"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:152
+msgid "scrollLeft"
+msgstr "scrollLeft"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:153
+msgid "scrollRight"
+msgstr "scrollRight"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:154
+msgid "blindX"
+msgstr "blindX"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:155
+msgid "blindY"
+msgstr "blindY"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:156
+msgid "blindZ"
+msgstr "blindZ"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:157
+msgid "cover"
+msgstr "cover"
+
+#: ../inc/panel/catcheverest-theme-options-defaults.php:158
+msgid "shuffle"
+msgstr "shuffle"
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:34
+#, fuzzy
+#| msgid "Most Used Categories"
+msgid "All Categories"
+msgstr "Categories més utilitzades"
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:48
+msgid ""
+"Hold down the Ctrl (windows) / Command (Mac) button to select multiple "
+"options."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:61
+msgid "Theme Instructions"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:65
+msgid "Support"
+msgstr "Suport tècnic"
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:69
+msgid "Changelog"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:73
+msgid "Donate Now"
+msgstr "Dóna ara"
+
+#: ../inc/panel/customizer/customizer-custom-controls.php:77
+msgid "Review"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:33
+msgid "Theme Options"
+msgstr "Opcions del tema"
+
+#: ../inc/panel/customizer/customizer.php:34
+msgid "Basic theme Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:38
+msgid "Responsive Design"
+msgstr "Disseny adaptatiu"
+
+#: ../inc/panel/customizer/customizer.php:43
+msgid "Header Right Section"
+msgstr "Header Right Section"
+
+#: ../inc/panel/customizer/customizer.php:48
+msgid "Search Text Settings"
+msgstr "Configuració de cerca textual"
+
+#: ../inc/panel/customizer/customizer.php:53
+msgid "Excerpt / More Tag Settings"
+msgstr "Configuració de l'extracte (etiqueta Llegeix més)"
+
+#: ../inc/panel/customizer/customizer.php:58
+msgid "Feed Redirect"
+msgstr "Redirecció del canal RSS"
+
+#: ../inc/panel/customizer/customizer.php:63
+msgid "Layout Options"
+msgstr "Opcions de disposició"
+
+#: ../inc/panel/customizer/customizer.php:68
+msgid "Header Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:73
+msgid "Content Featured Image Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:78
+msgid "Promotion Headline Options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:83
+msgid "Homepage/Frontpage Settings"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:88
+msgid "Custom CSS"
+msgstr "CSS personalitzat"
+
+#: ../inc/panel/customizer/customizer.php:93
+msgid "Scroll Up"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:101
+#: ../inc/panel/customizer/customizer.php:102
+msgid "Homepage Settings"
+msgstr "Configuració de la pàgina d'inici"
+
+#: ../inc/panel/customizer/customizer.php:106
+msgid "Homepage Headline Options"
+msgstr "Opcions del titular de la pàgina d'inici"
+
+#: ../inc/panel/customizer/customizer.php:111
+msgid "Homepage Featured Content options"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:116
+msgid "Homepage Featured Content Options"
+msgstr "Opcions del contingut destacat de la pàgina d'inici"
+
+#: ../inc/panel/customizer/customizer.php:121
+msgid "Homepage / Frontpage Settings"
+msgstr "Configuració de la pàgina d'inici"
+
+#: ../inc/panel/customizer/customizer.php:129
+#: ../inc/panel/customizer/customizer.php:130
+msgid "Featured Post Slider"
+msgstr "Featured Post Slider"
+
+#: ../inc/panel/customizer/customizer.php:134
+msgid "Slider Options"
+msgstr "Opcions d'slider"
+
+#: ../inc/panel/customizer/customizer.php:142
+msgid "Social Links"
+msgstr "Enllaços socials"
+
+#: ../inc/panel/customizer/customizer.php:143
+msgid "Add your social links here"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:147
+msgid "Predefined Social Icons"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:154
+#: ../inc/panel/customizer/customizer.php:159
+msgid "Webmaster Tools"
+msgstr "Eines del webmaster"
+
+#: ../inc/panel/customizer/customizer.php:155
+#: ../inc/panel/customizer/customizer.php:160
+#, php-format
+msgid ""
+"Webmaster Tools falls under Plugins Territory according to Theme Review "
+"Guidelines in WordPress.org. This feature will be depreciated in future "
+"versions from Catch Box free version. If you want this feature, then you can "
+"add <a target=\"_blank\" href=\"%s\">Catch Web Tools</a>  plugin."
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:204
+msgid "Enable Featured Header Image"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:213
+msgid "Homepage"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:218
+msgid "Featured Header Image Alt/Title Tag"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:227
+msgid "Featured Header Image Link URL"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:236
+msgid "Check to Open Link in New Window"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:246
+msgid "Check to Disable Responsive Design"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:257
+msgid "Check to Disable Header Right Section"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:269
+msgid "Default Display Text in Search"
+msgstr "Text per defecte per mostrar a la casella de cerca"
+
+#: ../inc/panel/customizer/customizer.php:281
+msgid "More Tag Text"
+msgstr "Text per a l'etiqueta Llegeix més"
+
+#: ../inc/panel/customizer/customizer.php:291
+msgid "Excerpt length(words)"
+msgstr "Longitud de l'extracte (en paraules)"
+
+#: ../inc/panel/customizer/customizer.php:308
+msgid "Feed Redirect URL"
+msgstr "URL de redirecció del canal RSS"
+
+#: ../inc/panel/customizer/customizer.php:309
+msgid " Add in the Feedburner URL"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:321
+msgid "Sidebar Layout Options"
+msgstr "Opcions de disposició de la barra lateral"
+
+#: ../inc/panel/customizer/customizer.php:345
+msgid "Enter your custom CSS styles"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:357
+msgid "Check to Disable Scroll Up"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:367
+msgid "Check to Disable Homepage Headline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:378
+msgid "Homepage Headline Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:379
+#: ../inc/panel/customizer/customizer.php:1173
+msgid "Appropriate Words: 10"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:388
+msgid "Check to Disable Homepage Subheadline"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:398
+msgid "Homepage Subheadline Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:399
+msgid "Appropriate Words: 15"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:410
+msgid "Check to Enable Latest Posts"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:420
+msgid "Homepage posts categories:"
+msgstr "Categories de les entrades per a la pàgina d'inici"
+
+#: ../inc/panel/customizer/customizer.php:421
+msgid ""
+"Only posts that belong to the categories selected here will be displayed on "
+"the front page"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:432
+msgid "Check to Disable Homepage Featured Content"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:442
+msgid "Featured Content Headline Text"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:443
+msgid "Leave empty if you want to remove headline"
+msgstr "Deixa-ho buit si vols eliminar el titular"
+
+#: ../inc/panel/customizer/customizer.php:452
+msgid "Number of Featured Content"
+msgstr "Nombre de continguts destacats"
+
+#: ../inc/panel/customizer/customizer.php:453
+msgid ""
+"Customizer page needs to be refreshed after saving if number of featured "
+"content is changed"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:470
+msgid "Enable Slider"
+msgstr "Habilita l'slider"
+
+#: ../inc/panel/customizer/customizer.php:481
+msgid "Number of Slides"
+msgstr "Nombre de diapositives"
+
+#: ../inc/panel/customizer/customizer.php:482
+msgid ""
+"Customizer page needs to be refreshed after saving if number of slides is "
+"changed"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:498
+msgid "Transition Effect"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:509
+msgid "Transition Delay"
+msgstr "Temps entre slides"
+
+#: ../inc/panel/customizer/customizer.php:525
+msgid "Transition Length"
+msgstr "Durada de la transició entre slides"
+
+#: ../inc/panel/customizer/customizer.php:543
+msgid "Check to Exclude Slider posts from Homepage posts"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:544
+msgid "Please refresh the customizer after saving if reset option is used"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:595
+msgid "Youtube"
+msgstr "Youtube"
+
+#: ../inc/panel/customizer/customizer.php:625
+msgid "Slideshare"
+msgstr "Slideshare"
+
+#: ../inc/panel/customizer/customizer.php:635
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: ../inc/panel/customizer/customizer.php:785
+msgid "Goodreads"
+msgstr "Goodreads"
+
+#: ../inc/panel/customizer/customizer.php:805
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: ../inc/panel/customizer/customizer.php:847
+msgid "Code to display on Header"
+msgstr "Codi per incloure a la capçalera"
+
+#: ../inc/panel/customizer/customizer.php:848
+msgid ""
+"Here you can put scripts from Google, Facebook, Twitter, Add This etc. which "
+"will load on Header"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:858
+msgid "Code to display on Footer"
+msgstr "Codi per incloure al peu de pàgina"
+
+#: ../inc/panel/customizer/customizer.php:859
+msgid ""
+"Here you can put scripts from Google, Facebook, Twitter, Add This etc. which "
+"will load on footer"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1042
+#, fuzzy, php-format
+#| msgid "Featured Content #%s"
+msgid "Featured Page #%s"
+msgstr "Contingut destacat %s"
+
+#: ../inc/panel/customizer/customizer.php:1063
+#, php-format
+msgid "Featured Content #%s"
+msgstr "Contingut destacat %s"
+
+#: ../inc/panel/customizer/customizer.php:1085
+msgid "Image"
+msgstr "Imatge"
+
+#: ../inc/panel/customizer/customizer.php:1106
+msgid "Link URL"
+msgstr "URL"
+
+#: ../inc/panel/customizer/customizer.php:1127
+msgid "Target. Open Link in New Window?"
+msgstr "Obrir l'enllaç en una finestra nova?"
+
+#: ../inc/panel/customizer/customizer.php:1148
+msgid "Title"
+msgstr "Títol"
+
+#: ../inc/panel/customizer/customizer.php:1151
+msgid "Leave empty if you want to remove title"
+msgstr "Deixa-ho buit si vols eliminar el títol"
+
+#: ../inc/panel/customizer/customizer.php:1170
+msgid "Content"
+msgstr "Contingut"
+
+#: ../inc/panel/customizer/customizer.php:1195
+#, php-format
+msgid "Featured Post Slider #%s"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1209
+#: ../inc/panel/customizer/customizer.php:1220
+msgid "Important Links"
+msgstr ""
+
+#: ../inc/panel/customizer/customizer.php:1295
+msgid "Y"
+msgstr "Y"
+
+#: ../inc/panel/customizer/customizer.php:1326
+msgid "Catch Everest Theme by "
+msgstr "Catch Everest Theme by "
+
+#: ../inc/panel/customizer/customizer.php:1335
+msgid "Catch Themes"
+msgstr "Catch Themes"
+
+#: ../inc/panel/customizer/customizer.php:1346
+#: ../inc/panel/customizer/customizer.php:1349
+msgid "Copyright"
+msgstr "Copyright"
+
+#: ../inc/panel/customizer/customizer.php:1346
+msgid "All Rights Reserved"
+msgstr "Tots els drets reservats"
+
+#: ../inc/panel/customizer/customizer.php:1349
+#, fuzzy
+#| msgid "All Rights Reserved"
+msgid "All Rights Reserved.  "
+msgstr "Tots els drets reservats"
+
+#: ../inc/template-tags.php:50 ../inc/template-tags.php:111
+msgid "Post navigation"
+msgstr "Navegació per les entrades"
+
+#: ../inc/template-tags.php:54 ../inc/template-tags.php:115
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: ../inc/template-tags.php:55 ../inc/template-tags.php:116
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: ../inc/template-tags.php:67 ../inc/template-tags.php:128
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Entrades més antigues"
+
+#: ../inc/template-tags.php:71 ../inc/template-tags.php:132
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Entrades més recents <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../inc/template-tags.php:162
+msgid "Pingback:"
+msgstr "Retroenllaç:"
+
+#: ../inc/template-tags.php:162
+msgid "(Edit)"
+msgstr "(Edita)"
+
+#: ../inc/template-tags.php:177
+msgid "Post author"
+msgstr "Autor de l'entrada"
+
+#: ../inc/template-tags.php:183
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s a les %2$s"
+
+#: ../inc/template-tags.php:189
+msgid "Your comment is awaiting moderation."
+msgstr "El teu comentari està esperant moderació."
+
+#: ../inc/template-tags.php:198
+msgid "Reply"
+msgstr "Respon"
+
+#: ../inc/template-tags.php:227 ../inc/template-tags.php:300
+#, php-format
+msgid "View all posts by %s"
+msgstr "Mostra totes les entrades de %s"
+
+#: ../inc/template-tags.php:232
+#, php-format
+msgid ""
+"<span class=\"on-date\">Posted on %1$s</span><span class=\"by-author\"> by "
+"%2$s</span>"
+msgstr ""
+"<span class=\"on-date\">Publicat el %1$s</span>, <span class=\"by-author\"> "
+"escrit per %2$s</span>"
+
+#: ../inc/template-tags.php:254 ../inc/template-tags.php:257
+#: ../inc/template-tags.php:286 ../inc/template-tags.php:289
+msgid ", "
+msgstr ", "
+
+#: ../inc/template-tags.php:262
+#, php-format
+msgid ""
+"<span class=\"in-category\">Posted in %1$s</span><span class=\"sep\"> | </"
+"span><span class=\"in-tag\">Tagged %2$s</span>"
+msgstr ""
+"<span class=\"in-category\">Publicat a %1$s</span><span class=\"sep\"> | </"
+"span><span class=\"in-tag\">Etiquetat com a %2$s</span>"
+
+#: ../inc/template-tags.php:264
+#, php-format
+msgid "<span class=\"in-category\">Posted in %1$s</span>"
+msgstr "<span class=\"in-category\">Publicat a %1$s</span>"
+
+#: ../inc/template-tags.php:306
+#, php-format
+msgid ""
+"<span class=\"on-date\">Posted on %3$s</span><span class=\"in-category\"> "
+"under %1$s</span><span class=\"sep\"> | </span><span class=\"in-tag\">Tagged "
+"%2$s</span><span class=\"sep\"> | </span><span class=\"by-author\"> By %4$s</"
+"span>"
+msgstr ""
+"<span class=\"on-date\">Publicat el %3$s</span><span class=\"in-category\"> "
+"a %1$s</span><span class=\"sep\"> | </span><span class=\"in-tag\">Etiquetat "
+"com a %2$s</span><span class=\"sep\"> | </span><span class=\"by-author\"> "
+"Escrit per %4$s</span>"
+
+#: ../inc/template-tags.php:308
+#, php-format
+msgid ""
+"<span class=\"on-date\">Posted on %3$s</span><span class=\"in-category\"> "
+"under in %1$s<span><span class=\"sep\"> | </span><span class=\"by-author\"> "
+"By %4$s</span>."
+msgstr ""
+"<span class=\"on-date\">Publicat el %3$s</span><span class=\"in-category\"> "
+"a %1$s<span><span class=\"sep\"> | </span><span class=\"by-author\"> per "
+"%4$s</span>."
+
+#: ../inc/template-tags.php:310
+#, php-format
+msgid ""
+"<span class=\"on-date\">Posted on %3$s</span><span class=\"sep\"> | </"
+"span><span class=\"by-author\"> By %4$s</span>."
+msgstr ""
+"<span class=\"on-date\">Publicat el %3$s</span><span class=\"sep\"> | </"
+"span><span class=\"by-author\"> Escrit per %4$s</span>."
+
+#: ../inc/widgets.php:14
+msgid "Main Sidebar"
+msgstr "Barra lateral principal"
+
+#: ../inc/widgets.php:16
+msgid "Shows the Widgets at the side of Content"
+msgstr "Mostra els ginys al costat del contingut"
+
+#: ../inc/widgets.php:25
+msgid "Footer Area One"
+msgstr "Zona 1 del peu de pàgina"
+
+#: ../inc/widgets.php:27 ../inc/widgets.php:38 ../inc/widgets.php:49
+msgid "An optional widget area for your site footer"
+msgstr "Una zona opcional per a ginys al peu del lloc"
+
+#: ../inc/widgets.php:36
+msgid "Footer Area Two"
+msgstr "Zona 2 del peu de pàgina"
+
+#: ../inc/widgets.php:47
+msgid "Footer Area Three"
+msgstr "Zona 3 del peu de pàgina"
+
+#: ../inc/widgets.php:76
+msgid "CT: Social Icons"
+msgstr ""
+
+#: ../inc/widgets.php:77
+msgid ""
+"Use this widget to add Social Icons from Social Icons Settings as a widget."
+msgstr ""
+
+#: ../inc/widgets.php:90 ../inc/widgets.php:174
+msgid "Title (optional):"
+msgstr "Títol (opcional):"
+
+#: ../inc/widgets.php:155
+msgid "CT: Advertisement"
+msgstr ""
+
+#: ../inc/widgets.php:156
+msgid "Use this widget to add any type of Advertisement as a widget."
+msgstr "Fes servir aquest giny per afegir qualsevol tipus d'anunci."
+
+#: ../inc/widgets.php:179
+msgid "Advertisement Code:"
+msgstr "Codi de l'anunci:"
+
+#: ../inc/widgets.php:185
+msgid "Image Url:"
+msgstr "URL de la imatge:"
+
+#: ../inc/widgets.php:189
+msgid "Link URL:"
+msgstr "URL:"
+
+#: ../inc/widgets.php:193
+msgid "Open Link in New Window"
+msgstr "Obre l'enllaç en una altra finestra"
+
+#: ../inc/widgets.php:196
+msgid "Alt text:"
+msgstr "Text alternatiu (Alt):"
+
+#: ../inc/widgets.php:259
+msgid "Add Advertisement Code or Image URL"
+msgstr "Afegeix un codi d'anuncis o la URL de la imatge"
+
+#: ../no-results.php:14
+msgid "Nothing Found"
+msgstr "No s'ha trobat res"
+
+#: ../no-results.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Preparat per publicar la teva primera entrada? <a href=\"%1$s\">Comença "
+"aquí</a>."
+
+#: ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ho sentim, no hem trobat res que coincideixi amb els criteris de cerca. "
+"Intenta-ho amb paraules clau diferents."
+
+#: ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Sembla que no podem trobar el que demanaves. Prova de fer una cerca."
+
+#: ../search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Resultats de la cerca per a: %s"
+
+#: ../searchform.php:18
+msgid "Search"
+msgstr "Cerca"
+
+#: ../sidebar.php:38
+msgid "Archives"
+msgstr "Arxius"
+
+#~ msgid "Audio"
+#~ msgstr "Àudio"
+
+#~ msgid "Chat"
+#~ msgstr "Xat"
+
+#~ msgid "Gallery"
+#~ msgstr "Galeria"
+
+#~ msgid "Link"
+#~ msgstr "Enllaç"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#~ msgid "Video"
+#~ msgstr "Vídeo"
+
+#~ msgid "Select Sidebar layout"
+#~ msgstr "Escull el Disposició de barra lateral"
+
+#~ msgid "Default Layout Set in"
+#~ msgstr "Disposició per defecte a"
+
+#~ msgid "Theme Settings"
+#~ msgstr "Theme Settings"
+
+#~ msgid "Right sidebar"
+#~ msgstr "Barra lateral dreta"
+
+#~ msgid "Left sidebar"
+#~ msgstr "Barra lateral esquerra"
+
+#~ msgid "No sidebar"
+#~ msgstr "Sense barres laterals"
+
+#~ msgid "No sidebar, Full Width"
+#~ msgstr "Amplada completa, sense barra lateral"
+
+#~ msgid "Options Saved"
+#~ msgstr "Opcions desades"
+
+#~ msgid "Theme Options By"
+#~ msgstr "Opcions del tema per"
+
+#~ msgid "https://catchthemes.com/"
+#~ msgstr "https://catchthemes.com/"
+
+#~ msgid "https://catchthemes.com/themes/catch-everest-pro/"
+#~ msgstr "https://catchthemes.com/themes/catch-everest-pro/"
+
+#~ msgid "Upgrade to Catch Everest Pro"
+#~ msgstr "Actualitza a Catch Everest Pro"
+
+#~ msgid "https://catchthemes.com/donate/"
+#~ msgstr "https://catchthemes.com/donate/"
+
+#~ msgid "Donate to Catch Everest"
+#~ msgstr "Dóna a Catch Everest"
+
+#~ msgid "https://catchthemes.com/support/"
+#~ msgstr "https://catchthemes.com/support/"
+
+#~ msgid "https://catchthemes.com/theme-instructions/catch-everest/"
+#~ msgstr "https://catchthemes.com/theme-instructions/catch-everest/"
+
+#~ msgid "Theme Instruction"
+#~ msgstr "Instruccions del tema"
+
+#~ msgid "https://www.facebook.com/catchthemes/"
+#~ msgstr "https://www.facebook.com/catchthemes/"
+
+#~ msgid "Like Catch Themes on Facebook"
+#~ msgstr "Segueix Catch Themes a Facebook"
+
+#~ msgid "https://twitter.com/catchthemes/"
+#~ msgstr "https://twitter.com/catchthemes/"
+
+#~ msgid "Follow Catch Themes on Twitter"
+#~ msgstr "Segueix Catch Themes a Twitter"
+
+#~ msgid "http://wordpress.org/support/view/theme-reviews/catch-everest"
+#~ msgstr "http://wordpress.org/support/view/theme-reviews/catch-everest"
+
+#~ msgid "Rate us 5 Star on WordPress"
+#~ msgstr "Puntua'ns amb 5 estrelles a Wordpress"
+
+#~ msgid "5 Star Rating"
+#~ msgstr "Puntuació 5 estrelles"
+
+#~ msgid "Disable Responsive Design?"
+#~ msgstr "Desactivar el disseny adaptatiu? "
+
+#~ msgid "Check to disable"
+#~ msgstr "Marca per desactivar"
+
+#~ msgid "Save"
+#~ msgstr "Desa els canvis"
+
+#~ msgid "Upload Logo"
+#~ msgstr "Upload Logo"
+
+#~ msgid "<a class=\"button\" href=\"%s\">Click here</a>"
+#~ msgstr "<a class=\"button\" href=\"%s\">clic aquí</a>"
+
+#~ msgid "Favicon"
+#~ msgstr "Icona preferida (favicon)"
+
+#~ msgid "Disable Favicon?"
+#~ msgstr "Desactivar la icona preferida?"
+
+#~ msgid "Fav Icon URL:"
+#~ msgstr "URL per a la icona preferida"
+
+#~ msgid "Insert as Fav Icon"
+#~ msgstr "Insereix com a favicon"
+
+#~ msgid "Change Fav Icon"
+#~ msgstr "Canvia la icona preferida"
+
+#~ msgid "Preview: "
+#~ msgstr "Previsualitza:"
+
+#~ msgid "Web Clip Icon Options"
+#~ msgstr "Opcions d'icona de Web Clip"
+
+#~ msgid "Disable Web Clip Icon?"
+#~ msgstr "Desactivar la icona de Web Clip?"
+
+#~ msgid "Web Clip Icon URL:"
+#~ msgstr "URL de la icona de Web Clip:"
+
+#~ msgid "Insert as Web Clip Icon"
+#~ msgstr "Insereix com a icona de Web Clip"
+
+#~ msgid "Change Web Clip Icon"
+#~ msgstr "Canvia la icona de Web Clip"
+
+#~ msgid ""
+#~ "Note: Web Clip Icon for Apple devices. Recommended Size - Width 144px and "
+#~ "Height 144px height, which will support High Resolution Devices like iPad "
+#~ "Retina."
+#~ msgstr ""
+#~ "Nota: La icona de Web Clip és per a dispositius Apple. Mida recomanada: "
+#~ "144px d'amplada i 144px d'alçada, compatible amb dispositius d'alta "
+#~ "resolució com l'iPad Retina."
+
+#~ msgid "Disable Header Right Section?"
+#~ msgstr "Disable Header Right Section?"
+
+#~ msgid "Background"
+#~ msgstr "Background"
+
+#~ msgid "Custom Background. Need to replace or remove background?"
+#~ msgstr "Custom Background. Need to replace or remove background?"
+
+#~ msgid "Add in the Feedburner URL"
+#~ msgstr "Afegeix a la URL de Feedburner"
+
+#~ msgid "Content Layout"
+#~ msgstr "Disposició del contingut"
+
+#~ msgid "Reset Layout?"
+#~ msgstr "Restablir la disposició?"
+
+#~ msgid "Check to reset"
+#~ msgstr "Marca per restablir els valors per defecte"
+
+#~ msgid "Enter your custom CSS styles."
+#~ msgstr "Insereix els teus estils CSS personalitzats."
+
+#~ msgid "CSS Tutorial from W3Schools."
+#~ msgstr "Tutorial CSS de W3Schools."
+
+#~ msgid "http://www.w3schools.com/css/default.asp"
+#~ msgstr "http://www.w3schools.com/css/default.asp"
+
+#~ msgid "CSS Tutorial"
+#~ msgstr "Tutorial de CSS"
+
+#~ msgid "Click Here to Read"
+#~ msgstr "Fes clic aquí per llegir-lo"
+
+#~ msgid "The appropriate length for Headine is around 10 words."
+#~ msgstr "La longitud adequada per al titular és d'unes 10 paraules."
+
+#~ msgid "Homepage Subheadline Headline"
+#~ msgstr "Subtítol del titular de la pàgina d'inici"
+
+#~ msgid "Disable Homepage Headline?"
+#~ msgstr "Deshabilitar el titular de la pàgina d'inici?"
+
+#~ msgid "Disable Homepage Subheadline?"
+#~ msgstr "Deshabilitar el subtítol del titular de la pàgina d'inici?"
+
+#~ msgid "Disable Homepage Featured Content?"
+#~ msgstr "Desactivar els continguts destacats de la pàgina d'inici?"
+
+#~ msgid "Headline"
+#~ msgstr "Titular"
+
+#~ msgid "Insert as Featured Content #%s"
+#~ msgstr "Utilitza com a contingut destacat %s"
+
+#~ msgid "Change Image"
+#~ msgstr "Canvia la imatge"
+
+#~ msgid "Add Image"
+#~ msgstr "Afegeix una imatge"
+
+#~ msgid "Add in the Target URL for the content"
+#~ msgstr "Afegeix la URL de destí del contingut"
+
+#~ msgid "Check to open in new window"
+#~ msgstr "Marca per obrir l'enllaç en una finestra nova"
+
+#~ msgid "The appropriate length for Content is around 10 words."
+#~ msgstr "La longitud adequada per al contingut és d'unes 10 paraules."
+
+#~ msgid "Enable Latest Posts?"
+#~ msgstr "Mostra les entrades més recents?"
+
+#~ msgid "Check to Enable"
+#~ msgstr "Marca per activar"
+
+#~ msgid "Add Page instead of Latest Posts"
+#~ msgstr "Afegeix una pàgina en comptes de les entrades més recents"
+
+#~ msgid "Widgets"
+#~ msgstr "Ginys"
+
+#~ msgid "Click Here to Set Static Front Page Instead of Latest Posts"
+#~ msgstr ""
+#~ "Fes clic aquí per activar una pàgina d'inici estàtica enlloc de les "
+#~ "entrades més recents"
+
+#~ msgid ""
+#~ "Only posts that belong to the categories selected here will be displayed "
+#~ "on the front page."
+#~ msgstr ""
+#~ "Només les entrades que pertanyin a les categories escollides es mostraran "
+#~ "a la pàgina d'inici."
+
+#~ msgid "--Disabled--"
+#~ msgstr "--Deshabilitat--"
+
+#~ msgid "You may select multiple categories by holding down the CTRL key."
+#~ msgstr "Pots escollir diverses categories prement la tecla CTRL."
+
+#~ msgid "Transition Effect:"
+#~ msgstr "Efecte de transició:"
+
+#~ msgid "second(s)"
+#~ msgstr "segon(s)"
+
+#~ msgid "Featured Post Slider Options"
+#~ msgstr "Opcions de l'slider d'entrades destacades"
+
+#~ msgid "Exclude Slider post from Homepage posts?"
+#~ msgstr ""
+#~ "Excloure les entrades destacades de l'slider de la llista d'entrades de "
+#~ "la pàgina d'inici?"
+
+#~ msgid "Check to exclude"
+#~ msgstr "Marca per excloure"
+
+#~ msgid "Featured Slider Post #"
+#~ msgstr "Slide d'entrada destacada %s"
+
+#~ msgid "Click Here To Edit"
+#~ msgstr "Fes clic aquí per editar"
+
+#~ msgid ""
+#~ "Note: Here You can put your Post IDs which displays on Homepage as slider."
+#~ msgstr ""
+#~ "Nota: Pots indicar l'ID de les entrades que vulguis que es vegin a "
+#~ "l'slider de la pàgina d'inici."
+
+#~ msgid "Linkedin"
+#~ msgstr "Linkedin"
+
+#~ msgid "Header and Footer Codes"
+#~ msgstr "Codi per a la capçalera i el peu de pàgina"
+
+#~ msgid ""
+#~ "Note: Note: Here you can put scripts from Google, Facebook, Twitter, Add "
+#~ "This etc. which will load on Header"
+#~ msgstr ""
+#~ "Nota: aquí pots posar-hi scripts de Google, Facebook, Twitter, Add This, "
+#~ "etc. que hagin de ser carregats a la capçalera."
+
+#~ msgid ""
+#~ "Note: Here you can put scripts from Google, Facebook, Twitter, Add This "
+#~ "etc. which will load on footer"
+#~ msgstr ""
+#~ "Nota: aquí pots posar-hi scripts de Google, Facebook, Twitter, Add This, "
+#~ "etc. que hagin de ser carregats al peu de pàgina."
+
+#~ msgid "%s"
+#~ msgstr "%s"
+
+#~ msgid "Featured post"
+#~ msgstr "Entrada destacada"
+
+#, fuzzy
+#~ msgid "Catch Everest Pro"
+#~ msgstr "Actualitza a Catch Everest Pro"
+
+#, fuzzy
+#~ msgid "Catch Everest"
+#~ msgstr "Dóna a Catch Everest"
+
+#, fuzzy
+#~ msgid "https://catchthemes.com/themes/catch-everest"
+#~ msgstr "https://catchthemes.com/themes/catch-everest-pro/"
+
+#, fuzzy
+#~ msgid "https://catchthemes.com"
+#~ msgstr "https://catchthemes.com/"
+
+#~ msgid "Category Archives: %s"
+#~ msgstr "Arxiu de la categoria: %s"
+
+#~ msgid "Tag Archives: %s"
+#~ msgstr "Arxiu de l'etiqueta: %s"
+
+#~ msgid "Author Archives: %s"
+#~ msgstr "Arxiu de l'autor: %s"
+
+#~ msgid "Daily Archives: %s"
+#~ msgstr "Arxiu diari: %s"
+
+#~ msgid "Monthly Archives: %s"
+#~ msgstr "Arxiu mensual: %s"
+
+#~ msgid "Yearly Archives: %s"
+#~ msgstr "Arxiu anual: %s"
+
+#~ msgid "Custom Header. Need to Add or Remove Logo?"
+#~ msgstr "Custom Header. Need to Add or Remove Logo?"
+
+#~ msgid "More Theme Options &raquo;"
+#~ msgstr "More Theme Options &raquo;"
+
+#~ msgid "Page %s"
+#~ msgstr "Pàgina %s"
+
+#~ msgid ""
+#~ "Use this widget to add Social Icons from Social Icons Settings as a "
+#~ "widget. "
+#~ msgstr "Fes servir aquest giny per afegir les icones socials."
+
+#~ msgid "1. Catch Everest Social Widget"
+#~ msgstr "1. Catch Everest Social Widget"
+
+#~ msgid "2. Catch Everest: Advertisement"
+#~ msgstr "2. Catch Everest: Anunci"

@@ -1,0 +1,96 @@
+%3Cdata%3E%3Clicence%3E%3C%21%5BCDATA%5B%5D%5D%3E%3C%2Flicence%3E%3Clicence%3E%3C%21%5BCDATA%5B%5D%5D%3E%3C%2Flicence%3E%3Clicence%3E%3C%21%5BCDATA%5B%5D%5D%3E%3C%2Flicence%3E%3Clicence%3E%3C%21%5BCDATA%5B%5D%5D%3E%3C%2Flicence%3E%3Clicence%3E%3C%21%5BCDATA%5B%5D%5D%3E%3C%2Flicence%3E%3Cproject_settings%3E%3Cwidth%3E400%3C%2Fwidth%3E%3Cheight%3E400%3C%2Fheight%3E%3C%2Fproject_settings%3E%3Csettings%3E%3Cbackground%3E%3Ccolor+transparent%3D%22true%22%3E0xffffff%3C%2Fcolor%3E%3C%2Fbackground%3E%3Cfolder_images%3E%3C%21%5BCDATA%5B%2Fwp-content%2Fuploads%2Fwpcu3er%2F5641%2FArchivio%2Fimages%2F%5D%5D%3E%3C%2Ffolder_images%3E%3Cfolder_fonts%3E%3C%21%5BCDATA%5B%2Fwp-content%2Fuploads%2Fwpcu3er%2F5641%2FArchivio%2Ffonts%2F%5D%5D%3E%3C%2Ffolder_fonts%3E%3C%2Fsettings%3E%3Cdefaults%3E%3Cslide+time%3D%223%22+color%3D%220x000000%22+transparent%3D%22false%22%3E%3Clink+target%3D%22_blank%22+%2F%3E%3Cdescription%3E%3Clink+target%3D%22_blank%22+%2F%3E%3C%2Fdescription%3E%3Cimage+align_pos%3D%22MC%22+x%3D%220%22+y%3D%220%22+scaleX%3D%221%22+scaleY%3D%221%22+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+type%3D%223D%22+columns%3D%223%22+rows%3D%223%22+type2D%3D%22slide%22+flipAngle%3D%22180%22+flipOrder%3D%2245%22+flipShader%3D%22none%22+flipOrderFromCenter%3D%22false%22+flipDirection%3D%22up%2Cdown%2Cleft%2Cright%22+flipColor%3D%220x878787%22+flipBoxDepth%3D%2210%22+flipDepth%3D%2250%22+flipEasing%3D%22Sine.easeOut%22+flipDuration%3D%220.6%22+flipDelay%3D%220.15%22+flipDelayRandomize%3D%220%22+%2F%3E%3C%2Fdefaults%3E%3Cslides+align_pos%3D%22MC%22+x%3D%220%22+y%3D%220%22+width%3D%22250%22+height%3D%22250%22%3E%3Cslide+time%3D%222.0000000000000027%22+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_19.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+align_pos%3D%22MC%22+fit%3D%22dafault%22+x%3D%220%22+y%3D%220%22+scaleX%3D%221%22+scaleY%3D%221%22+%2F%3E%3Clink+target%3D%22_self%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_1.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+align_pos%3D%22MC%22+fit%3D%22dafault%22+x%3D%220%22+y%3D%220%22+scaleX%3D%221%22+scaleY%3D%221%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_10.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+align_pos%3D%22MC%22+fit%3D%22dafault%22+x%3D%220%22+y%3D%220%22+scaleX%3D%221%22+scaleY%3D%221%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_12.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_11.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_13.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_14.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_15.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_16.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_2.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+flipOrderFromCenter%3D%22true%22+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_17.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+flipShader%3D%22flat%22+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_20.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+flipOrderFromCenter%3D%22true%22+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_3.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+flipOrderFromCenter%3D%22true%22+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_4.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+flipOrderFromCenter%3D%22true%22+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_5.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_6.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_7.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_8.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3Cslide+use_image%3D%22true%22%3E%3Curl%3E%3C%21%5BCDATA%5Bib_p007_1_9.jpg%5D%5D%3E%3C%2Furl%3E%3Cimage+fit%3D%22dafault%22+%2F%3E%3C%2Fslide%3E%3Ctransition+%2F%3E%3C%2Fslides%3E%3C%2Fdata%3E|||||<ul style="position:absolute; left:-50000px;"><li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_19.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_1.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_10.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_12.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_11.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_13.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_14.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_15.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_16.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_2.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_17.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_20.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_3.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_4.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_5.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_6.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_7.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_8.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+<li><img src='/wp-content/uploads/wpcu3er/5641/Archivio/images/ib_p007_1_9.jpg' alt=''/>
+<h2></h2>
+<p></p>
+<p></p>
+</li>
+</ul>

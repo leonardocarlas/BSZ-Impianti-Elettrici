@@ -1,0 +1,165 @@
+@import "wp_contact_people_mixins.less";
+
+/* Grid View Layout */
+#people_contacts_container .people-entry-item .p_content_left,
+.people-entry-item .p_content_left{
+	width: 24% !important;
+	float: left !important;
+	text-align:center;
+}
+#people_contacts_container .people-entry-item .p_content_right,
+.people-entry-item .p_content_right{
+	width: 74% !important;
+	float: right !important;
+}
+
+/* Card Fonts */
+#people_contacts_container .people-entry-item .p_item_title,
+.people-entry-item .p_item_title {
+	/* Font */
+	font:bold 18px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+#people_contacts_container .people-entry-item .p_item_name,
+.people-entry-item .p_item_name {
+	/* Font */
+	font:bold 16px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+#people_contacts_container .people-entry-item .p_about_profile *,
+.people-entry-item .p_about_profile * {
+	/* Font */
+	font:normal 13px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+#people_contacts_container .people-entry-item .p_contact_details *,
+.people-entry-item .p_contact_details * {
+	/* Font */
+	font:normal 13px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+#people_contacts_container .people-entry-item .p_about_profile a,
+.people-entry-item .p_about_profile a,
+#people_contacts_container .people-entry-item .p_contact_details a,
+.people-entry-item .p_contact_details a {
+	/* Color */
+	color: #1A8FB2 !important;
+}
+#people_contacts_container .people-entry-item .p_about_profile a:hover,
+.people-entry-item .p_about_profile a:hover,
+#people_contacts_container .people-entry-item .p_contact_details a:hover,
+.people-entry-item .p_contact_details a:hover {
+	/* Hover Color */
+	color: #23527c !important;
+}
+
+/* Thumb Image Style */
+#people_contacts_container .people-entry-item .p_content_left img,
+.people-entry-item .p_content_left img{
+	
+	width: auto !important;
+	max-width:100% !important;
+}
+
+#people_contacts_container .people-entry-item .p_content_left img,
+.people-entry-item .p_content_left img,
+body #people_contacts_container #map_canvas .infowindow .info_avatar img,
+body #people_contacts_container .map_canvas_container .infowindow .info_avatar img,
+.custom_contact_popup .people_email_inquiry_default_image_container img {
+	background: #FFFFFF !important;
+	
+	border: 1px solid #DBDBDB !important;	padding:2px !important;
+
+	border-radius: 200px !important;
+	-moz-border-radius: 200px !important;
+	-webkit-border-radius: 200px !important;
+	box-shadow: 1 1 1 1 1 1 !important;-moz-box-shadow: 1 1 1 1 1 1 !important;-webkit-box-shadow: 1 1 1 1 1 1 !important;
+	box-sizing:border-box !important;
+	-moz-box-sizing:border-box !important;
+	-webkit-box-sizing:border-box !important;
+}
+
+#people_contacts_container .people_item .people-entry-item,
+.people_item .people-entry-item{
+	background-color:#FFFFFF;
+	border: 1px solid #DBDBDB !important;border-radius: 0px !important;-moz-border-radius: 0px !important;-webkit-border-radius: 0px !important;	padding:10px 10px 10px 10px;
+	box-shadow: 1 1 1 1 1 1 !important;-moz-box-shadow: 1 1 1 1 1 1 !important;-webkit-box-shadow: 1 1 1 1 1 1 !important;}
+#people_contacts_container .people_box_content.has_map .people_item.has_marker .people-entry-item,
+.people_box_content.has_map .people_item.has_marker .people-entry-item {
+	cursor: pointer;
+}
+#people_contacts_container .people_box_content.has_map .people_item.has_marker .people-entry-item:hover,
+.people_box_content.has_map .people_item.has_marker .people-entry-item:hover {
+	background-color:#e6f3f4;
+}
+#people_contacts_container .infowindow{
+	background-color:#e6f3f4;
+	padding:10px;
+}
+
+
+/* Email Inquiry Form Style */
+.custom_contact_popup * {
+	box-sizing:content-box !important;
+	-moz-box-sizing:content-box !important;
+	-webkit-box-sizing:content-box !important;	
+}
+.custom_contact_popup {
+	background-color: #FFFFFF !important;
+}
+body .custom_contact_popup,
+.custom_contact_popup {
+	/* Font */
+	font:normal 12px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+.people_email_inquiry_contact_heading {
+	/* Font */
+	font:normal 14px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+.people_email_inquiry_site_name {
+	/* Font */
+	font:normal 28px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+.people_email_inquiry_profile_position {
+	/* Font */
+	font:bold 14px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+.people_email_inquiry_profile_name {
+	/* Font */
+	font:bold 14px/1.4em Arial, sans-serif !important; color:#000000 !important;}
+.custom_contact_popup input,
+.custom_contact_popup textarea{
+	/*Border*/
+	border: 1px solid #CCCCCC !important;border-radius: 0px !important;-moz-border-radius: 0px !important;-webkit-border-radius: 0px !important;	
+	/*Background*/
+	background-color: #FAFAFA !important;
+	
+	/* Font */
+	color: #000000 !important;
+}
+
+/* Email Inquiry Form Button Style */
+body .people_email_inquiry_form_button,
+.people_email_inquiry_form_button {
+	position: relative !important;
+	cursor:pointer;
+	display: inline-block !important;
+	line-height: 1 !important;
+}
+body .people_email_inquiry_form_button,
+.people_email_inquiry_form_button {
+	padding: 7px 10px !important;
+	margin:0;
+	
+	/*Background*/
+	background-color: #EE2B2B !important;
+	background: -webkit-gradient(
+					linear,
+					left top,
+					left bottom,
+					color-stop(.2, #FBCACA),
+					color-stop(1, #EE2B2B)
+				) !important;;
+	background: -moz-linear-gradient(
+					center top,
+					#FBCACA 20%,
+					#EE2B2B 100%
+				) !important;;
+	
+	/*Border*/
+	border: 1px solid #EE2B2B !important;border-radius: 3px 3px 3px 3px !important;-moz-border-radius: 3px 3px 3px 3px !important;-webkit-border-radius: 3px 3px 3px 3px !important;	
+	/* Font */
+	font:normal 12px/1.4em Arial, sans-serif !important; color:#FFFFFF !important;		
+	text-align: center !important;
+	text-shadow: 0 -1px 0 hsla(0,0%,0%,.3);
+	text-decoration: none !important;
+}
+

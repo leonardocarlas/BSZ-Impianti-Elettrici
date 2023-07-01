@@ -1,0 +1,227 @@
+﻿<data>
+  <debug>0</debug><referral>lca99dabe3a9271b1</referral>
+  <project_settings>
+    <width>300</width>
+    <height>300</height>
+  </project_settings>
+  <settings>
+    <folder_images>images</folder_images>
+    <folder_fonts>fonts</folder_fonts>
+    <background>
+      <color transparent="true">0xffffff</color>
+    </background>
+    <start_slide>1</start_slide>
+    <auto_play>true</auto_play>
+    <randomize_slides>false</randomize_slides>
+    <pause_on_rollover>true</pause_on_rollover>
+    <branding align_to="stage" align_pos="TR" x="-10" y="10">
+      <remove_logo_loader>false</remove_logo_loader>
+      <remove_right_menu_info>false</remove_right_menu_info>
+      <remove_right_menu_licence>false</remove_right_menu_licence>
+    </branding>
+    <camera x="0" y="1" z="0" angleX="0" angleY="0" angleZ="0"/>
+  </settings>
+  <fonts/>
+  <preloader type="linear" align_to="stage" align_pos="MC" width="200" height="20" x="0" y="109" radius="30">
+    <background padding="5">
+      <tweenShow tint="0x2185C5" alpha="0.85" x="0" y="0" scaleX="1" scaleY="1"/>
+      <tweenOver alpha="1" x="0" y="0" scaleX="1" scaleY="1"/>
+      <tweenHide alpha="0" x="0" y="0" scaleX="1" scaleY="1"/>
+    </background>
+    <loader>
+      <tweenShow tint="0xFFFFFF" alpha="0.8"/>
+      <tweenOver tint="0xFFFFFF" alpha="1"/>
+      <tweenHide tint="0xFFFFFF" alpha="0"/>
+    </loader>
+  </preloader>
+  <controls/>
+  <defaults>
+    <slide time="5" color="0x000000">
+      <image align_pos="MC" x="0" y="0" fit="inside" scaleX="1" scaleY="1"/>
+      <link target="_blank"/>
+      <description>
+        <link target="_blank"/>
+      </description>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+    </slide>
+    <transition type="3D" columns="3" rows="3" type2D="slide" flipAngle="180" flipOrder="45" flipShader="none" flipOrderFromCenter="false" flipDirection="left" flipColor="0x878787" flipBoxDepth="10" flipDepth="50" flipEasing="Sine.easeOut" flipDuration="0.6" flipDelay="0.15" flipRandomize="0"/>
+  </defaults>
+  <slides width="250" height="250" align_pos="MC" x="0" y="0" corner_TL="-145,-65" corner_TR="395,-65" corner_BL="-145,315" corner_BR="395,315">
+    <slide time="3.0000000000000027">
+      <url><![CDATA[ib_p007_1_19.jpg]]></url>
+      <link target="_self"/>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <description/>
+      <image x="0" y="0" scaleX="1" scaleY="1" align_pos="MC" fit="inside"/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_1.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+      <image x="0" y="0" scaleX="1" scaleY="1" align_pos="MC" fit="inside"/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_10.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+      <image x="0" y="0" scaleX="1" scaleY="1" align_pos="MC" fit="inside"/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_12.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_11.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_13.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_14.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_15.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_16.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_2.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide color="0x000000">
+      <url><![CDATA[ib_p007_1_17.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_20.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_3.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_4.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_5.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_6.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_7.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_8.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+    <slide>
+      <url><![CDATA[ib_p007_1_9.jpg]]></url>
+      <seo>
+        <show image="true" heading="true" paragraph="true" caption="true"/>
+      </seo>
+      <link target="_blank"/>
+      <description/>
+    </slide>
+    <transition/>
+  </slides>
+</data>
