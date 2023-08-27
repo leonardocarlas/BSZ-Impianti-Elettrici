@@ -273,6 +273,7 @@ function sydney_footer_default_colors() {
 
     if ( '#252525' !== $footer_widgets_background ) {
         set_theme_mod( 'footer_widgets_background', '#00102E' );
+        set_theme_mod( 'global_footer_widgets_background', 'global_color_6');
     }
   
     if ( '#666666' !== $footer_widgets_color ) {
@@ -285,6 +286,7 @@ function sydney_footer_default_colors() {
 
     if ( '#1c1c1c' !== $footer_background ) {
         set_theme_mod( 'footer_background', '#00102E' );
+        set_theme_mod( 'global_footer_background', 'global_color_6');
     }  
     
     if ( '#666666' !== $footer_color ) {
@@ -309,3 +311,26 @@ function sydney_default_local_google_fonts() {
     set_theme_mod( 'perf_google_fonts_local', 1 );
 }
 add_action( 'after_switch_theme', 'sydney_default_local_google_fonts' );
+
+/**
+ * Migrate primary color to global color 1
+ * 
+ */
+function sydney_migrate_primary_color() {
+
+    $flag = get_theme_mod( 'sydney_migrate_primary_color', false );
+
+    if ( true === $flag ) {
+        return;
+    }
+
+    $primary_color = get_theme_mod( 'primary_color' );
+
+    if ( '' !== $primary_color ) {
+        set_theme_mod( 'global_color_1', $primary_color );
+    }
+
+    //Set flag
+    set_theme_mod( 'sydney_migrate_primary_color', true );
+}
+add_action( 'init', 'sydney_migrate_primary_color' );

@@ -144,12 +144,12 @@ class CPM {
 			$new_cpm_point['description'] = ( !empty( $new_cpm_point['description'] ) ) ? $new_cpm_point['description'] : '';
 
 
-            $new_cpm_map['zoompancontrol'] 	= ($new_cpm_map['zoompancontrol'] == true);
-            $new_cpm_map['fullscreencontrol'] 	= ($new_cpm_map['fullscreencontrol'] == true);
-            $new_cpm_map['mousewheel'] 		= ($new_cpm_map['mousewheel'] == true);
-            $new_cpm_map['typecontrol'] 	= ($new_cpm_map['typecontrol'] == true);
-            $new_cpm_map['streetviewcontrol'] 	= ($new_cpm_map['streetviewcontrol'] == true);
-            $new_cpm_map['trafficlayer'] 	= ($new_cpm_map['trafficlayer'] == true);
+            $new_cpm_map['zoompancontrol'] 	= (! empty( $new_cpm_map['zoompancontrol'] ) && $new_cpm_map['zoompancontrol'] == true);
+            $new_cpm_map['fullscreencontrol'] 	= (! empty( $new_cpm_map['fullscreencontrol'] ) && $new_cpm_map['fullscreencontrol'] == true);
+            $new_cpm_map['mousewheel'] 		= (! empty( $new_cpm_map['mousewheel'] ) && $new_cpm_map['mousewheel'] == true);
+            $new_cpm_map['typecontrol'] 	= (! empty( $new_cpm_map['typecontrol'] ) && $new_cpm_map['typecontrol'] == true);
+            $new_cpm_map['streetviewcontrol'] 	= (! empty( $new_cpm_map['streetviewcontrol'] ) && $new_cpm_map['streetviewcontrol'] == true);
+            $new_cpm_map['trafficlayer'] 	= (! empty( $new_cpm_map['trafficlayer'] ) && $new_cpm_map['trafficlayer'] == true);
             $new_cpm_map['dynamic_zoom'] 	= (isset($new_cpm_map['dynamic_zoom']) && $new_cpm_map['dynamic_zoom']) ? true : false;
             $new_cpm_map['show_default'] 	= (isset($new_cpm_map['show_default']) && $new_cpm_map['show_default']) ? true : false;
             $new_cpm_map['show_window'] 	= (isset($new_cpm_map['show_window']) && $new_cpm_map['show_window']) ? true : false;

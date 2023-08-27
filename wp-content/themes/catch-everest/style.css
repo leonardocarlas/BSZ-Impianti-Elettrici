@@ -4,9 +4,9 @@ Theme URI: https://catchthemes.com/themes/catch-everest/
 Author: Catch Themes
 Author URI: https://catchthemes.com/
 Description: Catch Everest is Simple, Clean and Responsive WordPress Theme which automatically adapts to the screen's size, ensuring that your content is always displayed beautifully no matter what device visitors are using. It is based in HTML5, CSS3 and very own Catch Themes easy to use Theme Options panel which makes this theme highly customizable and flexible. Make your beautiful yet professional website in no time. Translation Ready and currently translated in Polish, Chinese, Spanish, Italian, German(SWITZERLAND), Russian, Japanese, French, Brazilian Portuguese, Dutch, German, Catalan, Turkish and Bosnian. Check out Theme Instructions at https://catchthemes.com/theme-instructions/catch-everest/, Support at https://catchthemes.com/support/ and Demo at https://catchthemes.com/demo/catch-everest/
-Version: 3.5.2
-Requires at least: 5.1
-Tested up to: 5.5
+Version: 3.6.1
+Requires at least: 5.6
+Tested up to: 5.9
 Requires PHP: 5.6
 License: GNU General Public License, version 3 (GPLv3)
 License URI: http://www.gnu.org/licenses/gpl-3.0.txt
@@ -730,7 +730,8 @@ article.format-aside .entry-title,
 
 .page .entry-header,
 .widget-title,
-.header-sidebar .widget.widget_catcheverest_social_widget {
+.header-sidebar .widget.widget_catcheverest_social_widget,
+.widget-area .wp-block-group h2 {
 	margin-bottom: 10px;
 }
 
@@ -839,7 +840,8 @@ article.format-aside .entry-title {
 
 #homepage-message span,
 .page-links,
-.widget-title {
+.widget-title,
+.widget-area .wp-block-group h2 {
 	font-size: 20px;
 	font-size: 1.25rem;
 }
@@ -863,8 +865,8 @@ article.format-aside .entry-title {
 }
 
 pre {
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 16px;
+	font-size: 1rem;
 	line-height: 1.6;
 }
 
@@ -1330,7 +1332,7 @@ sub {
     border-bottom: 1px solid #666;
     display: block;
     outline: none;
-    padding: 6px 4px;;
+    padding: 6px 4px;
     text-indent: 4px;
 }
 .sb-options a:link,
@@ -2178,7 +2180,8 @@ li.bypostauthor cite span {
 /* =Widgets
 ----------------------------------------------- */
 
-.widget-title {
+.widget-title,
+.widget-area .wp-block-group h2 {
 	color: #222;
 }
 .widget-area .widget a {

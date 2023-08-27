@@ -237,6 +237,23 @@ class MetaSlider_Admin_Table extends WP_List_table
         return $wpdb->num_rows;
     }
 
+    public function getslide_thumb($slideId)
+    {
+        $logo = 'data:image/svg+xml;base64,' . base64_encode(file_get_contents(dirname(__FILE__) . '/assets/metaslider.svg'));
+        if (get_post_type($slideId) == 'attachment') {
+            $image = wp_get_attachment_image_src($slideId, 'thumbnail');
+        } else {
+            $image = wp_get_attachment_image_src(get_post_thumbnail_id($slideId), 'thumbnail');
+        }
+
+        if (isset($image[0])) {
+            $slidethumb = "<img src='". esc_url($image[0]) ."'>";
+        } else {
+            $slidethumb = "<img src='". $logo ."' class='thumb-logo'>";
+        }
+        return $slidethumb;
+    }
+
     public function slideshow_thumb($slideshowId)
     {
         $slides = get_posts(array(
@@ -253,26 +270,26 @@ class MetaSlider_Admin_Table extends WP_List_table
                 )
             )
         ));
+
         $numberOfSlides = count($slides);
         $logo = 'data:image/svg+xml;base64,' . base64_encode(file_get_contents(dirname(__FILE__) . '/assets/metaslider.svg'));
         $thumbHtml = "<div class='w-16 h-16 bg-gray-light'>";
         if ($numberOfSlides === 0) {
-            $thumbHtml .= "<div class='relative w-16 h-16'><img src='". esc_url($logo) ."' class='absolute block inset-0 default-thumb'></div>";
+            $thumbHtml .= "<img src='". $logo ."' class='thumb-logo'>";
         } else {
-            $thumbHtml .= "<div class='relative w-16 h-16 image-wrap'>";
-            foreach ($slides as $key => $slide) {
-                $image = get_post(get_post_meta($slide->ID, '_thumbnail_id', true));
-                if ($image) {
-                    $thumb = wp_get_attachment_image_src($image->ID, 'thumbnail');
-                    $thumbHtml .= "<img src='". esc_url($thumb[0]) ."' class='absolute block inset-0 transition-all duration-1000 ease-linear'>";
-                } else {
-                    $thumbHtml .= "<img src='". esc_url($logo) ."' class='absolute block inset-0 default-thumb'>";
+            if ($numberOfSlides === 1){
+                $thumbHtml .= $this->getslide_thumb($slides[0]->ID);
+            } else {
+                $thumbHtml .= "<div class='relative w-16 h-16 image-wrap'>";
+                foreach ($slides as $key => $slide) {
+                    $thumbHtml .= "<div class='bg-gray-light absolute block inset-0 transition-all duration-1000 ease-linear autoplay'>";
+                    $thumbHtml .= $this->getslide_thumb($slide->ID);
+                    $thumbHtml .= "</div>";
                 }
-            }
-            $thumbHtml .= "</div>";
+                $thumbHtml .= "</div>";
+            }        
         }
         $thumbHtml .= "</div>";
-
         return $thumbHtml;
     }
 

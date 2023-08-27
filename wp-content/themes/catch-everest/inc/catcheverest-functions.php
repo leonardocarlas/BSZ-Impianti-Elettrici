@@ -92,6 +92,16 @@ function catcheverest_scripts() {
 add_action( 'wp_enqueue_scripts', 'catcheverest_scripts' );
 
 /**
+ * Enqueue editor styles for Gutenberg
+ */
+function catcheverest_block_editor_styles() {
+	// Block styles.
+	wp_enqueue_style( 'catcheverest-block-editor-style', trailingslashit( esc_url ( get_template_directory_uri() ) ) . 'css/editor-blocks.css' );
+	// Add custom fonts.
+}
+add_action( 'enqueue_block_editor_assets', 'catcheverest_block_editor_styles' );
+
+/**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  *
  * @since Catch Everest 1.0
@@ -561,7 +571,7 @@ if ( ! function_exists( 'catcheverest_homepage_headline' ) ) :
 	function catcheverest_homepage_headline() {
 		//delete_transient( 'catcheverest_homepage_headline' );
 
-		global $post, $wp_query, $catcheverest_options_settings;;
+		global $post, $wp_query, $catcheverest_options_settings;
 	   	$options = $catcheverest_options_settings;
 
 		// Getting data from Theme Options

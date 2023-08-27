@@ -388,12 +388,16 @@ $wp_customize->add_control(
 	)
 ); 
 
-$wp_customize->selective_refresh->add_partial( 'single_post_template', array(
-	'selector' 				=> '.single-post .content-area',
-	'settings' 				=> array( 'single_post_image_placement','single_post_show_featured','single_post_meta_position','single_post_meta_elements','single_post_show_tags','single_post_show_author_box','single_post_show_post_nav','single_post_show_related_posts' ),
-	'container_inclusive' 	=> true,
-	'render_callback' 		=> 'sydney_single_template',
-) );
+$single_post_options = array( 'single_post_image_placement','single_post_show_featured','single_post_meta_position','single_post_meta_elements','single_post_show_tags','single_post_show_author_box','single_post_show_post_nav','single_post_show_related_posts','single_post_share_title','enable_post_sharing','single_post_sharing_networks','single_post_reading_progress' );
+
+foreach ( $single_post_options as $option ) {
+	$wp_customize->selective_refresh->add_partial( $option, array(
+		'selector' 				=> '.single-post .content-area',
+		'settings' 				=> $option,
+		'container_inclusive' 	=> true,
+		'render_callback' 		=> 'sydney_single_template',
+	) );
+}
 
 /**
  * Styling
@@ -435,6 +439,14 @@ $wp_customize->add_control( new Sydney_Responsive_Slider( $wp_customize, 'single
 ) );
 
 $wp_customize->add_setting(
+    'global_single_post_title_color',
+    array(
+        'default'           => 'global_color_4',
+        'sanitize_callback' => 'sydney_sanitize_hex_rgba',
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_setting(
 	'single_post_title_color',
 	array(
 		'default'           => '#00102E',
@@ -449,6 +461,10 @@ $wp_customize->add_control(
 		array(
 			'label'         	=> esc_html__( 'Title color', 'sydney' ),
 			'section'       	=> 'sydney_section_blog_singles',
+			'settings'       => array(
+                'global'  => 'global_single_post_title_color',
+                'setting' => 'single_post_title_color',
+            ),
 		)
 	)
 );
@@ -504,6 +520,14 @@ $wp_customize->add_control( new Sydney_Responsive_Slider( $wp_customize, 'single
 ) );
 
 $wp_customize->add_setting(
+    'global_single_post_meta_color',
+    array(
+        'default'           => 'global_color_5',
+        'sanitize_callback' => 'sydney_sanitize_hex_rgba',
+        'transport'         => 'postMessage'
+    )
+);
+$wp_customize->add_setting(
 	'single_post_meta_color',
 	array(
 		'default'           => '#666666',
@@ -518,6 +542,10 @@ $wp_customize->add_control(
 		array(
 			'label'         	=> esc_html__( 'Meta color', 'sydney' ),
 			'section'       	=> 'sydney_section_blog_singles',
+			'settings'       => array(
+                'global'  => 'global_single_post_meta_color',
+                'setting' => 'single_post_meta_color',
+            ),
 		)
 	)
 );

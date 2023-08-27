@@ -113,7 +113,7 @@ eventually be removed/refactored */
 .metaslider .left table tr.slide input.url {
     width: 100%;
     margin: 0;
-    padding: 4px;
+    padding: 4px 8px;
 }
 
 .metaslider .section {
@@ -685,13 +685,16 @@ eventually be removed/refactored */
     width: 30px;
     height: 30px;
 }
-.metaslider-ui .metaslider-slides-container .update-image {
+.metaslider-ui .metaslider-slides-container .update-image,
+.metaslider-ui .metaslider-slides-container .update-video {
     padding: 0px 0 0 6px;
 }
-.metaslider-ui .metaslider-slides-container .update-image svg {
+.metaslider-ui .metaslider-slides-container .update-image svg,
+.metaslider-ui .metaslider-slides-container .update-video svg {
     width: 18px;
 }
-.metaslider-ui .metaslider-slides-container .update-image.image-button {
+.metaslider-ui .metaslider-slides-container .update-image.image-button,
+.metaslider-ui .metaslider-slides-container .update-video.image-button {
     padding: 0;
     margin: 0;
     display: block;
@@ -1090,7 +1093,7 @@ input.no_last_pass {
 #slideshows-list table.fixed{
     position: relative!important;
 }
-.column-slides .image-wrap > * {
+.column-slides .image-wrap .autoplay {
     animation: 12s autoplaythumb infinite linear;
 }
 #slideshows-list #slides {
@@ -1098,6 +1101,9 @@ input.no_last_pass {
 }
 #slideshows-list .wp-heading-inline {
 	margin-bottom: 0 !important;
+}
+.thumb-logo {
+    padding: 10px;
 }
 .default-thumb {
 	width: 70%;
@@ -1128,6 +1134,14 @@ input.no_last_pass {
 .metaslider_page_metaslider-start #ms-toolbar .container,
 .metaslider-pro_page_metaslider-start #ms-toolbar .container{
     margin: 0;
+}
+
+.metaslider-welcome #media-items #message p {
+	margin: 0 !important;
+	padding: 10px 0;
+}
+.metaslider-welcome #media-items #message {
+	margin: 0;
 }
 
 /* Upgrade Page */
@@ -1186,6 +1200,9 @@ input.no_last_pass {
     /* Quick Start */
     .metaslider-welcome .ms-panel-container > div:nth-child(2) {
         padding-left: 1rem;
+    }
+    .metaslider-welcome .drag-drop .drag-drop-inside {
+        width: 400px;
     }
     /* Dashboard */
     #slideshows-list {

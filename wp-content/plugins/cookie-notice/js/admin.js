@@ -27,8 +27,6 @@
 				type: 'POST',
 				dataType: 'json',
 				data: ajaxArgs
-			} ).done( function( result ) {
-				console.log( result );
 			} ).always( function( result ) {
 				$( el ).parent().find( '.spinner' ).remove();
 			} );

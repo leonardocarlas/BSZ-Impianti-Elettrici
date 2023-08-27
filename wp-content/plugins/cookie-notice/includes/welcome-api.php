@@ -432,8 +432,15 @@ class Cookie_Notice_Welcome_API {
 				}
 
 				$params['AppID'] = $app_id;
+
 				// @todo When mutliple default languages are supported
 				$params['DefaultLanguage'] = 'en';
+
+				if ( ! array_key_exists( 'text', $params ) )
+					$params['text'] = new stdClass();
+
+				// add privacy policy url
+				$params['text']->privacyPolicyUrl = get_privacy_policy_url();
 
 				// add translations if needed
 				if ( $locale_code[0] !== 'en' )
@@ -654,8 +661,12 @@ class Cookie_Notice_Welcome_API {
 				// create quick config
 				$params = [
 					'AppID'				=> $app_exists->AppID,
-					'DefaultLanguage'	=> 'en'
+					'DefaultLanguage'	=> 'en',
+					'text'				=> new stdClass()
 				];
+
+				// add privacy policy url
+				$params['text']->privacyPolicyUrl = get_privacy_policy_url();
 
 				// add translations if needed
 				if ( $locale_code[0] !== 'en' )
@@ -975,13 +986,22 @@ class Cookie_Notice_Welcome_API {
 			case 'get_analytics':
 				$api_url = $cn->get_url( 'transactional_api', '/api/transactional/analytics/analytics-data' );
 				$api_args['method'] = 'GET';
-				$api_args['headers'] = array_merge(
-					$api_args['headers'],
-					[
+
+				$diff_data = $cn->settings->get_analytics_app_data();
+
+				if ( ! empty( $diff_data ) ) {
+					$app_data = [
+						'app-id'			=> $diff_data['id'],
+						'app-secret-key'	=> $diff_data['key']
+					];
+				} else {
+					$app_data = [
 						'app-id'			=> $cn->options['general']['app_id'],
 						'app-secret-key'	=> $cn->options['general']['app_key']
-					]
-				);
+					];
+				}
+
+				$api_args['headers'] = array_merge( $api_args['headers'], $app_data );
 				break;
 
 			case 'get_config':
@@ -1176,19 +1196,19 @@ class Cookie_Notice_Welcome_API {
 			else
 				$recurrence = 'hourly';
 
-			if ( ! wp_next_scheduled( 'cookie_notice_get_app_analytics' ) ) {
-				// set schedule
+			// set schedule if needed
+			if ( ! wp_next_scheduled( 'cookie_notice_get_app_analytics' ) )
 				wp_schedule_event( time(), 'hourly', 'cookie_notice_get_app_analytics' );
-			}
 
-			if ( ! wp_next_scheduled( 'cookie_notice_get_app_config' ) ) {
-				// set schedule
+			// set schedule if needed
+			if ( ! wp_next_scheduled( 'cookie_notice_get_app_config' ) )
 				wp_schedule_event( time(), $recurrence, 'cookie_notice_get_app_config' );
-			}
 		} else {
+			// remove schedule if needed
 			if ( wp_next_scheduled( 'cookie_notice_get_app_analytics' ) )
 				wp_clear_scheduled_hook( 'cookie_notice_get_app_analytics' );
 			
+			// remove schedule if needed
 			if ( wp_next_scheduled( 'cookie_notice_get_app_config' ) )
 				wp_clear_scheduled_hook( 'cookie_notice_get_app_config' );
 		}
@@ -1197,21 +1217,26 @@ class Cookie_Notice_Welcome_API {
 	/**
 	 * Get app analytics.
 	 *
+	 * @param string $app_id
 	 * @param bool $force_update
 	 * @return void
 	 */
-	public function get_app_analytics( $force_update = false ) {
+	public function get_app_analytics( $app_id = '', $force_update = false ) {
 		// get main instance
 		$cn = Cookie_Notice();
 
 		$allow_one_cron_per_hour = false;
 
 		if ( is_multisite() && $cn->is_plugin_network_active() && $cn->network_options['global_override'] ) {
-			$app_id = $cn->network_options['app_id'];
+			if ( empty( $app_id ) )
+				$app_id = $cn->network_options['app_id'];
+
 			$network = true;
 			$allow_one_cron_per_hour = true;
 		} else {
-			$app_id = $cn->options['general']['app_id'];
+			if ( empty( $app_id ) )
+				$app_id = $cn->options['general']['app_id'];
+
 			$network = false;
 		}
 
@@ -1376,40 +1401,5 @@ class Cookie_Notice_Welcome_API {
 			update_option( 'cookie_notice_status', $status_data, false );
 
 		return $status_data;
-	}
-
-	/**
-	 * Defines the function used to initial the cURL library.
-	 *
-	 * @param string $url To URL to which the request is being made
-	 * @param string $args The URL query parameters
-	 * @return string|bool|null
-	 */
-	private function curl( $url, $args ) {
-		$curl = curl_init( $url );
-
-		$headers = [];
-
-		foreach ( $args['headers'] as $header => $value ) {
-			$headers[] = $header . ': ' . $value;
-		}
-
-		curl_setopt( $curl, CURLOPT_HTTPHEADER, $headers );
-		curl_setopt( $curl, CURLOPT_RETURNTRANSFER, true );
-		curl_setopt( $curl, CURLOPT_HEADER, false );
-		curl_setopt( $curl, CURLOPT_USERAGENT, '' );
-		curl_setopt( $curl, CURLOPT_HTTPGET, true );
-		curl_setopt( $curl, CURLOPT_CUSTOMREQUEST, 'GET' );
-		curl_setopt( $curl, CURLOPT_POSTFIELDS, $args['body'] );
-		curl_setopt( $curl, CURLOPT_TIMEOUT, 10 );
-
-		$response = curl_exec( $curl );
-
-		if ( 0 !== curl_errno( $curl ) || 200 !== curl_getinfo( $curl, CURLINFO_HTTP_CODE ) )
-			$response = null;
-
-		curl_close( $curl );
-
-		return $response;
 	}
 }

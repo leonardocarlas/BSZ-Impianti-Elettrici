@@ -1,10 +1,10 @@
 === Cookie Notice & Compliance for GDPR / CCPA ===
 Contributors: humanityco
-Tags: gdpr, ccpa, cookies, consent, compliance
-Requires at least: 4.7
+Tags: gdpr, ccpa, cookies, consent, compliance, privacy
+Requires at least: 4.9.6
 Requires PHP: 5.4
-Tested up to: 6.2.2
-Stable tag: 2.4.9
+Tested up to: 6.3
+Stable tag: 2.4.10
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -120,6 +120,13 @@ Yes! The plugin + web appliaction version includes technical compliance features
 4. Cookie Compliance settings
 
 == Changelog ==
+
+= 2.4.10 =
+* New: Option to enable/disable caching compatibility
+* New: WP Fastest Cache plugin compatibility
+* Fix: Potential security issue with purging cache
+* Fix: Improved refreshing Compliance analytics data
+* Tweak: Chart.js updated to 4.3.2
 
 = 2.4.9 =
 * New: WP Rocket plugin compatibility
@@ -471,5 +478,5 @@ Initial release
 
 == Upgrade Notice ==
 
-= 2.4.9 =
-Improved support for WP ROcket and LiteSpeed Cache plugins. Google and Facebook consent modes support (Cookie Compliance only).
+= 2.4.10 =
+New: Option to enable/disable caching compatibility, WP Fastest Cache plugin compatibility, Fix: Potential security issue with purging cache

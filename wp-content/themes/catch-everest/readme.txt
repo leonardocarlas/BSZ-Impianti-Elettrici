@@ -1,10 +1,10 @@
 === Catch Everest ===
 Contributors: catchthemes
 Tags: light, gray, white, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-header, custom-menu, featured-images, flexible-header, full-width-template, post-formats, sticky-post, theme-options, threaded-comments, translation-ready
-Requires at least: 5.1
-Tested up to: 5.5
+Requires at least: 5.6
+Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 3.5.2
+Stable tag: 3.6.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -52,6 +52,24 @@ Access to free support forum at https://catchthemes.com/support-forum/forum/catc
 For more FAQs, visit https://catchthemes.com/frequently-asked-questions/
 
 == Change Log ==
+
+= 3.6.1 (Released: February 05, 2022) =
+* Updated: WordPress 5.9 ready
+
+= 3.6 (Released: September 14, 2021) =
+* Add: Block editor style file editor-blocks.css
+* Add: Editor style file editor-style.css
+* Add: Extra Small font option
+* Add: Widget title style to first H2 tag inside widget group block
+* Bug Fixed: Active Callback issue
+* Bug Fixed: Block editor content width
+* Bug Fixed: Editor style path
+* Bug Fixed: block Table style
+* Bug Fixed: block Code style
+* Bug Fixed: Blockquote block style
+* Bug Fixed: Pullquote block style
+* Bug Fixed: Removed extra ; from style and catcheverest-functions.php
+* Updated: Block font sizes
 
 = 3.5.2 (Released: November 17, 2020) =
 * Bug Fixed: Customizer Checkbox not working
@@ -397,7 +415,7 @@ For more FAQs, visit https://catchthemes.com/frequently-asked-questions/
 
 == Copyright ==
 
-Catch Everest WordPress Theme, Copyright 2012-2019 Catchthemes.com
+Catch Everest WordPress Theme, Copyright 2012-2022 Catchthemes.com
 Catch Everest is distributed under the terms of the GNU GPL
 
 == Resources ==

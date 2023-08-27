@@ -25,6 +25,7 @@ class Cookie_Notice_Settings {
 	public $script_placements = [];
 	public $level_names = [];
 	public $text_strings = [];
+	private $analytics_app_data = [];
 
 	/**
 	 * Class constructor.
@@ -36,6 +37,7 @@ class Cookie_Notice_Settings {
 		add_action( 'admin_menu', [ $this, 'admin_menu_options' ] );
 		add_action( 'network_admin_menu', [ $this, 'admin_menu_options' ] );
 		add_action( 'after_setup_theme', [ $this, 'load_defaults' ] );
+		add_action( 'admin_init', [ $this, 'load_modules' ] );
 		add_action( 'admin_init', [ $this, 'validate_network_options' ], 9 );
 		add_action( 'admin_init', [ $this, 'register_settings' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_enqueue_scripts' ] );
@@ -44,6 +46,19 @@ class Cookie_Notice_Settings {
 		add_action( 'wp_ajax_cn-get-group-rules-values', [ $this, 'get_group_rule_values' ] );
 		add_action( 'admin_notices', [ $this, 'settings_errors' ] );
 		add_action( 'network_admin_notices', [ $this, 'settings_errors' ] );
+	}
+
+	/**
+	 * Load additional modules.
+	 *
+	 * @return void
+	 */
+	public function load_modules() {
+		if ( Cookie_Notice()->options['general']['caching_compatibility'] ) {
+			// wp fastest cache
+			if ( cn_is_plugin_active( 'wpfastestcache' ) )
+				include_once( COOKIE_NOTICE_PATH . 'includes/modules/wp-fastest-cache/wp-fastest-cache.php' );
+		}
 	}
 
 	/**
@@ -216,7 +231,7 @@ class Cookie_Notice_Settings {
 		if ( current_action() === 'network_admin_menu' && ! Cookie_Notice()->is_plugin_network_active() )
 			return;
 
-		add_menu_page( __( 'Cookie Notice', 'cookie-notice' ), __( 'Cookies', 'cookie-notice' ), apply_filters( 'cn_manage_cookie_notice_cap', 'manage_options' ), 'cookie-notice', [ $this, 'options_page' ], 'none', '99.3' );
+		add_menu_page( __( 'Cookie Notice', 'cookie-notice' ), __( 'Cookies', 'cookie-notice' ), apply_filters( 'cn_manage_cookie_notice_cap', 'manage_options' ), 'cookie-notice', [ $this, 'options_page' ], 'none', '99.300' );
 	}
 
 	/**
@@ -432,6 +447,7 @@ class Cookie_Notice_Settings {
 			add_settings_section( 'cookie_notice_configuration', esc_html__( 'Miscellaneous Settings', 'cookie-notice' ), '', 'cookie_notice_options' );
 			add_settings_field( 'cn_app_blocking', esc_html__( 'Autoblocking', 'cookie-notice' ), [ $this, 'cn_app_blocking' ], 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_debug_mode', esc_html__( 'Debug mode', 'cookie-notice' ), [ $this, 'cn_debug_mode' ], 'cookie_notice_options', 'cookie_notice_configuration' );
+			add_settings_field( 'cn_caching_compatibility', esc_html__( 'Caching compatibility', 'cookie-notice' ), [ $this, 'cn_caching_compatibility' ], 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_app_purge_cache', esc_html__( 'Cache', 'cookie-notice' ), [ $this, 'cn_app_purge_cache' ], 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_conditional_display', esc_html__( 'Conditional display', 'cookie-notice' ), [ $this, 'cn_conditional_display' ], 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_deactivation_delete', esc_html__( 'Deactivation', 'cookie-notice' ), [ $this, 'cn_deactivation_delete' ], 'cookie_notice_options', 'cookie_notice_configuration' );
@@ -695,6 +711,39 @@ class Cookie_Notice_Settings {
 		echo '
 		<div id="cn_debug_mode">
 			<label><input type="checkbox" name="cookie_notice_options[debug_mode]" value="1" ' . checked( true, Cookie_Notice()->options['general']['debug_mode'], false ) . ' />' . esc_html__( 'Enable to run the consent banner in debug mode.', 'cookie-notice' ) . '</label>
+		</div>';
+	}
+
+	/**
+	 * Debug mode option.
+	 *
+	 * @return void
+	 */
+	public function cn_caching_compatibility() {
+		// get main instance
+		$cn = Cookie_Notice();
+
+		$plugins_html = '';
+
+		// get active caching plugins
+		$active_plugins = cn_get_active_caching_plugins();
+
+		if ( ! empty( $active_plugins ) ) {
+			$active_plugins_html = [];
+
+			$plugins_html .= '<p class="description">' . esc_html__( 'Currently detected active caching plugins', 'cookie-notice' ) . ': ';
+
+			foreach ( $active_plugins as $plugin ) {
+				$active_plugins_html[] = '<code>' . esc_html( $plugin ) . '</code>';
+			}
+
+			$plugins_html .= implode( ', ', $active_plugins_html ) . '.</p>';
+		} else
+			$plugins_html .= '<p class="description">' . esc_html__( 'No compatible cache plugins found.', 'cookie-notice' ) . '</p>';
+
+		echo '
+		<div id="cn_caching_compatibility">
+			<label><input type="checkbox" name="cookie_notice_options[caching_compatibility]" value="1" ' . checked( true, $cn->options['general']['caching_compatibility'] && ! empty( $active_plugins ), false ) . ' ' . disabled( empty( $active_plugins ), true, false ) . ' />' . esc_html__( 'Enable to apply changes improving compatibility with caching plugins.', 'cookie-notice' ) . '</label>' . $plugins_html . '
 		</div>';
 	}
 
@@ -1122,9 +1171,17 @@ class Cookie_Notice_Settings {
 			if ( ! empty( $input['app_id'] ) && ! empty( $input['app_key'] ) ) {
 				$app_data = $cn->welcome_api->get_app_config( $input['app_id'], true );
 
-				if ( $cn->check_status( $app_data['status'] ) === 'active' && $cn->options['general']['app_id'] !== $input['app_id'] && $cn->options['general']['app_key'] !== $input['app_key'] ) {
+				if ( $cn->check_status( $app_data['status'] ) === 'active' && $cn->options['general']['app_id'] !== $input['app_id'] ) {
+					// get_app_analytics requires fresh app data
+					$this->analytics_app_data = [
+						'id'	=> $input['app_id'],
+						'key'	=> $input['app_key']
+					];
+
 					// update analytics data
-					$cn->welcome_api->get_app_analytics( true );
+					$cn->welcome_api->get_app_analytics( $input['app_id'], true );
+
+					$this->analytics_app_data = [];
 				}
 			} else {
 				if ( $is_network )
@@ -1178,6 +1235,12 @@ class Cookie_Notice_Settings {
 
 			// debug mode
 			$input['debug_mode'] = isset( $input['debug_mode'] );
+
+			// get active caching plugins
+			$active_plugins = cn_get_active_caching_plugins();
+
+			// caching compatibility
+			$input['caching_compatibility'] = isset( $input['caching_compatibility'] ) && ! empty( $active_plugins );
 
 			// position
 			if ( isset( $input['position'] ) ) {
@@ -1631,16 +1694,17 @@ class Cookie_Notice_Settings {
 	 * @return void
 	 */
 	public function ajax_purge_cache() {
+		// valid nonce?
 		if ( ! check_ajax_referer( 'cn-purge-cache', 'nonce' ) )
-			echo false;
+			exit;
 
+		// check capability
 		if ( ! current_user_can( apply_filters( 'cn_manage_cookie_notice_cap', 'manage_options' ) ) )
-			echo false;
+			exit;
 
-		// request for new config data too
+		// request for new config data
 		Cookie_Notice()->welcome_api->get_app_config( '', true );
 
-		echo true;
 		exit;
 	}
 
@@ -2029,6 +2093,13 @@ class Cookie_Notice_Settings {
 		}
 
 		exit;
+	}
+
+	/**
+	 *
+	 */
+	public function get_analytics_app_data() {
+		return $this->analytics_app_data;
 	}
 
 	/**

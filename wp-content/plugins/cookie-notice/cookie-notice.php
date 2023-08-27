@@ -2,7 +2,7 @@
 /*
 Plugin Name: Cookie Notice & Compliance for GDPR / CCPA
 Description: Cookie Notice allows you to you elegantly inform users that your site uses cookies and helps you comply with GDPR, CCPA and other data privacy laws.
-Version: 2.4.9
+Version: 2.4.10
 Author: Hu-manity.co
 Author URI: https://hu-manity.co/
 Plugin URI: https://cookie-compliance.co/
@@ -29,7 +29,7 @@ if ( ! defined( 'ABSPATH' ) )
  * Cookie Notice class.
  *
  * @class Cookie_Notice
- * @version	2.4.9
+ * @version	2.4.10
  */
 class Cookie_Notice {
 
@@ -60,6 +60,7 @@ class Cookie_Notice {
 	public $welcome;
 	public $welcome_api;
 	public $welcome_frontend;
+	public $db_version;
 
 	/**
 	 * @var $defaults
@@ -74,6 +75,7 @@ class Cookie_Notice {
 			'conditional_active'	=> false,
 			'conditional_display'	=> 'hide',
 			'conditional_rules'		=> [],
+			'caching_compatibility'	=> true,
 			'debug_mode'			=> false,
 			'position'				=> 'bottom',
 			'message_text'			=> '',
@@ -124,7 +126,7 @@ class Cookie_Notice {
 			'subscription'			=> 'basic',
 			'threshold_exceeded'	=> false
 		],
-		'version'	=> '2.4.9'
+		'version'	=> '2.4.10'
 	];
 
 	/**
@@ -654,26 +656,28 @@ class Cookie_Notice {
 		else
 			$current_db_version = get_option( 'cookie_notice_version', '1.0.0' );
 
-		if ( version_compare( $current_db_version, $this->defaults['version'], '<' ) && $this->options['general']['update_version'] < $current_update ) {
-			// check version, if update version is lower than plugin version, set update notice to true
-			$this->options['general']['update_version'] = $current_update;
-			$this->options['general']['update_notice'] = true;
+		$this->db_version = $current_db_version;
 
-			if ( $network ) {
-				$this->options['general']['update_notice_diss'] = false;
+		if ( version_compare( $current_db_version, $this->defaults['version'], '<' ) ) {
+			if ( $this->options['general']['update_version'] < $current_update ) {
+				// check version, if update version is lower than plugin version, set update notice to true
+				$this->options['general']['update_version'] = $current_update;
+				$this->options['general']['update_notice'] = true;
 
 				// update options
-				update_site_option( 'cookie_notice_options', $this->options['general'] );
+				if ( $network ) {
+					$this->options['general']['update_notice_diss'] = false;
 
-				// update plugin version
-				update_site_option( 'cookie_notice_version', $this->defaults['version'] );
-			} else {
-				// update options
-				update_option( 'cookie_notice_options', $this->options['general'] );
-
-				// update plugin version
-				update_option( 'cookie_notice_version', $this->defaults['version'], false );
+					update_site_option( 'cookie_notice_options', $this->options['general'] );
+				} else
+					update_option( 'cookie_notice_options', $this->options['general'] );
 			}
+
+			// update plugin version
+			if ( $network )
+				update_site_option( 'cookie_notice_version', $this->defaults['version'] );
+			else
+				update_option( 'cookie_notice_version', $this->defaults['version'], false );
 		}
 
 		// check page

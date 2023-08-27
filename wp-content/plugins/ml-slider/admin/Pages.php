@@ -67,8 +67,7 @@ class MetaSlider_Admin_Pages extends MetaSliderPlugin
         wp_enqueue_media();
         wp_enqueue_script('jquery-ui-core');
         wp_enqueue_script('jquery-ui-sortable');
-
-        wp_register_script('metaslider-admin-script', METASLIDER_ADMIN_URL . 'assets/dist/js/admin.js', array('jquery'), METASLIDER_ASSETS_VERSION, true);
+        wp_register_script('metaslider-admin-script', METASLIDER_ADMIN_URL . 'assets/dist/js/admin.js', array('jquery', 'plupload-all'), METASLIDER_ASSETS_VERSION, true);
         
         wp_localize_script('metaslider-admin-script', 'metaslider', array(
             'url' => esc_html__("URL", "ml-slider"),
@@ -89,6 +88,7 @@ class MetaSlider_Admin_Pages extends MetaSliderPlugin
             'undelete_slide_nonce' => wp_create_nonce('metaslider_undelete_slide'),
             'permanent_delete_slide_nonce' => wp_create_nonce('metaslider_permanent_delete_slide'),
             'update_slide_image_nonce' => wp_create_nonce('metaslider_update_slide_image'),
+            'quickstart_slideshow_nonce' => wp_create_nonce('metaslider_quickstart_slideshow'),
             'useWithCaution' => esc_html__("Caution: This setting is for advanced developers only. If you're unsure, leave it checked.", "ml-slider"),
             'locale' => preg_replace('/[^a-z]/', '', get_locale()),
         ));

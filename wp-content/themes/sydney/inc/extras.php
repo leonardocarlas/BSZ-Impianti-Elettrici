@@ -305,7 +305,7 @@ add_action('wp_footer', 'sydney_append_gotop_html', 1);
  */
 function sydney_get_social_network( $social ) {
 
-	$networks = array( 'facebook', 'twitter', 'instagram', 'github', 'linkedin', 'youtube', 'xing', 'flickr', 'dribbble', 'vk', 'weibo', 'vimeo', 'mix', 'behance', 'spotify', 'soundcloud', 'twitch', 'bandcamp', 'etsy', 'pinterest', 'amazon', 'tiktok', 'telegram', 'whatsapp', 'wa.me', 't.me' );
+	$networks = array( 'maps', 'facebook', 'twitter', 'instagram', 'github', 'linkedin', 'youtube', 'xing', 'flickr', 'dribbble', 'vk', 'weibo', 'vimeo', 'mix', 'behance', 'spotify', 'soundcloud', 'twitch', 'bandcamp', 'etsy', 'pinterest', 'amazon', 'tiktok', 'telegram', 'whatsapp', 'wa.me', 't.me' );
 
 	foreach ( $networks as $network ) {
 		$found = strpos( $social, $network );
@@ -585,6 +585,7 @@ function sydney_header_elements() {
 		'woocommerce_icons' => esc_html__( 'Cart &amp; account icons', 'sydney' ),
 		'button' 			=> esc_html__( 'Button', 'sydney' ),
 		'contact_info' 		=> esc_html__( 'Contact info', 'sydney' ),
+		'social' 			=> esc_html__( 'Social', 'sydney' ),
 	);
 
 	return apply_filters( 'sydney_header_elements', $elements );
@@ -858,3 +859,37 @@ function sydney_single_template() {
 	<?php
 }
 add_action( 'sydney_single_content', 'sydney_single_template' );
+
+/**
+ * Global color palette
+ */
+function sydney_get_global_color_defaults() {
+	$defaults = array(
+		'global_color_1' => '#d65050',
+		'global_color_2' => '#b73d3d',
+		'global_color_3' => '#233452',
+		'global_color_4' => '#00102E',
+		'global_color_5' => '#737C8C',
+		'global_color_6' => '#00102E',
+		'global_color_7' => '#F4F5F7',
+		'global_color_8' => '#dbdbdb',
+		'global_color_9' => '#ffffff',
+	);
+
+	return apply_filters( 'sydney_global_color_defaults', $defaults );
+}
+
+/**
+ * Get global colors
+ */
+function sydney_get_global_colors() {
+	$defaults = sydney_get_global_color_defaults();
+
+	$colors = array();
+
+	foreach ( $defaults as $key => $value ) {
+		$colors[ $key ] = get_theme_mod( $key, $value );
+	}
+
+	return $colors;
+}

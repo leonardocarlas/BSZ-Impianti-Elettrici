@@ -77,7 +77,11 @@ if ( !class_exists( 'Sydney_Header' ) ) :
 					</div>
 				</div>
 				<div class="mobile-header-item">
-					<?php $this->menu(); ?>
+					<?php if ( has_nav_menu( 'mobile' ) ) {
+						$this->mobile_menu();
+					} else {
+						$this->menu();
+					} ?>
 				</div>
 				<div class="mobile-header-item offcanvas-items">
 					<?php $this->render_components( 'offcanvas' ); ?>
@@ -394,7 +398,9 @@ if ( !class_exists( 'Sydney_Header' ) ) :
 		 * Social icons
 		 */
 		public function social() {
-			sydney_social_profile( 'social_profiles_header' );
+			echo '<div class="header-item header-social">';
+				sydney_social_profile( 'social_profiles_header' );
+			echo '</div>';
 		}
 
 		/**
@@ -416,6 +422,25 @@ if ( !class_exists( 'Sydney_Header' ) ) :
 			</nav>
 			<?php endif;
 		}
+
+		/**
+		 * Mobile navigation
+		 */
+		public function mobile_menu() {
+			?>
+			<nav id="mainnav" class="mainnav">
+				<?php			
+				wp_nav_menu(
+					array(
+						'theme_location' => 'mobile',
+						'menu_id'        => 'primary-menu',
+						'walker'         => apply_filters( 'sydney_primary_wp_nav_menu_walker', '' )
+					)
+				);
+				?>
+			</nav>
+			<?php
+		}		
 
 		/**
 		 * Button
@@ -499,6 +524,7 @@ if ( !class_exists( 'Sydney_Header' ) ) :
 		 * Site branding
 		*/		
 		public function logo( $context = false ) {
+			$logo_site_title	= get_theme_mod('logo_site_title', 0);
 			?>
 			<div class="site-branding">
 
@@ -509,28 +535,39 @@ if ( !class_exists( 'Sydney_Header' ) ) :
 					?>						
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php bloginfo('name'); ?>"><img width="<?php echo esc_attr( $logo_attrs[1] ); ?>" height="<?php echo esc_attr( $logo_attrs[2] ); ?>" class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>" alt="<?php bloginfo('name'); ?>" <?php sydney_do_schema( 'logo' ); ?> /></a>
 				
-					<?php if ( is_home() && 'main' == $context ) : ?>
+					<?php if ( $logo_site_title ) : //display site title and description with the logo
+						echo '<div class="site-branding-text">';
+						$this->site_title_desc();
+						echo '</div>';
+					elseif ( is_home() && 'main' == $context ) : ?>
 						<h1 class="screen-reader-text"><?php bloginfo( 'name' ); ?></h1>
 					<?php endif; ?>
 				<?php else : ?>
-					<?php if ( is_front_page() && is_home() ) :
-						?>
-						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-						<?php
-					else :
-						?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-						<?php
-					endif;
-					$sydney_description = get_bloginfo( 'description', 'display' );
-					if ( $sydney_description || is_customize_preview() ) :
-						?>
-						<p class="site-description"><?php echo $sydney_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-					<?php endif; ?>
+					<?php $this->site_title_desc(); ?>
 				<?php endif; ?>	
 			</div><!-- .site-branding -->
 			<?php
 		}
+
+		/**
+		 * Site title and description
+		 */
+		public function site_title_desc() {
+			if ( is_front_page() && is_home() ) :
+				?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<?php
+			else :
+				?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<?php
+			endif;
+			$sydney_description = get_bloginfo( 'description', 'display' );
+			if ( $sydney_description || is_customize_preview() ) :
+				?>
+				<p class="site-description"><?php echo $sydney_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+			<?php endif;
+		}		
 
 		/**
 		 * Mobile menu trigger

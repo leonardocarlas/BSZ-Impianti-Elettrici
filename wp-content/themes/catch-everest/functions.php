@@ -61,10 +61,9 @@ function catcheverest_setup() {
 	load_theme_textdomain( 'catch-everest', get_template_directory() . '/languages' );
 
 	/**
-	 * Add callback for custom TinyMCE editor stylesheets. (editor-style.css)
-	 * @see http://codex.wordpress.org/Function_Reference/add_editor_style
+	 * Setup Editor style
 	 */
-	add_editor_style();
+	add_editor_style( 'css/editor-style.css' );
 
 	/**
 	 * Add default posts and comments RSS feed links to head
@@ -174,15 +173,21 @@ function catcheverest_setup() {
 		'editor-font-sizes',
 		array(
 			array(
+				'name'      => esc_html__( 'Extra small', 'catch-everest' ),
+				'shortName' => esc_html__( 'XSS', 'catch-everest' ),
+				'size'      => 16,
+				'slug'      => 'extra-small',
+			),
+			array(
 				'name'      => esc_html__( 'Small', 'catch-everest' ),
 				'shortName' => esc_html__( 'S', 'catch-everest' ),
-				'size'      => 13,
+				'size'      => 16,
 				'slug'      => 'small',
 			),
 			array(
 				'name'      => esc_html__( 'Normal', 'catch-everest' ),
 				'shortName' => esc_html__( 'M', 'catch-everest' ),
-				'size'      => 16,
+				'size'      => 18,
 				'slug'      => 'normal',
 			),
 			array(

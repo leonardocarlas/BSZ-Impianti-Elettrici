@@ -3,7 +3,7 @@ Contributors: codepeople
 Donate link: http://wordpress.dwbooster.com/content-tools/codepeople-post-map
 Tags:google maps,maps,marker,gmap,places,shortcode,map,categories,post map,point,location,address,images,geocoder,google,shape,list,grouping,cluster,infowindow,route,pin,streetview,post,posts,pages,widget,image,exif tag,plugin,sidebar,stylize,admin
 Requires at least: 3.0.5
-Tested up to: 6.2
+Tested up to: 6.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -80,6 +80,7 @@ The third, and most extended version of the plugin is the "Developer Version". T
 *   Allows design a Contact Form, and associate it with the points in the map.
 *   Send notification emails with the information collected by the form.
 *   Associate an email address to the points, to contact a different person by each point, or a global email address to be notified from all points.
+*   Supports Contact Form 7 plugin's forms in the points' descriptions by inserting their shortcodes ( [contact-form-7 id="1" title="Contact Form" label="Click Here"] )
 *   Allows to use the image associated with the point as the point's icon on map.
 
 **Demo of the Developer Version of Google Maps CP Plugin**
@@ -635,6 +636,10 @@ Now the most important part create the shape's area. To create the shape's area 
 11. Export/Import section (only available in the Developer version of the plugin)
 
 == Changelog ==
+
+= 1.1.1 =
+
+* Fixes an issue in default variables.
 
 = 1.1.0 =
 

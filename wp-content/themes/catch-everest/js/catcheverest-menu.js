@@ -21,7 +21,7 @@ jQuery(function( $ ) {
 		// Add menu items with submenus to aria-haspopup="true".
 		container.find( '.menu-item-has-children, .page_item_has_children' ).attr( 'aria-haspopup', 'true' );
 
-		container.find( '.dropdown-toggle' ).click( function( e ) {
+		container.find( '.dropdown-toggle' ).on( 'click', function( e ) {
 			var _this            = $( this ),
 				screenReaderSpan = _this.find( '.screen-reader-text' );
 
@@ -155,7 +155,7 @@ jQuery(function( $ ) {
 			$( this ).parents( '.menu-item, .page_item' ).toggleClass( 'focus' );
 		} );
 
-		$('.main-navigation button.dropdown-toggle, .top-navigation button.dropdown-toggle, .secondary-navigation button.dropdown-toggle').click(function() {
+		$('.main-navigation button.dropdown-toggle, .top-navigation button.dropdown-toggle, .secondary-navigation button.dropdown-toggle').on( 'click',function() {
 			$(this).toggleClass('active');
 			$(this).parent().find('.children, .sub-menu').first().toggleClass('toggled-on');
 		});

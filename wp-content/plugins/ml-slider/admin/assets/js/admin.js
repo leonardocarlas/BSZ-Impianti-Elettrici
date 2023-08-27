@@ -85,11 +85,17 @@ window.jQuery(function ($) {
         }
 
         // Remove the events for image APIs
-        remove_image_apis()
+        remove_image_apis();
+
+        if(window.location.href.indexOf('metaslider-start') > -1) {
+            var slideshow_id = "";
+        } else {
+            var slideshow_id = window.parent.metaslider_slider_id;
+        }
 
         var data = {
             action: 'create_image_slide',
-            slider_id: window.parent.metaslider_slider_id,
+            slider_id: slideshow_id,
             selection: slide_ids,
             _wpnonce: metaslider.create_slide_nonce
         };
@@ -104,37 +110,39 @@ window.jQuery(function ($) {
                 APP && APP.notifyError('metaslider/slide-create-failed', error, true)
             },
             success: function (response) {
+                if(window.location.href.indexOf('metaslider-start') > -1) {
+                    window.location.href = 'admin.php?page=metaslider&id=' + response.data;
+                } else {
+                    // Mount and render each new slide
+                    response.data.forEach(function (slide) {
+                        // TODO: Eventually move the creation to the slideshow or slide vue component
+                        // TODO: Be careful about the handling of filters (ex. scheduling)
+                        var res = window.metaslider.app.Vue.compile(slide['html'])
 
-                // Mount and render each new slide
-                response.data.forEach(function (slide) {
-                    // TODO: Eventually move the creation to the slideshow or slide vue component
-                    // TODO: Be careful about the handling of filters (ex. scheduling)
-                    var res = window.metaslider.app.Vue.compile(slide['html'])
-
-                    // Mount the slide to the end of the list
-                    $('#metaslider-slides-list > tbody').append(
-                        (new window.metaslider.app.Vue({
-                            render: res.render,
-                            staticRenderFns: res.staticRenderFns
-                        }).$mount()).$el
-                    )
-                })
-
-                // Add timeouts to give some breating room to the notice animations
-                setTimeout(function () {
-                    if (APP) {
-                        const message = slide_ids.length == 1 ? APP.__('1 slide added successfully', 'ml-slider') : APP.__('%s slides added successfully')
-                        APP.notifySuccess(
-                            'metaslider/slides-created',
-                            APP.sprintf(message, slide_ids.length),
-                            true
+                        // Mount the slide to the end of the list
+                        $('#metaslider-slides-list > tbody').append(
+                            (new window.metaslider.app.Vue({
+                                render: res.render,
+                                staticRenderFns: res.staticRenderFns
+                            }).$mount()).$el
                         )
-                    }
-                    setTimeout(function () {
-                        APP && APP.triggerEvent('metaslider/save')
-                    }, 1000);
-                }, 1000);
+                    })
 
+                    // Add timeouts to give some breating room to the notice animations
+                    setTimeout(function () {
+                        if (APP) {
+                            const message = slide_ids.length == 1 ? APP.__('1 slide added successfully', 'ml-slider') : APP.__('%s slides added successfully')
+                            APP.notifySuccess(
+                                'metaslider/slides-created',
+                                APP.sprintf(message, slide_ids.length),
+                                true
+                            )
+                        }
+                        setTimeout(function () {
+                            APP && APP.triggerEvent('metaslider/save')
+                        }, 1000);
+                    }, 1000);
+                }
             }
         })
     })
@@ -374,7 +382,7 @@ window.jQuery(function ($) {
         delete window.metaslider.slide_type
     }
 
-    var add_image_apis = function (slide_type, slide_id) {
+    var add_image_apis = window.metaslider.add_image_apis = function (slide_type, slide_id) {
 
         // This is the pro layer screen (not currently used)
         if ($('.media-menu-item.active:contains("Layer")').length) {
@@ -411,7 +419,7 @@ window.jQuery(function ($) {
     /**
      * Remove tab and events for api type images. Add this when a modal closes to avoid duplicate events
      */
-    var remove_image_apis = function () {
+    var remove_image_apis = window.metaslider.remove_image_apis = function () {
 
         // Some things shouldn't happen when we're about to reload
         if (window.metaslider.about_to_reload) {
@@ -705,6 +713,10 @@ window.jQuery(function ($) {
     if (window.location.href.indexOf("withcaption") > -1) {
         $("input[value='override']").attr('checked', true).trigger('click');
     }
+
+    $("#quickstart-browse-button").click(function(){
+        window.create_slides.open();
+    });
 });
 
 /**

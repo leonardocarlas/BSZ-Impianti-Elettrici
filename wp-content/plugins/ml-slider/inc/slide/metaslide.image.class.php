@@ -153,8 +153,14 @@ class MetaImageSlide extends MetaSlide
             );
         }
 
+        if(empty($_POST['slider_id'])) {
+            $slider_id = MetaSlider_Slideshows::create();
+        } else {
+            $slider_id = absint($_POST['slider_id']);
+        }
+
         $slides = $this->create_slides(
-            absint($_POST['slider_id']),
+            $slider_id,
             array_map(array($this, 'make_image_slide_data'), $_POST['selection']) // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
         );
 
@@ -164,7 +170,13 @@ class MetaImageSlide extends MetaSlide
             ), 409);
         }
 
-        wp_send_json_success($slides, 200);
+        if(empty($_POST['slider_id'])) {
+            $response = $slider_id;
+        } else {
+            $response = $slides;
+        }
+        
+        wp_send_json_success($response, 200);
     }
 
     /**
@@ -665,7 +677,9 @@ class MetaImageSlide extends MetaSlide
         $attributes = apply_filters('metaslider_flex_slider_list_item_attributes', array(
                 'data-thumb' => isset($slide['data-thumb']) ? $slide['data-thumb'] : "",
                 'style' => "display: none; width: 100%;",
-                'class' => "slide-{$this->slide->ID} ms-image"
+                'class' => "slide-{$this->slide->ID} ms-image",
+                'aria-roledescription' => "slide",
+                'aria-label' =>"slide-{$this->slide->ID}"
             ), $slide, $this->slider->ID);
 
         $li = "<li";

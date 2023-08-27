@@ -141,14 +141,23 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
         
         
             //__COLORS
+            $global_color_defaults = sydney_get_global_color_defaults();            
+            $global_colors = array();
+            
+            $custom .= ":root {" . "\n";
+            for ($i = 1; $i <= 9; $i++) {
+                $color = get_theme_mod("global_color_" . $i, $global_color_defaults["global_color_" . $i]);
+                $custom .= "  --sydney-global-color-" . $i . ":" . $color . ";" . "\n";
+            }
+            $custom .= "}" . "\n";
+
             //Primary color
-            $primary_color = get_theme_mod( 'primary_color', '#d65050' );
-            if ( $primary_color != '#d65050' ) {
+            $primary_color = 'var(--sydney-global-color-1)';
             $custom .= ".llms-student-dashboard .llms-button-secondary:hover,.llms-button-action:hover,.read-more-gt,.widget-area .widget_fp_social a,#mainnav ul li a:hover, .sydney_contact_info_widget span, .roll-team .team-content .name,.roll-team .team-item .team-pop .team-social li:hover a,.roll-infomation li.address:before,.roll-infomation li.phone:before,.roll-infomation li.email:before,.roll-testimonials .name,.roll-button.border,.roll-button:hover,.roll-icon-list .icon i,.roll-icon-list .content h3 a:hover,.roll-icon-box.white .content h3 a,.roll-icon-box .icon i,.roll-icon-box .content h3 a:hover,.switcher-container .switcher-icon a:focus,.go-top:hover,.hentry .meta-post a:hover,#mainnav > ul > li > a.active, #mainnav > ul > li > a:hover, button:hover, input[type=\"button\"]:hover, input[type=\"reset\"]:hover, input[type=\"submit\"]:hover, .text-color, .social-menu-widget a, .social-menu-widget a:hover, .archive .team-social li a, a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,.classic-alt .meta-post a,.single .hentry .meta-post a, .content-area.modern .hentry .meta-post span:before, .content-area.modern .post-cat { color:" . esc_attr($primary_color) . "}"."\n";
             $custom .= ".llms-student-dashboard .llms-button-secondary,.llms-button-action,.woocommerce #respond input#submit,.woocommerce a.button,.woocommerce button.button,.woocommerce input.button,.project-filter li a.active, .project-filter li a:hover,.preloader .pre-bounce1, .preloader .pre-bounce2,.roll-team .team-item .team-pop,.roll-progress .progress-animate,.roll-socials li a:hover,.roll-project .project-item .project-pop,.roll-project .project-filter li.active,.roll-project .project-filter li:hover,.roll-button.light:hover,.roll-button.border:hover,.roll-button,.roll-icon-box.white .icon,.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span,.go-top,.bottom .socials li:hover a,.sidebar .widget:before,.blog-pagination ul li.active,.blog-pagination ul li:hover a,.content-area .hentry:after,.text-slider .maintitle:after,.error-wrap #search-submit:hover,#mainnav .sub-menu li:hover > a,#mainnav ul li ul:after, button, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"], .panel-grid-cell .widget-title:after, .cart-amount { background-color:" . esc_attr($primary_color) . "}"."\n";
             $custom .= ".llms-student-dashboard .llms-button-secondary,.llms-student-dashboard .llms-button-secondary:hover,.llms-button-action,.llms-button-action:hover,.roll-socials li a:hover,.roll-socials li a,.roll-button.light:hover,.roll-button.border,.roll-button,.roll-icon-list .icon,.roll-icon-box .icon,.owl-theme .owl-controls .owl-page span,.comment .comment-detail,.widget-tags .tag-list a:hover,.blog-pagination ul li,.error-wrap #search-submit:hover,textarea:focus,input[type=\"text\"]:focus,input[type=\"password\"]:focus,input[type=\"datetime\"]:focus,input[type=\"datetime-local\"]:focus,input[type=\"date\"]:focus,input[type=\"month\"]:focus,input[type=\"time\"]:focus,input[type=\"week\"]:focus,input[type=\"number\"]:focus,input[type=\"email\"]:focus,input[type=\"url\"]:focus,input[type=\"search\"]:focus,input[type=\"tel\"]:focus,input[type=\"color\"]:focus, button, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"], .archive .team-social li a { border-color:" . esc_attr($primary_color) . "}"."\n";
-            }
-            //Primary color SVGs
+
+			//Primary color SVGs
             $custom .= ".sydney_contact_info_widget span { fill:" . esc_attr( $primary_color ) . ";}" . "\n";
             $custom .= ".go-top:hover svg { stroke:" . esc_attr( $primary_color ) . ";}" . "\n";
         
@@ -189,7 +198,7 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
             //Menu items hover
             $menu_items_hover = get_theme_mod( 'menu_items_hover', '#d65050' );
             $custom .= "#mainnav ul li a:hover, .main-header #mainnav .menu > li > a:hover { color:" . esc_attr($menu_items_hover) . "}"."\n";
-
+		
             //Rows overlay
             $rows_overlay = get_theme_mod( 'rows_overlay', '#000000' );
             $custom .= ".overlay { background-color:" . esc_attr($rows_overlay) . "}"."\n";	
@@ -293,7 +302,8 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
 			$custom .= ".footer-widgets-grid { gap:" . esc_attr( $footer_widgets_column_spacing_desktop ) . "px;}" . "\n";
 			$custom .= $this->get_top_bottom_padding_css( 'footer_widgets_padding', $defaults = array( 'desktop' => 95, 'tablet' => 60, 'mobile' => 60 ), '.footer-widgets-grid' );
 			$custom .= $this->get_font_sizes_css( 'footer_widgets_title_size', $defaults = array( 'desktop' => 22, 'tablet' => 22, 'mobile' => 22 ), '.sidebar-column .widget .widget-title' );
-
+			$custom .= $this->get_font_sizes_css( 'footer_widgets_body_size', $defaults = array( 'desktop' => 16, 'tablet' => 16, 'mobile' => 16 ), '.footer-widgets' );
+			
 			$custom .= $this->get_background_color_css( 'footer_widgets_background', '', '.footer-widgets' );
 			$custom .= $this->get_color_css( 'footer_widgets_title_color', '', '.sidebar-column .widget .widget-title' );
 			$custom .= $this->get_color_css( 'footer_widgets_headings_color', '', '.sidebar-column .widget h1, .sidebar-column .widget h2, .sidebar-column .widget h3, .sidebar-column .widget h4, .sidebar-column .widget h5, .sidebar-column .widget h6' );
@@ -417,6 +427,9 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
 			$custom .= $this->get_color_css( 'main_header_submenu_color', '', '.bottom-header-row #mainnav ul ul li a,.bottom-header-row #mainnav ul ul li:hover a, .main-header #mainnav ul ul li:hover a,.main-header #mainnav ul ul li a' );
 			$custom .= $this->get_fill_css( 'main_header_submenu_color', '', '.bottom-header-row #mainnav ul ul li svg, .main-header #mainnav ul ul li svg' );
 			
+            //Submenu items hover
+			$custom .= $this->get_color_css( 'submenu_items_hover', '', '#mainnav .sub-menu li:hover>a, .main-header #mainnav ul ul li:hover>a' );
+
 			//Header mini cart
 			$custom .= $this->get_color_css( 'color_body_text', '', '.main-header-cart .count-number' );
 			$custom .= $this->get_background_color_rgba_css( 'color_body_text', '#212121', '.main-header-cart .widget_shopping_cart .widgettitle:after, .main-header-cart .widget_shopping_cart .woocommerce-mini-cart__buttons:before', '0.1' );
@@ -455,6 +468,11 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
             $custom .= $this->get_max_height_css( 'site_logo_size', $defaults = array( 'desktop' => 100, 'tablet' => 100, 'mobile' => 100 ), '.site-logo' );      
             
             //Site title
+			$logo_site_title	= get_theme_mod('logo_site_title', 0);
+
+            if ( $logo_site_title ) {
+                $custom .= ".site-branding { display: flex;gap:15px;align-items:center; }"."\n";
+            }			
             $site_title = get_theme_mod( 'site_title_color' );
             $custom .= ".site-title a, .site-title a:visited, .main-header .site-title a, .main-header .site-title a:visited  { color:" . esc_attr($site_title) . "}"."\n";
             //Site desc
@@ -613,8 +631,8 @@ if ( !class_exists( 'Sydney_Custom_CSS' ) ) :
 			}  
             
             //Global colors
-			$custom .= $this->get_color_css( 'color_link_default', '', '.entry-content a:not(.button)' );
-			$custom .= $this->get_color_css( 'color_link_hover', '', '.entry-content a:not(.button):hover' );
+			$custom .= $this->get_color_css( 'color_link_default', '', '.entry-content a:not(.button):not(.elementor-button-link)' );
+			$custom .= $this->get_color_css( 'color_link_hover', '', '.entry-content a:not(.button):not(.elementor-button-link):hover' );
 			$custom .= $this->get_color_css( 'color_heading_1', '', 'h1' );
 			$custom .= $this->get_color_css( 'color_heading_2', '', 'h2' );
 			$custom .= $this->get_color_css( 'color_heading_3', '', 'h3' );

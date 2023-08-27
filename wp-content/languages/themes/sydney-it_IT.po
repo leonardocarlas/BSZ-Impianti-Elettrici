@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the Themes - Sydney package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-05-07 10:20:41+0000\n"
+"PO-Revision-Date: 2023-08-26 00:53:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
 "Language: it\n"
 "Project-Id-Version: Themes - Sydney\n"
 
@@ -17,11 +17,358 @@ msgid "Sydney is a powerful business theme that provides a fast way for companie
 msgstr "Sydney è un potente tema per il business che offre ad agenzie e freelancer un metodo rapido per creare una stupenda presenza online. Essendo pienamente compatibile con Elementor, Sydney offre molteplici possibilità di personalizzazione tra cui l'accesso a tutti i Google font, il completo controllo dei colori, il caricamento del logo, slider a schermo intero, l'immagine dell'header, il menu di navigazione fisso e molto altro. Inoltre, Sydney fornisce tutti i blocchi necessari per creare una home page altamente coinvolgente. Vuoi iniziare rapidamente con Sydney? Importa una delle nostre demo con pochi click (https://athemes.com/sydney-demos/)"
 
 #. Theme Name of the theme
-#: inc/extras.php:353 inc/onboarding/theme-info.php:136
-#: inc/theme-dashboard-settings.php:21
+#: inc/dashboard/html-notifications-sidebar.php:46 inc/extras.php:353
+#: inc/onboarding/theme-info.php:136 inc/theme-dashboard-settings.php:21
 #, gp-priority: high
 msgid "Sydney"
 msgstr "Sydney"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:107
+msgid "Global Color 9"
+msgstr "Colore globale 9"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:106
+msgid "Global Color 8"
+msgstr "Colore globale 8"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:105
+msgid "Global Color 7"
+msgstr "Colore globale 7"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:104
+msgid "Global Color 6"
+msgstr "Colore globale 6"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:103
+msgid "Global Color 5"
+msgstr "Colore globale 5"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:102
+msgid "Global Color 4"
+msgstr "Colore globale 4"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:101
+msgid "Global Color 3"
+msgstr "Colore globale 3"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:100
+msgid "Global Color 2"
+msgstr "Colore globale 2"
+
+#: inc/integrations/elementor/class-sydney-elementor-global-colors.php:99
+msgid "Global Color 1"
+msgstr "Colore globale 1"
+
+#: inc/dashboard/html-builder.php:142
+msgid "Add Template"
+msgstr "Aggiungi template"
+
+#: inc/dashboard/html-builder.php:133
+msgid "WordPress Editor"
+msgstr "Editor WordPress"
+
+#: inc/dashboard/html-builder.php:131
+msgid "Elementor"
+msgstr "Elementor"
+
+#: inc/dashboard/html-builder.php:129
+msgid "Choose your builder:"
+msgstr "Scegli il page builder:"
+
+#: inc/dashboard/html-builder.php:119
+msgid "Reset"
+msgstr "Reimposta"
+
+#: inc/dashboard/html-builder.php:117
+msgid "Create New"
+msgstr "Crea nuovo"
+
+#: inc/dashboard/html-builder.php:116
+msgid "Select Existing"
+msgstr "Seleziona esistente"
+
+#: inc/dashboard/html-builder.php:113
+msgid "%s Selected"
+msgstr "%s selezionato"
+
+#: inc/dashboard/html-builder.php:112
+msgid "Select %s"
+msgstr "Seleziona %s"
+
+#: inc/dashboard/html-builder.php:103
+msgid "Delete"
+msgstr "Elimina"
+
+#: inc/dashboard/html-builder.php:102
+msgid "Duplicate"
+msgstr "Duplica"
+
+#: inc/dashboard/html-builder.php:96
+msgid "Display conditions"
+msgstr "Visualizza le condizioni"
+
+#: inc/dashboard/html-builder.php:91
+msgid "Global Template"
+msgstr "Template globali"
+
+#: inc/dashboard/html-builder.php:89
+msgid "Template Name"
+msgstr "Nome del template"
+
+#: inc/dashboard/html-builder.php:43
+msgid "Watch a quick tutorial video."
+msgstr "Guarda un rapido video tutorial."
+
+#: inc/dashboard/html-builder.php:43
+msgid "Need help?"
+msgstr "Serve aiuto?"
+
+#: inc/dashboard/html-builder.php:40
+msgid "You can create multiple templates and assign them to specific pages."
+msgstr "Puoi creare template multipli e assegnarli a pagine specifiche."
+
+#: inc/dashboard/html-builder.php:39
+msgid "Use the Global Template to create parts for all pages."
+msgstr "Usa il template globale per creare parti per tutte le pagine."
+
+#: inc/dashboard/html-builder.php:38
+msgid "Replace theme-built components like header, footer, etc. on specific pages or everywhere."
+msgstr "Sostituisci i componenti preimpostati del tema come header, footer... su pagine specifiche o ovunque tu voglia."
+
+#: inc/dashboard/html-builder.php:34
+msgid "This feature is available only in Sydney Pro"
+msgstr "Questa funzionalità è disponibile solo in Sydney Pro."
+
+#: inc/dashboard/html-builder.php:34
+msgid "Please note: "
+msgstr "Nota bene: "
+
+#: inc/dashboard/html-builder.php:18
+msgid "Content"
+msgstr "Contenuto"
+
+#: inc/dashboard/html-builder.php:17
+msgid "Page Title"
+msgstr "Titolo della pagina"
+
+#: inc/dashboard/class-dashboard.php:709
+msgid "Select existing"
+msgstr "Seleziona esistente"
+
+#: inc/dashboard/class-dashboard.php:706
+msgid "No templates found."
+msgstr "Nessun template trovato."
+
+#: inc/dashboard/class-dashboard.php:143 inc/dashboard/html-builder.php:148
+msgid "Save"
+msgstr "Salva"
+
+#: inc/dashboard/class-dashboard.php:142
+msgid "You have unsaved changes."
+msgstr "Ci sono modifiche non salvate."
+
+#: inc/dashboard/class-dashboard.php:141
+msgid "Saved!"
+msgstr "Salvato!"
+
+#: inc/dashboard/class-dashboard.php:140
+msgid "Saving..."
+msgstr "Salvataggio in corso&hellip;"
+
+#: inc/dashboard/class-dashboard.php:139
+msgid "Loading..."
+msgstr "Caricamento in corso&hellip;"
+
+#: inc/dashboard/class-dashboard-settings.php:304
+msgid "Browser Tools"
+msgstr "Strumenti del browser"
+
+#: inc/dashboard/class-dashboard-settings.php:115
+#: inc/dashboard/class-dashboard-settings.php:254
+#: inc/dashboard/html-builder.php:31
+msgid "Template Builder"
+msgstr "Builder template"
+
+#: inc/customizer/options/upsell.php:246 inc/customizer/options/upsell.php:270
+msgid "An option to upload custom fonts"
+msgstr "Un'opzione per caricare font personalizzati"
+
+#: inc/customizer/options/upsell.php:214
+msgid "A different button for each slide"
+msgstr "Un pulsante diverso per ogni slide"
+
+#: inc/customizer/options/upsell.php:213
+msgid "Extra styling options"
+msgstr "Opzioni di stile extra"
+
+#: inc/customizer/options/upsell.php:156 inc/customizer/options/upsell.php:185
+msgid "Social sharing buttons"
+msgstr "Pulsanti di condivisione social"
+
+#: inc/customizer/options/upsell.php:155 inc/customizer/options/upsell.php:183
+msgid "Progress bar"
+msgstr "Barra di avanzamento"
+
+#: inc/customizer/options/upsell.php:154 inc/customizer/options/upsell.php:182
+msgid "Reading time"
+msgstr "Tempo di lettura"
+
+#: inc/customizer/options/upsell.php:152
+msgid "Premium post header layouts"
+msgstr "Layout header degli articoli Premium"
+
+#: inc/customizer/options/upsell.php:150 inc/customizer/options/upsell.php:179
+msgid "Improve your blog’s conversion rate with Sydney Pro!"
+msgstr "Migliora il tasso di conversione del tuo blog con Sydney Pro!"
+
+#: inc/customizer/options/upsell.php:90 inc/customizer/options/upsell.php:121
+msgid "Elementor footer builder"
+msgstr "Page builder Elementor"
+
+#: inc/customizer/options/upsell.php:62
+msgid "A different logo for mobile"
+msgstr "Un logo diverso per i dispositivi mobili"
+
+#: inc/customizer/options/upsell.php:33 inc/customizer/options/upsell.php:64
+#: inc/customizer/options/upsell.php:95 inc/customizer/options/upsell.php:126
+#: inc/customizer/options/upsell.php:158 inc/customizer/options/upsell.php:187
+#: inc/customizer/options/upsell.php:218 inc/customizer/options/upsell.php:247
+#: inc/customizer/options/upsell.php:271
+msgid "&hellip;and many more premium features"
+msgstr "&hellip; e molte altre funzioni premium"
+
+#: inc/customizer/options/footer.php:653
+msgid "Text size"
+msgstr "Dimensione del testo"
+
+#: inc/customizer/options/header.php:1158
+msgid "Submenu items hover"
+msgstr "Voci del sottomenu al passaggio del mouse"
+
+#: inc/extras.php:588
+msgid "Social"
+msgstr "Social network"
+
+#: inc/dashboard/html-starter-sites.php:50
+msgid "Go to Starter Sites"
+msgstr "Vai ai modelli di sito"
+
+#: inc/dashboard/html-starter-sites.php:29
+msgid "Install and Activate"
+msgstr "Installa e attiva"
+
+#: inc/dashboard/html-starter-sites.php:27
+msgid "In order to be able to import any starter sites for Sydney you need to have the aThemes demo importer plugin active."
+msgstr "Per importare qualsiasi sito iniziale di Sydney è necessario che il plugin aThemes demo importer sia attivo."
+
+#: inc/dashboard/html-settings-performance.php:21
+msgid "Activate this option to load the Google fonts locally."
+msgstr "Attiva questa opzione per caricare i font di Google localmente."
+
+#: inc/dashboard/html-settings-performance.php:20
+msgid "Load Google Fonts Locally"
+msgstr "Carica localmente i font di Google"
+
+#: inc/dashboard/html-settings-general.php:56
+msgid "Take Sydney to a whole other level by upgrading to the premium version."
+msgstr "Porta Sydney a un altro livello, passando alla versione Premium."
+
+#: inc/dashboard/html-settings-general.php:43
+msgid "In the licenses section, click on the 🔑 key icon. A license key will appear. Copy and paste the key here"
+msgstr "Nella sezione licenze, fai clic sull'icona della chiave 🔑. Apparirà una chiave di licenza. Copia e incolla qui la chiave"
+
+#: inc/dashboard/html-settings-general.php:36
+msgid "To get your key, please login to your %1$saThemes account%2$s."
+msgstr "Per ottenere la chiave, accedi al tuo account %1$saThemes%2$s."
+
+#: inc/dashboard/html-settings-general.php:28
+msgid "Instructions"
+msgstr "Istruzioni"
+
+#: inc/dashboard/html-settings-general.php:22
+msgid "Activate your license key for Sydney Pro to get latest theme updates automatically updates right from your WordPress Dashboard."
+msgstr "Attiva la tua chiave di licenza per Sydney Pro per ottenere automaticamente gli ultimi aggiornamenti del tema direttamente dalla Bacheca di WordPress."
+
+#: inc/dashboard/html-settings-general.php:21
+msgid "Sydney Pro License"
+msgstr "Licenza Sydney Pro"
+
+#: inc/dashboard/html-notifications-sidebar.php:98
+#: inc/dashboard/html-notifications-sidebar.php:146
+msgid "No notifications found"
+msgstr "Non ci sono notifiche"
+
+#: inc/dashboard/html-notifications-sidebar.php:35
+msgid "New Update"
+msgstr "Nuovo aggiornamento"
+
+#: inc/dashboard/html-notifications-sidebar.php:16
+msgid "Close the sidebar"
+msgstr "Chiudi la barra laterale"
+
+#: inc/dashboard/html-home.php:133
+msgid "This option is only available on Sydney Pro"
+msgstr "Questa opzione è disponibile solo su Sydney Pro."
+
+#: inc/dashboard/class-dashboard.php:769
+msgid "Website"
+msgstr "Sito web"
+
+#: inc/dashboard/class-dashboard.php:145
+msgid "Activated"
+msgstr "Attivato"
+
+#: inc/dashboard/class-dashboard.php:144
+msgid "Redirecting..."
+msgstr "Reindirizzamento in corso&hellip;"
+
+#: inc/dashboard/class-dashboard.php:138
+msgid "Deactivating..."
+msgstr "Disattivazione in corso&hellip;"
+
+#: inc/dashboard/class-dashboard.php:137
+msgid "Activating..."
+msgstr "Attivazione in corso&hellip;"
+
+#: inc/dashboard/class-dashboard.php:136
+msgid "Installing..."
+msgstr "Installazione in corso&hellip;"
+
+#: inc/dashboard/class-dashboard-settings.php:405
+msgid "Add an extra widget area to your theme."
+msgstr "Aggiungi un'area widget extra al tema."
+
+#: inc/dashboard/class-dashboard-settings.php:324
+msgid "Mega Menu"
+msgstr "Mega Menu"
+
+#: inc/dashboard/class-dashboard-settings.php:289
+msgid "Add custom fonts to your site."
+msgstr "Aggiungi i font personalizzati al tuo sito."
+
+#: inc/dashboard/class-dashboard-settings.php:175
+msgid "HubSpot"
+msgstr "HubSpot"
+
+#: inc/dashboard/class-dashboard-settings.php:166
+msgid "WPForms"
+msgstr "WPForms"
+
+#: inc/dashboard/class-dashboard-settings.php:157
+msgid "aThemes Blocks"
+msgstr "Blocchi aThemes"
+
+#: inc/dashboard/class-dashboard-settings.php:106
+msgid "Home"
+msgstr "Home"
+
+#: inc/customizer/options/upsell.php:245 inc/customizer/options/upsell.php:269
+msgid "Adobe Fonts integration"
+msgstr "Integrazione Adobe Fonts"
+
+#: inc/customizer/options/upsell.php:60
+msgid "A mobile-only menu"
+msgstr "Un menu solo per i dispositivi mobili"
 
 #. Template Name of the theme
 msgid "Sydney Canvas"
@@ -60,26 +407,32 @@ msgid "Show post content"
 msgstr "Mostra i contenuti dell'articolo"
 
 #: inc/classes/class-sydney-modules.php:135
+#: inc/dashboard/class-dashboard-settings.php:399
 msgid "Live chat floating icon"
 msgstr "Icona fluttuante per la chat live"
 
 #: inc/classes/class-sydney-modules.php:130
+#: inc/dashboard/class-dashboard-settings.php:394
 msgid "Live Chat (WhatsApp)"
 msgstr "Chat live (WhatsApp)"
 
 #: inc/classes/class-sydney-modules.php:126
+#: inc/dashboard/class-dashboard-settings.php:389
 msgid "Custom CSS and other tools for Elementor"
 msgstr "CSS personalizzato e altri strumenti per Elementor"
 
 #: inc/classes/class-sydney-modules.php:121
+#: inc/dashboard/class-dashboard-settings.php:384
 msgid "Elementor Tools"
 msgstr "Strumenti di Elementor"
 
 #: inc/classes/class-sydney-modules.php:96
+#: inc/dashboard/class-dashboard-settings.php:359
 msgid "Page Header options for posts, pages, archives etc."
 msgstr "Opzioni di header della pagina per articoli, pagine, archivi ecc."
 
 #: inc/classes/class-sydney-modules.php:91
+#: inc/dashboard/class-dashboard-settings.php:354
 msgid "Page Headers"
 msgstr "Header della pagina"
 
@@ -103,6 +456,7 @@ msgstr "Filtro"
 msgid "Loading"
 msgstr "Caricamento in corso"
 
+#: inc/dashboard/class-dashboard-settings.php:473
 #: inc/integrations/elementor/library/templates.php:54
 msgid "Get Pro"
 msgstr "Passa a Pro"
@@ -157,25 +511,23 @@ msgid "No Templates Found"
 msgstr "Nessun template trovato"
 
 #: inc/classes/class-sydney-modules.php:52
+#: inc/dashboard/class-dashboard-settings.php:279
 msgid "Modal with custom content"
 msgstr "Modal con contenuto personalizzato"
 
 #: inc/classes/class-sydney-modules.php:47
+#: inc/dashboard/class-dashboard-settings.php:274
 msgid "Modal"
 msgstr "Modal"
 
-#: inc/classes/class-sydney-header.php:544
-#: inc/classes/class-sydney-header.php:595
+#: inc/classes/class-sydney-header.php:581
+#: inc/classes/class-sydney-header.php:632
 msgid "Toggle menu"
 msgstr "Mostra/Nascondi menu"
 
 #: inc/classes/class-sydney-header.php:75
 msgid "Close menu"
 msgstr "Chiudi menu"
-
-#: inc/customizer/options/upsell.php:213
-msgid "More slider options are available in Sydney Pro"
-msgstr "In Sydney Pro sono disponibili altre opzioni per gli slider"
 
 #: inc/customizer/options/performance.php:48
 msgid "Disable Google Fonts preconnect"
@@ -269,11 +621,11 @@ msgstr "Stretto"
 msgid "Select your layout"
 msgstr "Seleziona il layout"
 
-#: inc/customizer/options/header.php:828
+#: inc/customizer/options/header.php:966
 msgid "Text color (sticky)"
 msgstr "Colore del testo (in evidenza)"
 
-#: inc/customizer/options/header.php:382
+#: inc/customizer/options/header.php:429
 msgid "Transparent header"
 msgstr "Header trasparente"
 
@@ -368,7 +720,7 @@ msgid "Single Page"
 msgstr "Pagina singola"
 
 #: inc/customizer/controls/display-conditions/display-conditions-script-template.php:67
-#: inc/customizer/customizer.php:511
+#: inc/customizer/customizer.php:512
 msgid "Pages"
 msgstr "Pagine"
 
@@ -416,27 +768,28 @@ msgstr "Includi"
 msgid "Add/Edit Conditions"
 msgstr "Aggiungi/modifica condizioni"
 
-#: inc/customizer/options/footer.php:258
+#: inc/customizer/options/footer.php:280
 msgid "Widget titles color (deprecated)"
 msgstr "Colore titoli del Widget (deprecato)"
 
-#: inc/customizer/customizer.php:490
+#: inc/customizer/customizer.php:491
 msgid " 4. Priority email support is available for our premium users. You can upgrade "
 msgstr " 4. L'email dell'assistenza prioritaria è disponibile per gli utenti premium. Puoi effettuare l'upgrade "
 
-#: inc/customizer/customizer.php:489
+#: inc/customizer/customizer.php:490
 msgid " 3. You can receive free support on the community forums "
 msgstr " 3. Puoi ricevere assistenza gratuita sui forum della community "
 
-#: inc/customizer/customizer.php:488
+#: inc/customizer/customizer.php:489
 msgid " 2. All of our starter sites, both free and pro, can be previewed "
 msgstr " 2. Puoi visualizzare tutti i nostri siti iniziali, sia gratuiti, sia premium, in anteprima "
 
 #: inc/classes/class-sydney-modules.php:34
+#: inc/dashboard/class-dashboard-settings.php:259
 msgid "Build headers, footers etc. with Elementor."
 msgstr "Personalizza header, footer, e altre parti del sito web con Elementor."
 
-#: inc/customizer/options/header.php:790
+#: inc/customizer/options/header.php:902
 msgid "Background color (sticky)"
 msgstr "Colore di sfondo (fisso)"
 
@@ -453,10 +806,12 @@ msgid "Extended WooCommerce Module"
 msgstr "Modulo esteso per WooCommerce"
 
 #: inc/classes/class-sydney-modules.php:117
+#: inc/dashboard/class-dashboard-settings.php:379
 msgid "Extra features for WooCommerce"
 msgstr "Funzionalità extra per WooCommerce"
 
 #: inc/classes/class-sydney-modules.php:112
+#: inc/dashboard/class-dashboard-settings.php:374
 msgid "Extended WooCommerce"
 msgstr "WooCommerce esteso"
 
@@ -465,13 +820,16 @@ msgid "Load Google Fonts Locally?"
 msgstr "Vuoi caricare i Google Fonts localmente?"
 
 #: inc/classes/class-sydney-modules.php:43
+#: inc/dashboard/class-dashboard-settings.php:269
 msgid "Floating quick links bar (contact, social etc.)"
 msgstr "Barra rapida dei link fluttuante (contatti, social media, ecc.)"
 
 #: inc/classes/class-sydney-modules.php:38
+#: inc/dashboard/class-dashboard-settings.php:264
 msgid "Quick Links Module"
 msgstr "Modulo rapido dei link"
 
+#: inc/dashboard/html-home.php:197
 #: theme-dashboard/class-theme-dashboard.php:716
 msgid "Get direct support from our developers via email. We aim to answer all premium support requests within 24 hours."
 msgstr "Ottieni assistenza direttamente dai nostri sviluppatori via email. Rispondiamo a tutte le richieste di assistenza prioritaria entro 24 ore."
@@ -484,47 +842,52 @@ msgstr "Menu trasparente fisso"
 msgid "Want more customization options?"
 msgstr "Ti servono altre opzioni di personalizzazione?"
 
-#: inc/customizer/options/upsell.php:153 inc/customizer/options/upsell.php:182
-msgid "More blog options are available in Sydney Pro"
-msgstr "Ulteriori opzioni per il blog sono disponibili nella versione Sydney Pro"
-
-#: inc/customizer/options/upsell.php:91 inc/customizer/options/upsell.php:122
-msgid "More footer options are available in Sydney Pro"
-msgstr "Ulteriori opzioni per il footer sono disponibili nella versione Sydney Pro"
-
-#: inc/customizer/options/upsell.php:25 inc/customizer/options/upsell.php:58
-msgid "More header options are available in Sydney Pro"
-msgstr "Ulteriori opzioni header sono disponibili nella versione Sydney Pro"
+#: inc/dashboard/class-dashboard-settings.php:423
+#: inc/dashboard/html-home.php:130
+msgid "Learn More"
+msgstr "Scopri di più"
 
 #: inc/classes/class-sydney-modules.php:76
+#: inc/dashboard/class-dashboard-settings.php:339
 msgid "Extra features for your footer"
 msgstr "Caratteristiche extra per il tuo footer"
 
-#: inc/classes/class-sydney-modules.php:71 inc/theme-dashboard-settings.php:89
+#: inc/classes/class-sydney-modules.php:71
+#: inc/dashboard/class-dashboard-settings.php:334
+#: inc/theme-dashboard-settings.php:89
 msgid "Extended Footer Module"
 msgstr "Modulo esteso del footer"
 
 #: inc/classes/class-sydney-modules.php:105
+#: inc/dashboard/class-dashboard-settings.php:369
 msgid "Breadcrumbs functionality."
 msgstr "Funzionalità dei breadcrumb."
 
-#: inc/classes/class-sydney-modules.php:100 inc/theme-dashboard-settings.php:84
+#: inc/classes/class-sydney-modules.php:100
+#: inc/dashboard/class-dashboard-settings.php:364
+#: inc/theme-dashboard-settings.php:84
 msgid "Breadcrumbs Module"
 msgstr "Modulo dei breadcrumb"
 
 #: inc/classes/class-sydney-modules.php:87
+#: inc/dashboard/class-dashboard-settings.php:349
 msgid "Extra features for your blog."
 msgstr "Caratteristiche extra per il tuo blog."
 
-#: inc/classes/class-sydney-modules.php:82 inc/theme-dashboard-settings.php:79
+#: inc/classes/class-sydney-modules.php:82
+#: inc/dashboard/class-dashboard-settings.php:344
+#: inc/theme-dashboard-settings.php:79
 msgid "Extended Blog Module"
 msgstr "Modulo esteso per il blog"
 
 #: inc/classes/class-sydney-modules.php:64
+#: inc/dashboard/class-dashboard-settings.php:319
 msgid "New features for your header area."
 msgstr "Nuove caratteristiche per la tua area header."
 
-#: inc/classes/class-sydney-modules.php:59 inc/theme-dashboard-settings.php:64
+#: inc/classes/class-sydney-modules.php:59
+#: inc/dashboard/class-dashboard-settings.php:314
+#: inc/theme-dashboard-settings.php:64
 msgid "Extended Header Module"
 msgstr "Modulo esteso per l'header"
 
@@ -785,35 +1148,35 @@ msgstr "Miniatura della galleria dello slider"
 msgid "Product Image"
 msgstr "Immagine del prodotto"
 
-#: inc/customizer/options/header.php:1150
+#: inc/customizer/options/header.php:1387
 msgid "Menu Items Font size"
 msgstr "Dimensione del font degli elementi del menu"
 
-#: inc/customizer/options/header.php:1091
+#: inc/customizer/options/header.php:1328
 msgid "Enable top-level menu items typography options"
 msgstr "Abilita le opzioni tipografiche per gli elementi del menu di livello superiore"
 
-#: inc/customizer/options/header.php:1072
+#: inc/customizer/options/header.php:1309
 msgid "Top-level menu items"
 msgstr "Elementi del menu di livello superiore"
 
-#: inc/customizer/options/colors.php:371
+#: inc/customizer/options/colors.php:589
 msgid "Placeholder color"
 msgstr "Colore del segnaposto"
 
-#: inc/customizer/options/colors.php:295
+#: inc/customizer/options/colors.php:469
 msgid "Form fields"
 msgstr "Campi del modulo"
 
-#: inc/customizer/options/colors.php:128
+#: inc/customizer/options/colors.php:226
 msgid "Content links hover"
 msgstr "Hover contenuto link"
 
-#: inc/customizer/options/colors.php:109
+#: inc/customizer/options/colors.php:195
 msgid "Content links"
 msgstr "Contenuto link"
 
-#: inc/customizer/options/colors.php:90
+#: inc/customizer/options/colors.php:169
 msgid "Links"
 msgstr "Link"
 
@@ -826,32 +1189,32 @@ msgstr "Opzioni pagina Sydney"
 msgid "Body"
 msgstr "Corpo del testo"
 
-#: inc/customizer/options/colors.php:266
+#: inc/customizer/options/colors.php:436
 #: inc/customizer/options/typography.php:426
 msgid "Heading 6"
 msgstr "Titolo 6"
 
-#: inc/customizer/options/colors.php:248
+#: inc/customizer/options/colors.php:406
 #: inc/customizer/options/typography.php:375
 msgid "Heading 5"
 msgstr "Titolo 5"
 
-#: inc/customizer/options/colors.php:230
+#: inc/customizer/options/colors.php:376
 #: inc/customizer/options/typography.php:324
 msgid "Heading 4"
 msgstr "Titolo 4"
 
-#: inc/customizer/options/colors.php:212
+#: inc/customizer/options/colors.php:346
 #: inc/customizer/options/typography.php:273
 msgid "Heading 3"
 msgstr "Titolo 3"
 
-#: inc/customizer/options/colors.php:194
+#: inc/customizer/options/colors.php:316
 #: inc/customizer/options/typography.php:222
 msgid "Heading 2"
 msgstr "Titolo 2"
 
-#: inc/customizer/options/colors.php:176
+#: inc/customizer/options/colors.php:286
 #: inc/customizer/options/typography.php:171
 msgid "Heading 1"
 msgstr "Titolo 1"
@@ -886,20 +1249,21 @@ msgstr "Corsivo"
 msgid "Font style"
 msgstr "Stile del font"
 
-#: inc/customizer/options/colors.php:157
+#: inc/customizer/options/colors.php:259
 #: inc/customizer/options/typography.php:22
 msgid "Headings"
 msgstr "Intestazioni"
 
 #: inc/customizer/options/typography.php:11
+#: inc/dashboard/class-dashboard-settings.php:194
 msgid "Typography"
 msgstr "Tipografia"
 
-#: inc/customizer/options/header.php:183
+#: inc/customizer/options/header.php:230
 msgid "Site description font size"
 msgstr "Dimensione del font per la descrizione del sito"
 
-#: inc/customizer/options/header.php:112
+#: inc/customizer/options/header.php:145
 msgid "Site title font size"
 msgstr "Dimensione del font del titolo del sito"
 
@@ -919,7 +1283,7 @@ msgstr "Nota 4: Fai un backup del tuo sito prima dell'aggiornamento."
 msgid "Note 1: this upgrade is optional, there is no need to do it if you are happy with your current header."
 msgstr "Nota 1: questo aggiornamento è facoltativo. Se sei soddisfatto del tuo header attuale, non è necessario."
 
-#: functions.php:190
+#: functions.php:191
 msgid "Are you sure you want to dismiss this notice?"
 msgstr "Sei sicuro di voler ignorare questo avviso?"
 
@@ -959,6 +1323,8 @@ msgstr "Questa versione di Sydney si presenta con nuove e migliori modalità di 
 msgid "Sydney Header Update"
 msgstr "Aggiornamento dell'header di Sydney"
 
+#: inc/customizer/options/upsell.php:29
+#: inc/dashboard/class-dashboard-settings.php:246
 #: inc/theme-dashboard-settings.php:210
 msgid "Top bar"
 msgstr "Barra superiore"
@@ -967,7 +1333,7 @@ msgstr "Barra superiore"
 msgid "0 comments"
 msgstr "0 commenti"
 
-#: inc/classes/class-sydney-header.php:474
+#: inc/classes/class-sydney-header.php:499
 #: inc/customizer/controls/display-conditions/display-conditions-script-template.php:183
 #: inc/extras.php:584 inc/integrations/elementor/library/templates.php:89
 msgid "Search"
@@ -987,115 +1353,116 @@ msgstr "Layout 4"
 msgid "Layout 3"
 msgstr "Layout 3"
 
-#: inc/customizer/options/header.php:1039
+#: inc/customizer/options/header.php:1276
 msgid "Border width"
 msgstr "Spessore del bordo"
 
-#: inc/customizer/options/colors.php:352 inc/customizer/options/header.php:1025
+#: inc/customizer/options/colors.php:558 inc/customizer/options/header.php:1262
 msgid "Border color"
 msgstr "Colore del bordo"
 
-#: inc/customizer/options/header.php:1009
+#: inc/customizer/options/header.php:1246
 msgid "Border size"
 msgstr "Dimensione del bordo"
 
-#: inc/customizer/options/header.php:973
+#: inc/customizer/options/header.php:1210
 msgid "Bottom row padding"
 msgstr "Spaziatura della riga inferiore "
 
-#: inc/customizer/options/header.php:906
+#: inc/customizer/options/header.php:1096
 msgid "Submenu color"
 msgstr "Colore sottomenu"
 
-#: inc/customizer/options/header.php:887
+#: inc/customizer/options/header.php:1064
 msgid "Submenu background"
 msgstr "Sfondo sottomenu"
 
-#: inc/customizer/options/header.php:867
+#: inc/customizer/options/header.php:1031
 msgid "Bottom row text color"
 msgstr "Colore del testo della riga inferiore"
 
-#: inc/customizer/options/header.php:847
+#: inc/customizer/options/header.php:998
 msgid "Bottom row background color"
 msgstr "Colore di sfondo della riga inferiore"
 
-#: inc/customizer/options/header.php:749
+#: inc/customizer/options/header.php:837
 msgid "Phone number"
 msgstr "Numero di telefono"
 
-#: inc/customizer/options/header.php:734
+#: inc/customizer/options/header.php:822
 msgid "Email address"
 msgstr "Indirizzo email"
 
-#: inc/customizer/options/header.php:718 inc/extras.php:587
+#: inc/customizer/options/header.php:806 inc/extras.php:587
 msgid "Contact info"
 msgstr "Informazioni di contatto"
 
-#: inc/customizer/options/header.php:687
+#: inc/customizer/options/header.php:775
 msgid "Open in a new tab?"
 msgstr "Apri in una nuova scheda?"
 
-#: inc/customizer/options/header.php:606
+#: inc/customizer/options/header.php:694
 msgid "Enable account icon"
 msgstr "Abilita icona account"
 
-#: inc/customizer/options/header.php:587
+#: inc/customizer/options/header.php:675
 msgid "Enable cart icon"
 msgstr "Abilita icona carrello"
 
-#: inc/customizer/options/header.php:568 inc/extras.php:585
+#: inc/customizer/options/header.php:656 inc/extras.php:585
 msgid "Cart &amp; account icons"
 msgstr "Icone carrello e account"
 
-#: inc/customizer/options/header.php:508
+#: inc/customizer/options/header.php:555
 msgid "Top right"
 msgstr "In alto a destra"
 
-#: inc/customizer/options/header.php:495
+#: inc/customizer/options/header.php:542
 msgid "Top left"
 msgstr "In alto a sinistra"
 
-#: inc/customizer/options/header.php:481
+#: inc/customizer/options/header.php:528
 msgid "Bottom row"
 msgstr "Riga in basso"
 
-#: inc/customizer/options/header.php:468
+#: inc/customizer/options/header.php:515
 msgid "Top row"
 msgstr "Riga in alto"
 
-#: inc/customizer/options/header.php:363
+#: inc/customizer/options/header.php:410
 msgid "On scroll to top"
 msgstr "Scorri verso l'alto"
 
-#: inc/customizer/options/header.php:362
+#: inc/customizer/options/header.php:409
 msgid "Always sticky"
 msgstr "Sempre in evidenza"
 
-#: inc/customizer/options/header.php:359
+#: inc/customizer/options/header.php:406
 msgid "Sticky header type"
 msgstr "Tipo di header fisso"
 
-#: inc/customizer/options/header.php:345
+#: inc/customizer/options/header.php:392
 msgid "Enable sticky header"
 msgstr "Abilita l'header fisso"
 
-#: inc/customizer/options/header.php:303
+#: inc/customizer/options/header.php:350
 msgid "Menu position"
 msgstr "Posizione del menu"
 
-#: inc/customizer/options/header.php:288
+#: inc/customizer/options/header.php:335
+#: inc/dashboard/class-dashboard-settings.php:108
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: inc/customizer/options/header.php:206
+#: inc/customizer/options/header.php:253
 msgid "Main header"
 msgstr "Header principale"
 
-#: inc/customizer/options/header.php:156
+#: inc/customizer/options/header.php:199
 msgid "Site description color"
 msgstr "Colore descrizione del sito"
 
-#: inc/customizer/options/header.php:85
+#: inc/customizer/options/header.php:114
 msgid "Site title color"
 msgstr "Colore del titolo del sito"
 
@@ -1103,19 +1470,19 @@ msgstr "Colore del titolo del sito"
 msgid "Logo height"
 msgstr "Altezza del logo"
 
-#: inc/customizer/options/header-mobile.php:499
+#: inc/customizer/options/header-mobile.php:560
 msgid "Separator color"
 msgstr "Colore del separatore"
 
-#: inc/customizer/options/header-mobile.php:472
+#: inc/customizer/options/header-mobile.php:524
 msgid "Separator size"
 msgstr "Dimensione del separatore"
 
-#: inc/customizer/options/header-mobile.php:392
+#: inc/customizer/options/header-mobile.php:418
 msgid "Offcanvas menu"
 msgstr "Menu off-canvas"
 
-#: inc/customizer/options/header-mobile.php:355
+#: inc/customizer/options/header-mobile.php:381
 msgid "Top &amp; bottom padding"
 msgstr "Spaziatura interna superiore e inferiore"
 
@@ -1132,7 +1499,7 @@ msgid "Link spacing"
 msgstr "Spaziatura link"
 
 #: inc/customizer/options/header-mobile.php:244
-#: inc/customizer/options/header-mobile.php:458
+#: inc/customizer/options/header-mobile.php:510
 msgid "Link separator"
 msgstr "Separatore link"
 
@@ -1190,22 +1557,22 @@ msgstr "Tipo di Copertina"
 msgid "Hero area"
 msgstr "Copertina"
 
-#: inc/classes/class-sydney-header.php:442
-#: inc/customizer/options/header.php:744
+#: inc/classes/class-sydney-header.php:467
+#: inc/customizer/options/header.php:832
 msgid "111222333"
 msgstr "111222333"
 
-#: inc/classes/class-sydney-header.php:441
-#: inc/customizer/options/header.php:729
+#: inc/classes/class-sydney-header.php:466
+#: inc/customizer/options/header.php:817
 msgid "office@example.org"
 msgstr "office@example.org"
 
-#: inc/classes/class-sydney-header.php:424
-#: inc/customizer/options/header.php:648
+#: inc/classes/class-sydney-header.php:449
+#: inc/customizer/options/header.php:736
 msgid "Click me"
 msgstr "Fai clic"
 
-#: functions.php:186
+#: functions.php:187
 msgid "Are you sure you want to upgrade your header?"
 msgstr "Sei sicuro di voler aggiornare il tuo header?"
 
@@ -1224,32 +1591,32 @@ msgstr "Vedi tutti gli articoli di %s"
 msgid "By %s"
 msgstr "di %s"
 
-#: inc/customizer/options/general.php:856
+#: inc/customizer/options/general.php:904
 msgid "Hover state"
 msgstr "Stato hover"
 
-#: inc/customizer/options/general.php:828
-#: inc/customizer/options/general.php:910
+#: inc/customizer/options/general.php:876
+#: inc/customizer/options/general.php:958
 msgid "Border Color"
 msgstr "Colore del bordo"
 
-#: inc/customizer/options/general.php:810
-#: inc/customizer/options/general.php:892
+#: inc/customizer/options/general.php:858
+#: inc/customizer/options/general.php:940
 msgid "Text Color"
 msgstr "Colore del testo"
 
-#: inc/customizer/options/general.php:774
+#: inc/customizer/options/general.php:822
 msgid "Default state"
 msgstr "Stato predefinito"
 
-#: inc/customizer/options/general.php:741
-#: inc/customizer/options/header.php:1130
+#: inc/customizer/options/general.php:789
+#: inc/customizer/options/header.php:1367
 #: inc/customizer/options/typography.php:119
 #: inc/customizer/options/typography.php:571
 msgid "Text transform"
 msgstr "Trasformazione Testo"
 
-#: inc/customizer/options/general.php:717
+#: inc/customizer/options/general.php:765
 #: inc/customizer/options/typography.php:197
 #: inc/customizer/options/typography.php:248
 #: inc/customizer/options/typography.php:299
@@ -1260,43 +1627,43 @@ msgstr "Trasformazione Testo"
 msgid "Font size"
 msgstr "Dimensione font"
 
-#: inc/customizer/options/general.php:646
+#: inc/customizer/options/general.php:694
 msgid "Left/Right padding"
 msgstr "Spaziatura interna sinistra/destra"
 
-#: inc/customizer/options/general.php:610
+#: inc/customizer/options/general.php:658
 msgid "Top/Bottom padding"
 msgstr "Spaziatura interna superiore e inferiore"
 
-#: inc/customizer/options/blog.php:812
+#: inc/customizer/options/blog.php:846
 msgid "Excerpt color"
 msgstr "Colore del riassunto"
 
-#: inc/customizer/options/blog.php:784
+#: inc/customizer/options/blog.php:810
 msgid "Excerpt font size"
 msgstr "DImensione del font del riassunto"
 
-#: inc/customizer/options/blog.php:716
+#: inc/customizer/options/blog.php:730
 msgid "Meta font size"
 msgstr "Dimensione font dei meta"
 
-#: inc/customizer/options/blog.php:647
+#: inc/customizer/options/blog.php:649
 msgid "Post title font size"
 msgstr "Dimensione font del titolo dell'articolo"
 
-#: inc/customizer/options/blog.php:608
+#: inc/customizer/options/blog.php:607
 msgid "None"
 msgstr "Nessuno"
 
-#: inc/customizer/options/blog.php:605
+#: inc/customizer/options/blog.php:604
 msgid "Delimiter style"
 msgstr "Stile del delimitatore"
 
-#: inc/customizer/options/blog.php:566
+#: inc/customizer/options/blog.php:565
 msgid "Show author avatar"
 msgstr "Mostra l'avatar dell'autore"
 
-#: inc/customizer/options/blog.php:530
+#: inc/customizer/options/blog.php:529
 msgid "Below excerpt"
 msgstr "Sotto il riassunto"
 
@@ -1367,21 +1734,21 @@ msgstr "Archivi del Blog"
 msgid "Blog"
 msgstr "Blog"
 
-#: inc/customizer/options/blog-single.php:519
-#: inc/customizer/options/blog.php:744
+#: inc/customizer/options/blog-single.php:543
+#: inc/customizer/options/blog.php:766
 msgid "Meta color"
 msgstr "Colori meta"
 
-#: inc/customizer/options/blog-single.php:491
+#: inc/customizer/options/blog-single.php:507
 msgid "Meta size"
 msgstr "Dimensioni meta"
 
-#: inc/customizer/options/blog-single.php:450
-#: inc/customizer/options/blog.php:675
+#: inc/customizer/options/blog-single.php:462
+#: inc/customizer/options/blog.php:685
 msgid "Title color"
 msgstr "Colore del titolo"
 
-#: inc/customizer/options/blog-single.php:422
+#: inc/customizer/options/blog-single.php:426
 msgid "Post title size"
 msgstr "Dimensioni del titolo dell'articolo"
 
@@ -1402,43 +1769,43 @@ msgid "Author box"
 msgstr "Riquadro autore"
 
 #: inc/customizer/options/blog-single.php:312
-#: inc/customizer/options/blog.php:549
+#: inc/customizer/options/blog.php:548
 msgid "Post tags"
 msgstr "Tag dell'articolo"
 
 #: inc/customizer/options/blog-single.php:294
-#: inc/customizer/options/header.php:410
+#: inc/customizer/options/header.php:457
 msgid "Elements"
 msgstr "Elementi"
 
 #: inc/customizer/options/blog-single.php:257
-#: inc/customizer/options/blog.php:302 inc/customizer/options/blog.php:582
+#: inc/customizer/options/blog.php:302 inc/customizer/options/blog.php:581
 #: inc/customizer/options/woocommerce.php:409
 msgid "Spacing"
 msgstr "Spaziatura"
 
 #: inc/customizer/options/blog-single.php:245
-#: inc/customizer/options/blog.php:548
+#: inc/customizer/options/blog.php:547
 msgid "Post comments"
 msgstr "Commenti dell'articolo"
 
 #: inc/customizer/options/blog-single.php:244
-#: inc/customizer/options/blog.php:547
+#: inc/customizer/options/blog.php:546
 msgid "Post categories"
 msgstr "Categorie articoli"
 
 #: inc/customizer/options/blog-single.php:243
-#: inc/customizer/options/blog.php:546
+#: inc/customizer/options/blog.php:545
 msgid "Post author"
 msgstr "Autore dell'articolo"
 
 #: inc/customizer/options/blog-single.php:242
-#: inc/customizer/options/blog.php:545
+#: inc/customizer/options/blog.php:544
 msgid "Post date"
 msgstr "Data dell'articolo"
 
 #: inc/customizer/options/blog-single.php:239
-#: inc/customizer/options/blog.php:542
+#: inc/customizer/options/blog.php:541
 msgid "Meta elements"
 msgstr "Elementi meta"
 
@@ -1447,7 +1814,7 @@ msgid "Below title"
 msgstr "Sotto al titolo"
 
 #: inc/customizer/options/blog-single.php:226
-#: inc/customizer/options/blog.php:529
+#: inc/customizer/options/blog.php:528
 msgid "Above title"
 msgstr "Sopra al titolo"
 
@@ -1496,23 +1863,24 @@ msgstr "Articoli singoli"
 msgid "Usage example: <strong>fas fa-cloud</strong> (solid). <strong>far fa-building</strong> (regular), <strong>fab fa-android</strong> (brands)"
 msgstr "Esempio di utilizzo: <strong>fas fa-cloud</strong> (solido). <strong>far fa-building</strong> (regolare), <strong>fab fa-android</strong> (brand)"
 
-#: inc/customizer/options/general.php:564 inc/customizer/options/header.php:952
+#: inc/customizer/options/general.php:612
+#: inc/customizer/options/header.php:1189
 msgid "Padding"
 msgstr "Spaziatura interna"
 
-#: inc/customizer/options/general.php:543
+#: inc/customizer/options/general.php:591
 msgid "Icon size"
 msgstr "Dimensione dell'icona"
 
-#: inc/customizer/options/general.php:516
+#: inc/customizer/options/general.php:560
 msgid "Background hover color"
 msgstr "Colore di sfondo al passaggio del mouse"
 
-#: inc/customizer/options/general.php:497
+#: inc/customizer/options/general.php:529
 msgid "Icon hover color"
 msgstr "Colore dell'icona al passaggio del mouse"
 
-#: inc/customizer/options/general.php:446
+#: inc/customizer/options/general.php:454
 msgid "Icon color"
 msgstr "Colore dell'icona"
 
@@ -1525,12 +1893,12 @@ msgid "Side offset"
 msgstr "Offset laterale"
 
 #: inc/customizer/options/blog-single.php:223
-#: inc/customizer/options/blog.php:526 inc/customizer/options/general.php:345
+#: inc/customizer/options/blog.php:525 inc/customizer/options/general.php:345
 msgid "Position"
 msgstr "Posizione"
 
 #: inc/customizer/options/general.php:308
-#: inc/customizer/options/general.php:670
+#: inc/customizer/options/general.php:718
 msgid "Button radius"
 msgstr "Raggio del pulsante"
 
@@ -1579,74 +1947,74 @@ msgstr "Torna in alto"
 msgid "Misc"
 msgstr "Varie"
 
-#: inc/customizer/options/footer.php:790
+#: inc/customizer/options/footer.php:955
 msgid "Vertical Padding"
 msgstr "Spaziatura interna verticale"
 
-#: inc/customizer/options/colors.php:314 inc/customizer/options/footer.php:681
-#: inc/customizer/options/header-mobile.php:341
-#: inc/customizer/options/header.php:809
+#: inc/customizer/options/colors.php:496 inc/customizer/options/footer.php:829
+#: inc/customizer/options/header-mobile.php:363
+#: inc/customizer/options/header.php:934
 msgid "Text color"
 msgstr "Colore del testo"
 
-#: inc/customizer/options/footer.php:643
+#: inc/customizer/options/footer.php:770 inc/customizer/options/header.php:621
 msgid "Add new"
 msgstr "Aggiungi nuovo"
 
-#: inc/customizer/options/footer.php:640
+#: inc/customizer/options/footer.php:767 inc/customizer/options/header.php:618
 msgid "Social profile"
 msgstr "Profilo social"
 
-#: inc/customizer/options/footer.php:613
+#: inc/customizer/options/footer.php:740
 msgid "You can use the following tags: {copyright}, {year}, {site_title}, {theme_author}"
 msgstr "Puoi utilizzare i seguenti tag: {copyright}, {year}, {site_title}, {theme_author}"
 
 #. translators: %1$1s, %2$2s theme copyright tags
-#: inc/customizer/options/footer.php:607 inc/extras.php:350
+#: inc/customizer/options/footer.php:734 inc/extras.php:350
 msgid "%1$1s. Proudly powered by %2$2s"
 msgstr "%1$1s. Proudly powered by %2$2s"
 
-#: inc/customizer/options/footer.php:548
+#: inc/customizer/options/footer.php:675
 msgid "Copyright area"
 msgstr "Area del copyright"
 
-#: inc/customizer/options/footer.php:526
+#: inc/customizer/options/footer.php:617
 msgid "Widget titles size"
 msgstr "Dimensione titoli dei widget"
 
-#: inc/customizer/options/footer.php:479
+#: inc/customizer/options/footer.php:570
 msgid "Column spacing"
 msgstr "Spaziatura colonna"
 
-#: inc/customizer/options/footer.php:456
+#: inc/customizer/options/footer.php:547
 msgid "Vertical section padding"
 msgstr "Spaziatura interna della sezione verticale"
 
-#: inc/customizer/options/footer.php:412 inc/customizer/options/footer.php:759
+#: inc/customizer/options/footer.php:503 inc/customizer/options/footer.php:924
 msgid "Divider width"
 msgstr "Larghezza del divisorio"
 
-#: inc/customizer/options/footer.php:397 inc/customizer/options/footer.php:744
+#: inc/customizer/options/footer.php:484 inc/customizer/options/footer.php:905
 msgid "Divider color"
 msgstr "Colore del separatore"
 
-#: inc/customizer/options/footer.php:380 inc/customizer/options/footer.php:727
+#: inc/customizer/options/footer.php:458 inc/customizer/options/footer.php:879
 msgid "Divider size"
 msgstr "Dimensione del divisore"
 
-#: inc/customizer/options/footer.php:365 inc/customizer/options/footer.php:712
+#: inc/customizer/options/footer.php:443 inc/customizer/options/footer.php:864
 msgid "Enable top divider"
 msgstr "Abilita il divisorio in alto"
 
-#: inc/customizer/options/footer.php:334
+#: inc/customizer/options/footer.php:408
 msgid "Links color (hover)"
 msgstr "Colore dei link (hover)"
 
-#: inc/customizer/options/footer.php:315
+#: inc/customizer/options/footer.php:376
 msgid "Links color"
 msgstr "Colore dei link"
 
-#: inc/customizer/options/footer.php:296
+#: inc/customizer/options/footer.php:344
 msgid "Widget text color"
 msgstr "Colore del testo del widget"
 
@@ -1683,7 +2051,7 @@ msgid "Visibility"
 msgstr "Visibilità"
 
 #: inc/customizer/options/blog.php:376 inc/customizer/options/footer.php:176
-#: inc/customizer/options/header.php:521
+#: inc/customizer/options/header.php:568
 msgid "Bottom"
 msgstr "In basso"
 
@@ -1700,14 +2068,14 @@ msgstr "In alto"
 msgid "Vertical alignment"
 msgstr "Allineamento verticale"
 
-#: inc/customizer/options/footer.php:157 inc/customizer/options/footer.php:416
-#: inc/customizer/options/footer.php:585 inc/customizer/options/footer.php:763
-#: inc/customizer/options/header.php:327 inc/customizer/options/header.php:1043
+#: inc/customizer/options/footer.php:157 inc/customizer/options/footer.php:507
+#: inc/customizer/options/footer.php:712 inc/customizer/options/footer.php:928
+#: inc/customizer/options/header.php:374 inc/customizer/options/header.php:1280
 msgid "Full-width"
 msgstr "Larghezza intera"
 
-#: inc/customizer/options/footer.php:153 inc/customizer/options/footer.php:581
-#: inc/customizer/options/header.php:323
+#: inc/customizer/options/footer.php:153 inc/customizer/options/footer.php:708
+#: inc/customizer/options/header.php:370
 msgid "Container type"
 msgstr "Tipo di contenitore"
 
@@ -1750,35 +2118,35 @@ msgstr "Aggiungi"
 msgid "Style"
 msgstr "Stile"
 
-#: functions.php:723
+#: functions.php:728
 msgid "<strong>Optional:</strong> Now <strong>Sydney</strong> is compatible with Font Awesome 5. For it is needed the latest version of <strong>Sydney Toolbox</strong> plugin. You can update the plugin <a href=\"%s\">here</a>."
 msgstr "<strong>Facoltativo:</strong> Adesso <strong>Sydney</strong> è commpatibile con Font Awesome 5. Per usarlo è necessaria l'ultima versione del plugin <strong>Sydney Toolbox</strong>. Puoi aggiornare il plugin da <a href=\"%s\">qui</a>."
 
-#: functions.php:713
+#: functions.php:718
 msgid "Update to v5"
 msgstr "Update alla v5"
 
-#: functions.php:711 functions.php:724
+#: functions.php:716 functions.php:729
 msgid "This is a global change. That means this change will affect all website icons and you will need update the icons class names in all theme widgets and post types that use Font Awesome 4 icons. For example: \"fa-android\" to \"fab fa-android\"."
 msgstr "Questa è una modifica globale. Ciò significa che influirà su tutte le icone del sitoweb e dovrai aggiornare il nome della classe delle icone in tutti i widget del tema e le tipologie di articoli che usano le icone di Font Awesome 4. Ad esempio \"fa-android\" deve diventare \"fab fa-android\"."
 
-#: functions.php:711 functions.php:724
+#: functions.php:716 functions.php:729
 msgid "Important: "
 msgstr "Importante: "
 
-#: functions.php:709
+#: functions.php:714
 msgid "Your website is currently running the version 4. Click in the below button to update to version 5."
 msgstr "Al momento sul tuo sito web è in esecuzione la versione 4. Fai clic sul pulsante in basso per eseguire l'aggiornamento alla versione 5."
 
-#: functions.php:709
+#: functions.php:714
 msgid "Sydney Font Awesome Update: "
 msgstr "Aggiorna Sydney Font Awesome: "
 
-#: functions.php:183 functions.php:187 functions.php:191
+#: functions.php:184 functions.php:188 functions.php:192
 msgid "It was not possible complete the request, please reload the page and try again."
 msgstr "Non è stato possibile completare la richiesta. Ricarica la pagina e riprova."
 
-#: functions.php:182
+#: functions.php:183
 msgid "Are you sure? Keep in mind this is a global change and you will need update your icons class names in all theme widgets and post types that use Font Awesome 4 icons."
 msgstr "Sei sicuro? Tieni presente che si tratta di un cambiamento globale e dovrai aggiornare i nomi delle classi delle icone in tutti i widget del tema e i tipi di articoli che utilizzano le icone di Font Awesome 4."
 
@@ -1794,7 +2162,7 @@ msgstr "Widget personalizzati per Elementor"
 msgid "Hooks system"
 msgstr "Sistema Hook"
 
-#: inc/customizer/options/footer.php:612 inc/theme-dashboard-settings.php:94
+#: inc/customizer/options/footer.php:739 inc/theme-dashboard-settings.php:94
 msgid "Footer credits"
 msgstr "Credits nel footer"
 
@@ -1818,6 +2186,7 @@ msgstr "Molteplici layout per il blog"
 msgid "Let us know. We'd love to hear from you."
 msgstr "Facci sapere. Vorremmo conoscere la tua opinione."
 
+#: inc/dashboard/html-home.php:267
 #: theme-dashboard/class-theme-dashboard.php:744
 msgid "Have an idea or feedback?"
 msgstr "Hai un'idea o un feedback?"
@@ -1838,6 +2207,7 @@ msgstr "Vedi il Changelog (registro delle modifiche )"
 msgid "Keep informed with the latest changes about each theme."
 msgstr "Resta informato sulle più recenti modifiche di ciascun tema."
 
+#: inc/dashboard/html-notifications-sidebar.php:33
 #: theme-dashboard/class-theme-dashboard.php:756
 msgid "Changelog"
 msgstr "Registro delle modifiche"
@@ -1846,6 +2216,7 @@ msgstr "Registro delle modifiche"
 msgid "Suggest an Idea"
 msgstr "Suggerisci un'idea"
 
+#: inc/dashboard/html-home.php:233
 #: theme-dashboard/class-theme-dashboard.php:738
 msgid "Submit a Review"
 msgstr "Invia una revisione"
@@ -1854,6 +2225,7 @@ msgstr "Invia una revisione"
 msgid "Review"
 msgstr "Revisione"
 
+#: inc/dashboard/html-home.php:288
 #: theme-dashboard/class-theme-dashboard.php:682
 msgid "Join Now"
 msgstr "Raggiungici ora"
@@ -1861,6 +2233,10 @@ msgstr "Raggiungici ora"
 #: theme-dashboard/class-theme-dashboard.php:678
 msgid "Discuss products and ask for community support or help the community."
 msgstr "Discuti i prodotti e chiedi oppure offri supporto alla community."
+
+#: inc/dashboard/html-home.php:283
+msgid "Join our Facebook community"
+msgstr "Unisciti alla community su Facebook"
 
 #: theme-dashboard/class-theme-dashboard.php:671
 msgid "Community"
@@ -1870,6 +2246,7 @@ msgstr "Community"
 msgid "pro"
 msgstr "pro"
 
+#: inc/dashboard/html-home.php:259
 #: theme-dashboard/class-theme-dashboard.php:662
 msgid "Get Support"
 msgstr "Ottieni supporto"
@@ -1878,6 +2255,7 @@ msgstr "Ottieni supporto"
 msgid "Have a question? Hit a bug? Get the help you need, when you need it from our friendly support staff."
 msgstr "Hai una domanda? Un bug? Ottieni l'aiuto di cui hai bisogno, quando ne hai bisogno, dal nostro cordiale staff di assistenza."
 
+#: inc/dashboard/html-home.php:254
 #: theme-dashboard/class-theme-dashboard.php:655
 msgid "Need help? We're here for you!"
 msgstr "Hai bisogno d'aiuto? Siamo qui per questo!"
@@ -1890,15 +2268,17 @@ msgstr "Stato prioritario"
 msgid "Clicking “Starter Sites” button will install and activate the demo importer plugin."
 msgstr "Facendo clic sul pulsante 'Siti iniziali' verrà installato e attivato il plugin di importazione della demo."
 
+#: inc/dashboard/class-dashboard-settings.php:107
+#: inc/dashboard/html-hero.php:49 inc/dashboard/html-hero.php:53
 #: theme-dashboard/class-theme-dashboard.php:534
 msgid "Starter Sites"
 msgstr "Siti iniziali"
 
-#: theme-dashboard/class-theme-dashboard.php:497
+#: inc/dashboard/html-hero.php:27 theme-dashboard/class-theme-dashboard.php:497
 msgid "👋🏻"
 msgstr "👋🏻"
 
-#: theme-dashboard/class-theme-dashboard.php:489
+#: inc/dashboard/html-hero.php:25 theme-dashboard/class-theme-dashboard.php:489
 msgid "Hello, "
 msgstr "Ciao,"
 
@@ -1934,28 +2314,57 @@ msgstr "I migliori plugin per l'ottimizzazione della velocità di WordPress"
 #: inc/classes/class-sydney-modules.php:103
 #: inc/classes/class-sydney-modules.php:115
 #: inc/classes/class-sydney-modules.php:133
+#: inc/dashboard/class-dashboard-settings.php:188
+#: inc/dashboard/class-dashboard-settings.php:196
+#: inc/dashboard/class-dashboard-settings.php:204
+#: inc/dashboard/class-dashboard-settings.php:212
+#: inc/dashboard/class-dashboard-settings.php:220
+#: inc/dashboard/class-dashboard-settings.php:228
+#: inc/dashboard/class-dashboard-settings.php:236
+#: inc/dashboard/class-dashboard-settings.php:248
+#: inc/dashboard/class-dashboard-settings.php:267
+#: inc/dashboard/class-dashboard-settings.php:277
+#: inc/dashboard/class-dashboard-settings.php:287
+#: inc/dashboard/class-dashboard-settings.php:297
+#: inc/dashboard/class-dashboard-settings.php:307
+#: inc/dashboard/class-dashboard-settings.php:317
+#: inc/dashboard/class-dashboard-settings.php:337
+#: inc/dashboard/class-dashboard-settings.php:347
+#: inc/dashboard/class-dashboard-settings.php:367
+#: inc/dashboard/class-dashboard-settings.php:377
+#: inc/dashboard/class-dashboard-settings.php:397
+#: inc/dashboard/class-dashboard-settings.php:406
+#: inc/dashboard/class-dashboard-settings.php:414
+#: inc/dashboard/html-home.php:55 inc/dashboard/html-home.php:64
+#: inc/dashboard/html-home.php:73 inc/dashboard/html-home.php:152
+#: inc/dashboard/html-home.php:161 inc/dashboard/html-home.php:170
 #: theme-dashboard/class-theme-dashboard.php:394
 msgid "Customize"
 msgstr "Personalizza"
 
+#: inc/dashboard/class-dashboard.php:398
 #: theme-dashboard/class-theme-dashboard.php:297
 msgid "Failed to initialize or activate importer plugin."
 msgstr "Installazione o attivazione del plugin fallita."
 
+#: inc/dashboard/class-dashboard.php:368
 #: theme-dashboard/class-theme-dashboard.php:278
 msgid "Insufficient permissions to install the plugin."
 msgstr "Permessi insufficienti per l'installazione del plugin."
 
+#: inc/dashboard/class-dashboard.php:147
 #: theme-dashboard/class-theme-dashboard.php:123
 msgid "Something went wrong, contact support."
 msgstr "Qualcosa non ha funzionato, contatta l'assistenza."
 
+#: inc/dashboard/class-dashboard.php:108 inc/dashboard/html-hero.php:58
 #: theme-dashboard/class-theme-dashboard.php:109
 #: theme-dashboard/class-theme-dashboard.php:539
 #: theme-dashboard/class-theme-dashboard.php:590
 msgid "Theme Dashboard"
 msgstr "Bacheca del tema"
 
+#: inc/dashboard/class-dashboard-settings.php:52
 #: inc/theme-dashboard-settings.php:277
 msgid "Upgrade to Pro"
 msgstr "Aggiorna a Pro"
@@ -1969,16 +2378,19 @@ msgstr "Prestazioni"
 msgid "Free vs PRO"
 msgstr "Versione gratuita vs PRO"
 
+#: inc/dashboard/class-dashboard-settings.php:412
 #: inc/theme-dashboard-settings.php:267
 msgid "Google Maps"
 msgstr "Google Maps"
 
+#: inc/dashboard/class-dashboard-settings.php:404
 #: inc/theme-dashboard-settings.php:220
 msgid "Extra Widget Area"
 msgstr "Area extra dei widget"
 
-#: inc/customizer/options/general.php:584
+#: inc/customizer/options/general.php:632
 #: inc/customizer/options/woocommerce.php:891
+#: inc/dashboard/class-dashboard-settings.php:218
 #: inc/theme-dashboard-settings.php:185
 msgid "Buttons"
 msgstr "Pulsanti"
@@ -1987,18 +2399,22 @@ msgstr "Pulsanti"
 msgid "Single Product"
 msgstr "Prodotto singolo"
 
+#: inc/dashboard/class-dashboard-settings.php:234
 #: inc/theme-dashboard-settings.php:248
 msgid "Footer Credits"
 msgstr "Crediti nel footer"
 
+#: inc/dashboard/class-dashboard-settings.php:226
 #: inc/theme-dashboard-settings.php:233
 msgid "Blog Options"
 msgstr "Opzioni del blog"
 
+#: inc/dashboard/class-dashboard-settings.php:202
 #: inc/theme-dashboard-settings.php:175
 msgid "Color Options"
 msgstr "Opzioni colore"
 
+#: inc/dashboard/class-dashboard-settings.php:210
 #: inc/theme-dashboard-settings.php:205
 msgid "Header Options"
 msgstr "Opzioni dell'header"
@@ -2057,7 +2473,7 @@ msgid "Learnpress"
 msgstr "Learnpress"
 
 #: inc/integrations/learndash/customize.php:64
-msgid "Single lessons, topics, quizzes etc."
+msgid "Single lessons, topics, quizzes, etc."
 msgstr "Lezioni singole, argomenti, quiz, etc."
 
 #: inc/integrations/learndash/customize.php:31
@@ -2169,71 +2585,71 @@ msgstr "Vuoi rimuovere la barra laterale nei prodotti singoli?"
 msgid "Single products"
 msgstr "Prodotti singoli"
 
-#: inc/customizer/customizer.php:390
+#: inc/customizer/customizer.php:391
 msgid "Custom HTML"
 msgstr "HTML personalizzato"
 
-#: inc/customizer/customizer.php:356
+#: inc/customizer/customizer.php:357
 msgid "Button border radius"
 msgstr "Raggio del bordo del pulsante"
 
-#: inc/customizer/customizer.php:335 inc/customizer/options/woocommerce.php:984
+#: inc/customizer/customizer.php:336 inc/customizer/options/woocommerce.php:984
 msgid "Button font size"
 msgstr "Dimensione font del pulsante"
 
-#: inc/customizer/customizer.php:314
+#: inc/customizer/customizer.php:315
 msgid "Left/right button padding"
 msgstr "Spaziatura interna sinistra/destra del pulsante"
 
-#: inc/customizer/customizer.php:294
+#: inc/customizer/customizer.php:295
 msgid "Top/bottom button padding"
 msgstr "Spaziatura interna sopra/sotto del pulsante"
 
-#: inc/customizer/customizer.php:276
+#: inc/customizer/customizer.php:277
 msgid "Open link in a new tab?"
 msgstr "Aprire il link in una nuova scheda?"
 
-#: inc/customizer/customizer.php:258 inc/customizer/options/header.php:653
+#: inc/customizer/customizer.php:259 inc/customizer/options/header.php:741
 msgid "Button text"
 msgstr "Testo del pulsante"
 
-#: inc/customizer/customizer.php:251 inc/extras.php:198
+#: inc/customizer/customizer.php:252 inc/extras.php:198
 msgid "Get in touch"
 msgstr "Mettiti in contatto"
 
-#: inc/customizer/customizer.php:241 inc/customizer/options/header.php:668
+#: inc/customizer/customizer.php:242 inc/customizer/options/header.php:756
 msgid "Button link"
 msgstr "Link del pulsante"
 
-#: inc/customizer/customizer.php:212
+#: inc/customizer/customizer.php:213
 msgid "HTML"
 msgstr "HTML"
 
-#: inc/customizer/customizer.php:211 inc/customizer/options/header.php:637
+#: inc/customizer/customizer.php:212 inc/customizer/options/header.php:725
 #: inc/extras.php:586
 msgid "Button"
 msgstr "Pulsante"
 
-#: inc/customizer/customizer.php:210
+#: inc/customizer/customizer.php:211
 msgid "Nothing"
 msgstr "Niente"
 
-#: inc/customizer/customizer.php:207
+#: inc/customizer/customizer.php:208
 msgid "Header custom item"
 msgstr "Elemento personalizzato dell'header"
 
-#: inc/customizer/customizer.php:189 inc/customizer/options/footer.php:156
-#: inc/customizer/options/footer.php:415 inc/customizer/options/footer.php:584
-#: inc/customizer/options/footer.php:762 inc/customizer/options/header.php:326
-#: inc/customizer/options/header.php:1042
+#: inc/customizer/customizer.php:190 inc/customizer/options/footer.php:156
+#: inc/customizer/options/footer.php:506 inc/customizer/options/footer.php:711
+#: inc/customizer/options/footer.php:927 inc/customizer/options/header.php:373
+#: inc/customizer/options/header.php:1279
 msgid "Contained"
 msgstr "Contenuto"
 
-#: inc/customizer/customizer.php:186
+#: inc/customizer/customizer.php:187
 msgid "Menu container"
 msgstr "Menu contenuto"
 
-#: inc/customizer/customizer.php:126
+#: inc/customizer/customizer.php:127
 msgid "Menu layout"
 msgstr "Layout del menu"
 
@@ -2281,10 +2697,12 @@ msgstr "[aThemes Portfolio] Titolo"
 msgid "Font weight"
 msgstr "Peso del font"
 
+#: inc/dashboard/class-dashboard-settings.php:54
 #: inc/onboarding/theme-info.php:269 inc/theme-dashboard-settings.php:279
 msgid "Discover Sydney Pro"
 msgstr "Scopri Sydney Pro"
 
+#: inc/dashboard/class-dashboard-settings.php:53
 #: inc/onboarding/theme-info.php:268 inc/theme-dashboard-settings.php:278
 msgid "Take Sydney to a whole other level by upgrading to the Pro version."
 msgstr "Porta Sydney a un livello completamente nuovo aggiornando alla versione Pro."
@@ -2301,7 +2719,7 @@ msgstr "Tieniti informato su ogni aggiornamento del tema."
 msgid "Submit a review here"
 msgstr "Aggiungi qui una recensione"
 
-#: inc/onboarding/theme-info.php:256
+#: inc/dashboard/html-home.php:231 inc/onboarding/theme-info.php:256
 #: theme-dashboard/class-theme-dashboard.php:734
 msgid "It makes us happy to hear from our users. We would appreciate a review."
 msgstr "Ci rende felici di sentire i nostri utenti. Gradiremmo una recensione."
@@ -2378,12 +2796,15 @@ msgstr "Attivazione in corso"
 msgid "Jetpack Portfolio"
 msgstr "Jetpack Portfolio"
 
+#: inc/dashboard/class-dashboard.php:135 inc/dashboard/html-home.php:60
+#: inc/dashboard/html-home.php:157
+#: inc/dashboard/html-settings-performance.php:27
 #: inc/onboarding/plugins/class-sydney-recommended-plugins.php:107
 #: theme-dashboard/class-theme-dashboard.php:377
 msgid "Deactivate"
 msgstr "Disattiva"
 
-#: inc/customizer/customizer.php:581
+#: inc/customizer/customizer.php:582
 msgid "Modern"
 msgstr "Moderno"
 
@@ -2394,11 +2815,11 @@ msgstr "Moderno"
 msgid "Read more"
 msgstr "Leggi tutto"
 
-#: inc/customizer/customizer.php:711 inc/customizer/options/hero-area.php:148
+#: inc/customizer/customizer.php:712 inc/customizer/options/hero-area.php:148
 msgid "or go to the Customizer"
 msgstr "oppure vai alla sezione personalizza"
 
-#: inc/customizer/customizer.php:695 inc/customizer/options/hero-area.php:131
+#: inc/customizer/customizer.php:696 inc/customizer/options/hero-area.php:131
 msgid "Click the pencil icon to change this text"
 msgstr "Fai clic sull'icona della matita per modificare questo testo"
 
@@ -2416,7 +2837,7 @@ msgstr "Senza barra laterale"
 msgid "Page builder ready"
 msgstr "Predisposto per page builder"
 
-#: inc/customizer/customizer.php:580
+#: inc/customizer/customizer.php:581
 msgid "Classic (alternative)"
 msgstr "Classico (alternativa)"
 
@@ -2500,6 +2921,7 @@ msgstr "Sfondi con parallasse"
 msgid "Access to all Google Fonts"
 msgstr "Accesso a tutti i Google Fonts"
 
+#: inc/dashboard/html-notifications-sidebar.php:51
 #: inc/onboarding/theme-info.php:137 inc/theme-dashboard-settings.php:22
 msgid "Sydney Pro"
 msgstr "Sydney Pro"
@@ -2514,7 +2936,7 @@ msgstr "Vedi la documentazione"
 
 #: inc/onboarding/theme-info.php:126
 msgid "Our documentation can help you learn how to use the theme and also provides you with premade code snippets and answers to FAQs."
-msgstr "La nostra documentazione può aiutarti a imparare ad usare il tema e ti fornisce anche  codici precompilati e risposte alle domande frequenti."
+msgstr "La nostra documentazione può aiutarti a imparare a usare il tema, ti fornisce anche codici precompilati e risposte alle domande frequenti."
 
 #: inc/onboarding/theme-info.php:121
 msgid "Visit the forums"
@@ -2536,6 +2958,11 @@ msgstr "Vai all'importatore automatico"
 msgid "Install and activate"
 msgstr "Installa e attiva"
 
+#: inc/dashboard/html-home.php:23
+msgid "Go To Customizer"
+msgstr "Vai al personalizzatore"
+
+#: inc/dashboard/class-dashboard-settings.php:109
 #: inc/onboarding/theme-info.php:40
 msgid "Free vs Pro"
 msgstr "Gratuito vs. Pro"
@@ -2552,12 +2979,12 @@ msgstr "Sidney adesso è installato e pronto a funzionare. Per aiutarti nel pros
 msgid "Hello, %s,"
 msgstr "Ciao, %s,"
 
-#: inc/customizer/customizer.php:596 inc/customizer/options/hero-area.php:593
+#: inc/customizer/customizer.php:597 inc/customizer/options/hero-area.php:593
 #: inc/onboarding/theme-info.php:147 inc/theme-dashboard-settings.php:32
 msgid "Responsive"
 msgstr "Responsive"
 
-#: inc/customizer/customizer.php:595 inc/customizer/options/hero-area.php:592
+#: inc/customizer/customizer.php:596 inc/customizer/options/hero-area.php:592
 msgid "Full screen"
 msgstr "Schermo intero"
 
@@ -2579,15 +3006,15 @@ msgstr "Normale"
 msgid "Video mode:"
 msgstr "Modalità video:"
 
-#: inc/customizer/options/colors.php:554
+#: inc/customizer/options/colors.php:776
 msgid "Mobile menu button"
 msgstr "Pulsante del menu mobile"
 
-#: inc/customizer/options/colors.php:499 inc/customizer/options/header.php:925
+#: inc/customizer/options/colors.php:721 inc/customizer/options/header.php:1126
 msgid "Menu items hover"
 msgstr "Elementi del menù al passaggio del mouse"
 
-#: inc/customizer/customizer.php:527 inc/customizer/options/hero-area.php:51
+#: inc/customizer/customizer.php:528 inc/customizer/options/hero-area.php:51
 #: inc/customizer/options/hero-area.php:74
 msgid "Video"
 msgstr "Video"
@@ -2609,6 +3036,7 @@ msgstr "Contenuto completo"
 msgid "Content to display:"
 msgstr "Contenuto da mostrare:"
 
+#: inc/dashboard/html-settings-general.php:55
 #: inc/theme-dashboard-settings.php:321
 msgid "Get Sydney Pro"
 msgstr "Ottieni Sydney PRO"
@@ -2617,7 +3045,7 @@ msgstr "Ottieni Sydney PRO"
 msgid "This applies to all headings in the widget, except the widget title"
 msgstr "Questo si applica a tutte le intestazioni del widget, tranne che al titolo"
 
-#: inc/customizer/options/footer.php:277 inc/page-builder.php:194
+#: inc/customizer/options/footer.php:312 inc/page-builder.php:194
 #: inc/so-page-builder.php:194
 msgid "Headings color"
 msgstr "Colore dell'intestazione"
@@ -2631,22 +3059,22 @@ msgid "This setting depends on the content, it may or may not work"
 msgstr "Questa impostazione potrebbe funzionare o no a seconda del contenuto"
 
 #: inc/customizer/options/blog.php:148 inc/customizer/options/blog.php:265
-#: inc/customizer/options/general.php:349 inc/customizer/options/header.php:308
-#: inc/customizer/options/header.php:454 inc/customizer/options/layouts.php:138
+#: inc/customizer/options/general.php:349 inc/customizer/options/header.php:355
+#: inc/customizer/options/header.php:501 inc/customizer/options/layouts.php:138
 #: inc/customizer/options/woocommerce.php:109 inc/page-builder.php:180
 #: inc/so-page-builder.php:180
 msgid "Right"
 msgstr "Destra"
 
-#: inc/customizer/options/header.php:307 inc/page-builder.php:179
+#: inc/customizer/options/header.php:354 inc/page-builder.php:179
 #: inc/so-page-builder.php:179
 msgid "Center"
 msgstr "Centro"
 
 #: inc/customizer/options/blog-single.php:68
 #: inc/customizer/options/blog.php:147 inc/customizer/options/blog.php:264
-#: inc/customizer/options/general.php:348 inc/customizer/options/header.php:306
-#: inc/customizer/options/header.php:441 inc/customizer/options/layouts.php:137
+#: inc/customizer/options/general.php:348 inc/customizer/options/header.php:353
+#: inc/customizer/options/header.php:488 inc/customizer/options/layouts.php:137
 #: inc/customizer/options/woocommerce.php:105 inc/page-builder.php:178
 #: inc/so-page-builder.php:178
 msgid "Left"
@@ -2665,8 +3093,8 @@ msgid "Disable row overlay?"
 msgstr "Disabilitare la sovrapposizione della riga?"
 
 #: inc/customizer/options/blog-single.php:51
-#: inc/customizer/options/colors.php:402 inc/customizer/options/header.php:14
-#: inc/theme-dashboard-settings.php:196
+#: inc/customizer/options/colors.php:624 inc/customizer/options/header.php:14
+#: inc/dashboard/html-builder.php:16 inc/theme-dashboard-settings.php:196
 msgid "Header"
 msgstr "Header"
 
@@ -2731,7 +3159,8 @@ msgstr "Tempo della riproduzione automatica [ms]"
 msgid "Support"
 msgstr "Supporto"
 
-#: inc/onboarding/theme-info.php:125
+#: inc/dashboard/html-home.php:45 inc/dashboard/html-home.php:142
+#: inc/dashboard/html-home.php:241 inc/onboarding/theme-info.php:125
 #: theme-dashboard/class-theme-dashboard.php:581
 msgid "Documentation"
 msgstr "Documentazione"
@@ -2741,7 +3170,7 @@ msgid "Sydney Info"
 msgstr "Informazioni su Sydney"
 
 #. Template Name of the theme
-#: inc/customizer/customizer.php:190
+#: inc/customizer/customizer.php:191
 msgid "Full width"
 msgstr "Larghezza piena"
 
@@ -2911,7 +3340,7 @@ msgstr "URL del pulsante che chiama all'azione:"
 
 #: widgets/fp-list.php:69
 msgid "Add your list items here. One item per row, start each row with <strong>^</strong>. Example: <strong>^ list item </strong>"
-msgstr "Aggiungi qui la lista degli elementi. Un elemento per riga, inizia ogni riga con <strong>^</strong>. Per esempio:  <strong>^ elemento della lista </strong>"
+msgstr "Aggiungi qui la lista degli elementi. Un elemento per riga, inizia ogni riga con <strong>^</strong>. Per esempio: <strong>^ elemento della lista </strong>"
 
 #: widgets/fp-list.php:66
 msgid "Add a bit of text here. It will be displayed."
@@ -3075,7 +3504,7 @@ msgstr "Numero di clienti da visualizzare (-1):"
 
 #: widgets/fp-clients.php:21
 msgid "In order to display this widget, you must first add some clients from your admin area. Set your client logos as featured images."
-msgstr "Per visualizzare questo widget, devi prima aggiungere alcuni clienti dalla tua area di amministrazione.  Imposta i loghi dei tuoi clienti come immagini in evidenza"
+msgstr "Per visualizzare questo widget, devi prima aggiungere alcuni clienti dalla tua area di amministrazione. Imposta i loghi dei tuoi clienti come immagini in evidenza."
 
 #: widgets/fp-clients.php:7
 msgid "Sydney FP: Clients"
@@ -3142,6 +3571,10 @@ msgstr "Mostra le informazioni di contatto"
 msgid "Search Results for: %s"
 msgstr "Risultati della ricerca per: %s"
 
+#: inc/dashboard/class-dashboard.php:134 inc/dashboard/html-home.php:69
+#: inc/dashboard/html-home.php:166
+#: inc/dashboard/html-settings-performance.php:31
+#: inc/dashboard/html-starter-sites.php:31
 #: inc/onboarding/plugins/class-sydney-recommended-plugins.php:92
 #: inc/onboarding/plugins/class-sydney-recommended-plugins.php:112
 #: theme-dashboard/class-theme-dashboard.php:373
@@ -3329,19 +3762,20 @@ msgstr "Immagine di sfondo"
 msgid "Color of the row."
 msgstr "Colore della riga."
 
-#: inc/customizer/options/header-mobile.php:430
+#: inc/customizer/options/header-mobile.php:478
 #: inc/customizer/options/woocommerce.php:872 inc/page-builder.php:78
 #: inc/so-page-builder.php:78
 msgid "Color"
 msgstr "Colore"
 
-#: inc/customizer/options/colors.php:333 inc/customizer/options/footer.php:239
-#: inc/customizer/options/footer.php:662 inc/customizer/options/general.php:465
-#: inc/customizer/options/general.php:792
-#: inc/customizer/options/general.php:874
-#: inc/customizer/options/header-mobile.php:322
-#: inc/customizer/options/header-mobile.php:411
-#: inc/customizer/options/header.php:771
+#: inc/customizer/options/colors.php:106 inc/customizer/options/colors.php:527
+#: inc/customizer/options/footer.php:248 inc/customizer/options/footer.php:797
+#: inc/customizer/options/general.php:485
+#: inc/customizer/options/general.php:840
+#: inc/customizer/options/general.php:922
+#: inc/customizer/options/header-mobile.php:331
+#: inc/customizer/options/header-mobile.php:446
+#: inc/customizer/options/header.php:869
 #: inc/customizer/options/woocommerce.php:852
 msgid "Background color"
 msgstr "Colore dello sfondo"
@@ -3364,57 +3798,53 @@ msgstr "Colore del bordo in basso"
 
 #: inc/page-builder.php:44 inc/so-page-builder.php:44
 msgid "Sydney Theme Widgets"
-msgstr "Widget del tema Sydney  "
+msgstr "Widget del tema Sydney"
 
-#: inc/customizer/customizer.php:528
+#: inc/customizer/customizer.php:529
 msgid "Nothing (only menu)"
 msgstr "Niente (solo il menu)"
 
-#: inc/customizer/customizer.php:487
+#: inc/customizer/customizer.php:488
 msgid " 1. Documentation for Sydney can be found "
 msgstr " 1. Puoi trovare la documentazione per il tema Sydney "
 
-#: inc/customizer/customizer.php:484
+#: inc/customizer/customizer.php:485
 msgid "Theme info"
 msgstr "Informazioni del tema"
 
-#: inc/customizer/options/colors.php:629
+#: inc/customizer/options/colors.php:871
 msgid "Sidebar color"
 msgstr "Colore della barra laterale"
 
-#: inc/customizer/options/colors.php:609
+#: inc/customizer/options/colors.php:839
 msgid "Sidebar background"
 msgstr "Sfondo della barra laterale"
 
-#: inc/customizer/options/colors.php:61
+#: inc/customizer/options/colors.php:136
 msgid "Body text"
 msgstr "Corpo del testo"
 
-#: inc/customizer/options/colors.php:536
+#: inc/customizer/options/colors.php:758
 msgid "Sub-menu background"
 msgstr "Sfondo del sotto-menu"
 
-#: inc/customizer/options/colors.php:518
+#: inc/customizer/options/colors.php:740
 msgid "Sub-menu items"
 msgstr "Voci del sotto-menu"
 
-#: inc/customizer/options/colors.php:481
+#: inc/customizer/options/colors.php:703
 msgid "Top level menu items"
 msgstr "Voci del menu di livello superiore"
 
-#: inc/customizer/options/colors.php:421
+#: inc/customizer/options/colors.php:643
 msgid "Menu background"
 msgstr "Sfondo Menu"
 
-#: inc/customizer/options/colors.php:41
-msgid "Primary color"
-msgstr "Colore principale"
-
-#: inc/customizer/options/colors.php:461
+#: inc/customizer/options/colors.php:683
 msgid "Site description"
 msgstr "Descrizione del sito"
 
-#: inc/customizer/options/colors.php:441
+#: inc/customizer/options/colors.php:663
 msgid "Site title"
 msgstr "Titolo sito"
 
@@ -3422,19 +3852,19 @@ msgstr "Titolo sito"
 msgid "Font family"
 msgstr "Famiglia di font"
 
-#: inc/customizer/customizer.php:556
+#: inc/customizer/customizer.php:557
 msgid "Four"
 msgstr "Quattro"
 
-#: inc/customizer/customizer.php:555
+#: inc/customizer/customizer.php:556
 msgid "Three"
 msgstr "Tre"
 
-#: inc/customizer/customizer.php:554
+#: inc/customizer/customizer.php:555
 msgid "Two"
 msgstr "Due"
 
-#: inc/customizer/customizer.php:553
+#: inc/customizer/customizer.php:554
 msgid "One"
 msgstr "Uno"
 
@@ -3442,7 +3872,8 @@ msgstr "Uno"
 msgid "Footer widget areas"
 msgstr "Aree widget del footer"
 
-#: inc/customizer/options/footer.php:29 inc/theme-dashboard-settings.php:244
+#: inc/customizer/options/footer.php:29 inc/dashboard/html-builder.php:19
+#: inc/theme-dashboard-settings.php:244
 msgid "Footer"
 msgstr "Footer"
 
@@ -3459,15 +3890,15 @@ msgstr "Meta"
 msgid "Excerpt length"
 msgstr "Lunghezza dell'estratto"
 
-#: inc/customizer/customizer.php:583
+#: inc/customizer/customizer.php:584
 msgid "Masonry (grid style)"
 msgstr "Masonry (stile a griglia)"
 
-#: inc/customizer/customizer.php:582
+#: inc/customizer/customizer.php:583
 msgid "Full width (no sidebar)"
 msgstr "A tutta larghezza (nessuna barra laterale)"
 
-#: inc/customizer/customizer.php:579 inc/customizer/options/blog.php:65
+#: inc/customizer/customizer.php:580 inc/customizer/options/blog.php:65
 msgid "Classic"
 msgstr "Classico"
 
@@ -3476,7 +3907,7 @@ msgid "Blog layout"
 msgstr "Layout del blog"
 
 #: inc/customizer/options/header-mobile.php:88
-#: inc/customizer/options/header.php:247 inc/customizer/options/layouts.php:42
+#: inc/customizer/options/header.php:294 inc/customizer/options/layouts.php:42
 #: inc/customizer/options/woocommerce.php:57
 #: inc/customizer/options/woocommerce.php:384
 #: inc/customizer/options/woocommerce.php:489
@@ -3490,51 +3921,51 @@ msgstr "Layout"
 msgid "Blog options"
 msgstr "Opzioni del blog"
 
-#: inc/customizer/customizer.php:467
+#: inc/customizer/customizer.php:468
 msgid "Upload your logo"
 msgstr "Carica il tuo logo"
 
-#: inc/customizer/customizer.php:448
+#: inc/customizer/customizer.php:449
 msgid "Disable the overlay?"
 msgstr "Disattiva la sovraimpressione?"
 
-#: inc/customizer/customizer.php:430
+#: inc/customizer/customizer.php:431
 msgid "Header height [default: 300px]"
 msgstr "Dimensione della testata [default: 300px]"
 
-#: inc/customizer/customizer.php:414 inc/customizer/customizer.php:542
+#: inc/customizer/customizer.php:415 inc/customizer/customizer.php:543
 msgid "Contain"
 msgstr "Adatta"
 
-#: inc/customizer/customizer.php:413 inc/customizer/customizer.php:541
+#: inc/customizer/customizer.php:414 inc/customizer/customizer.php:542
 msgid "Cover"
 msgstr "copri"
 
-#: inc/customizer/customizer.php:410
+#: inc/customizer/customizer.php:411
 msgid "Header background size"
 msgstr "Dimensione dello sfondo della testata"
 
-#: inc/customizer/customizer.php:169 inc/customizer/customizer.php:608
+#: inc/customizer/customizer.php:170 inc/customizer/customizer.php:609
 msgid "Centered (menu and site logo)"
 msgstr "Centrato (menu e logo del sito)"
 
-#: inc/customizer/customizer.php:168 inc/customizer/customizer.php:607
+#: inc/customizer/customizer.php:169 inc/customizer/customizer.php:608
 msgid "Inline"
 msgstr "Giustificato"
 
-#: inc/customizer/customizer.php:148 inc/customizer/customizer.php:568
+#: inc/customizer/customizer.php:149 inc/customizer/customizer.php:569
 msgid "Static"
 msgstr "Statico"
 
-#: inc/customizer/customizer.php:147 inc/customizer/customizer.php:567
+#: inc/customizer/customizer.php:148 inc/customizer/customizer.php:568
 msgid "Sticky"
 msgstr "In evidenza"
 
-#: inc/customizer/customizer.php:144
+#: inc/customizer/customizer.php:145
 msgid "Sticky menu"
 msgstr "Menu in evidenza"
 
-#: inc/customizer/customizer.php:165
+#: inc/customizer/customizer.php:166
 msgid "Menu style"
 msgstr "Stile Menu"
 
@@ -3622,6 +4053,7 @@ msgstr "Sottotitolo per la prima diapositiva"
 msgid "Title for the first slide"
 msgstr "Titolo per la prima diapositiva"
 
+#: inc/dashboard/class-dashboard-settings.php:35
 #: inc/onboarding/theme-info.php:31 inc/theme-dashboard-settings.php:142
 msgid "Welcome to Sydney"
 msgstr "Benvenuto su Sydney"
@@ -3659,13 +4091,13 @@ msgstr "Tipo della testata del sito"
 msgid "No header (only menu)"
 msgstr "Nessuna testata (solo il menu)"
 
-#: inc/customizer/customizer.php:526 inc/customizer/options/blog-single.php:120
+#: inc/customizer/customizer.php:527 inc/customizer/options/blog-single.php:120
 #: inc/customizer/options/hero-area.php:50
 #: inc/customizer/options/hero-area.php:73
 msgid "Image"
 msgstr "Immagine"
 
-#: inc/customizer/customizer.php:525 inc/customizer/options/hero-area.php:49
+#: inc/customizer/customizer.php:526 inc/customizer/options/hero-area.php:49
 #: inc/customizer/options/hero-area.php:72
 msgid "Full screen slider"
 msgstr "Scorrimento a schermo intero"
@@ -3683,7 +4115,7 @@ msgid "You can select your header type from here. After that, continue below to 
 msgstr "Puoi selezionare il tipo di testata da qui. Dopodiché, continua sotto con le prossime due schede (Scorrimento della testata e Immagine della testata) e configurale."
 
 #: inc/customizer/controls/class_sydney_tab_control.php:40
-#: inc/customizer/options/colors.php:20 inc/customizer/options/general.php:14
+#: inc/customizer/options/colors.php:78 inc/customizer/options/general.php:14
 #: inc/customizer/options/woocommerce.php:12
 #: inc/integrations/lifter/customize.php:18
 #: inc/theme-dashboard-settings.php:171
@@ -3694,15 +4126,15 @@ msgstr "Generale"
 msgid "Skip to content"
 msgstr "Vai al contenuto"
 
-#: functions.php:330
+#: functions.php:331
 msgid "Create your menu here"
 msgstr "Crea il menu qui"
 
-#: functions.php:119
+#: functions.php:120
 msgid "Footer "
 msgstr "Footer "
 
-#: functions.php:107 inc/customizer/options/colors.php:590
+#: functions.php:108 inc/customizer/options/colors.php:812
 #: inc/customizer/options/woocommerce.php:96
 msgid "Sidebar"
 msgstr "Barra laterale"
@@ -3711,7 +4143,8 @@ msgstr "Barra laterale"
 msgid "Primary Menu"
 msgstr "Menu principale"
 
-#: content-page.php:32 inc/template-tags.php:165
+#: content-page.php:32 inc/dashboard/html-builder.php:118
+#: inc/template-tags.php:165
 msgid "Edit"
 msgstr "Modifica"
 
@@ -3758,11 +4191,11 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "Un pensiero su &ldquo;%2$s&rdquo;"
 msgstr[1] "%1$s pensieri su &ldquo;%2$s&rdquo;"
 
-#: inc/extras.php:742
+#: inc/extras.php:743
 msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
 msgstr "Sembra non vi sia nulla in questa posizione. Provare con qualcuno dei link qua sotto o una ricerca?"
 
-#: inc/extras.php:738
+#: inc/extras.php:739
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "Oops! Questa pagina non si trova."
 

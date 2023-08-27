@@ -5,7 +5,7 @@
  * Plugin Name: MetaSlider
  * Plugin URI:  https://www.metaslider.com
  * Description: Easy to use slideshow plugin. Create SEO optimised responsive slideshows with Nivo Slider, Flex Slider, Coin Slider and Responsive Slides.
- * Version:     3.31.0
+ * Version:     3.36.0
  * Author:      MetaSlider
  * Author URI:  https://www.metaslider.com
  * License:     GPL-2.0+
@@ -42,7 +42,7 @@ if (! class_exists('MetaSliderPlugin')) {
          *
          * @var string
          */
-        public $version = '3.31.0';
+        public $version = '3.36.0';
 
         /**
          * Pro installed version number
@@ -295,9 +295,11 @@ if (! class_exists('MetaSliderPlugin')) {
             add_action('init', array($this, 'register_post_types'));
             add_action('init', array($this, 'register_taxonomy'));
             add_action('init', array($this, 'load_plugin_textdomain'));
+            add_action('init', array($this, 'redirect_on_activate'));
             add_action('admin_footer', array($this, 'admin_footer'), 11);
+            add_action('admin_footer', array($this, 'quickstart_params'), 11);
             add_action('widgets_init', array($this, 'register_metaslider_widget'));
-
+            
             add_action('admin_post_metaslider_switch_view', array($this, 'switch_view'));
             add_action('admin_post_metaslider_delete_slide', array($this, 'delete_slide'));
             add_action('admin_post_metaslider_delete_slider', array($this, 'delete_slider'));
@@ -308,16 +310,30 @@ if (! class_exists('MetaSliderPlugin')) {
             add_action('media_upload_post_feed', array($this, 'upgrade_to_pro_tab_post_feed'));
             add_action('media_upload_layer', array($this, 'upgrade_to_pro_tab_layer'));
             add_action('media_upload_external_url', array($this, 'upgrade_to_pro_tab_external_url'));
+            add_action('media_upload_local_video', array($this, 'upgrade_to_pro_tab_local_video'));
 
             // TODO: Refactor to Slide class object
             add_action('wp_ajax_delete_slide', array($this, 'ajax_delete_slide'));
             add_action('wp_ajax_undelete_slide', array($this, 'ajax_undelete_slide'));
             add_action('wp_ajax_permanent_delete_slide', array($this, 'ajax_permanent_delete_slide'));
+            add_action('wp_ajax_quickstart_upload', array($this, 'ajax_quickstart_upload'));
+            add_action('wp_ajax_quickstart_slideshow', array($this, 'ajax_quickstart_slideshow'));
 
             // Set date showing the first activation and redirect
             if (! get_option('ms_was_installed_on')) {
                 update_option('ms_was_installed_on', time());
             }
+        }
+
+        public function redirect_on_activate()
+        {
+          if (get_option('metaslider_activate')) {
+              delete_option('metaslider_activate');
+              if(!isset($_GET['activate-multi'])) {
+                  wp_redirect(admin_url("admin.php?page=metaslider-start"));
+                  exit;
+              }
+          }
         }
 
 
@@ -599,7 +615,7 @@ if (! class_exists('MetaSliderPlugin')) {
          */
         public function custom_media_upload_tab_name($tabs)
         {
-            $metaslider_tabs = array('post_feed', 'layer', 'youtube', 'vimeo', 'external_url');
+            $metaslider_tabs = array('post_feed', 'layer', 'youtube', 'vimeo', 'external_url', 'local_video');
 
             // restrict our tab changes to the MetaSlider plugin page
             if ((isset($_GET['page']) && $_GET['page'] == 'metaslider') || (isset($_GET['tab']) && in_array(
@@ -610,11 +626,12 @@ if (! class_exists('MetaSliderPlugin')) {
 
                 if (function_exists('is_plugin_active') && ! is_plugin_active('ml-slider-pro/ml-slider-pro.php')) {
                     $newtabs = array(
-                        'post_feed' => __("Post Feed", "metaslider"),
-                        'vimeo' => __("Vimeo", "metaslider"),
-                        'youtube' => __("YouTube", "metaslider"),
-                        'layer' => __("Layer Slide", "metaslider"),
-                        'external_url' => __("External URL", "metaslider"),
+                        'post_feed' => __("Post Feed", "ml-slider"),
+                        'vimeo' => __("Vimeo", "ml-slider"),
+                        'youtube' => __("YouTube", "ml-slider"),
+                        'layer' => __("Layer Slide", "ml-slider"),
+                        'external_url' => __("External URL", "ml-slider"),
+                        'local_video' => __("Local Video", "ml-slider"),
                     );
                 }
 
@@ -1043,8 +1060,6 @@ if (! class_exists('MetaSliderPlugin')) {
                 exit;
             }          
         }
-
-
 
         /**
          * Find a single slider ID. For example, last edited, or first published.
@@ -2014,6 +2029,19 @@ if (! class_exists('MetaSliderPlugin')) {
                                                                 "ml-slider"
                                                             )
                                                         ),
+                                                        'keyboard' => array(
+                                                            'priority' => 75,
+                                                            'type' => 'checkbox',
+                                                            'label' => esc_html__("Keyboard Controls", "ml-slider"),
+                                                            'class' => 'option coin flex nivo responsive',
+                                                            'checked' => 'true' == $this->slider->get_setting(
+                                                                'keyboard'
+                                                            ) ? 'checked' : '',
+                                                            'helptext' => esc_html__(
+                                                                "Use arrow keys to get to the next slide",
+                                                                "ml-slider"
+                                                            )
+                                                        ),
                                                         'delay' => array(
                                                             'priority' => 80,
                                                             'type' => 'number',
@@ -2590,6 +2618,16 @@ if (! class_exists('MetaSliderPlugin')) {
         }
 
         /**
+         * Return the MetaSlider pro upgrade iFrame
+         */
+        public function upgrade_to_pro_tab_local_video()
+        {
+            if (function_exists('is_plugin_active') && ! is_plugin_active('ml-slider-pro/ml-slider-pro.php')) {
+                return wp_iframe(array($this, 'upgrade_to_pro_iframe_local_video'));
+            }
+        }
+
+        /**
          * Media Manager iframe HTML - External URL
          */
         public function upgrade_to_pro_iframe_external_url()
@@ -2609,6 +2647,39 @@ if (! class_exists('MetaSliderPlugin')) {
                     ) . "</p>",
                     "<p>" . esc_html__(
                         'External URL slides give you all the power of MetaSlider, using images stored anywhere you want.',
+                        'ml-slider'
+                    ) . "</p>",
+                    '<a class="probutton button button-primary button-hero" href="' . esc_url(
+                        $link
+                    ) . '" target="_blank">' . esc_html__(
+                        "Find out more about MetaSlider Pro",
+                        "ml-slider"
+                    ) . '<span class="dashicons dashicons-external"></span></a>',
+                    "</div>"
+                )
+            );
+        }
+
+        /**
+         * Media Manager iframe HTML - Local video
+         */
+        public function upgrade_to_pro_iframe_local_video()
+        {
+            $link = apply_filters('metaslider_hoplink', 'https://www.metaslider.com/upgrade/');
+            $link .= '?utm_source=lite&amp;utm_medium=more-slide-types-video&amp;utm_campaign=pro';
+            $this->upgrade_to_pro_iframe(
+                array(
+                    '<div class="left"><img src="' . esc_url(METASLIDER_ADMIN_URL . 'images/upgrade/local-video.png') . '" alt="" /></div>',
+                    "<div ><h2>" . esc_html__(
+                        'Create slideshows with videos in your media library',
+                        'ml-slider'
+                    ) . "</h2>",
+                    "<p>" . esc_html__(
+                        'With Local Video slides, you can build beautiful slideshows with videos in your WordPress media library.',
+                        'ml-slider'
+                    ) . "</p>",
+                    "<p>" . esc_html__(
+                        'Local Video slides will display your MP4, WebM, and MOV videos with cover images, auto play, mute, lazy load, the ability to hide controls, and much more.',
                         'ml-slider'
                     ) . "</p>",
                     '<a class="probutton button button-primary button-hero" href="' . esc_url(
@@ -2732,6 +2803,204 @@ if (! class_exists('MetaSliderPlugin')) {
 
             return $tag;
         }
+
+
+        public function quickstart_params(){ 
+            if (isset($_REQUEST['page']) && 'metaslider-start' == $_REQUEST['page']) {
+                $plupload_init = array(
+                  'runtimes'            => 'html5,silverlight,flash,html4',
+                  'browse_button'       => 'plupload-browse-button',
+                  'container'           => 'plupload-upload-ui',
+                  'drop_element'        => 'drag-drop-area',
+                  'file_data_name'      => 'async-upload',            
+                  'multiple_queues'     => true,
+                  'max_file_size'       => wp_max_upload_size().'b',
+                  'url'                 => admin_url('admin-ajax.php'),
+                  'flash_swf_url'       => includes_url('js/plupload/plupload.flash.swf'),
+                  'silverlight_xap_url' => includes_url('js/plupload/plupload.silverlight.xap'),
+                  'filters'             => array(array('title' => __('Allowed Files'), 'extensions' => '*')),
+                  'multipart'           => true,
+                  'urlstream_upload'    => true,
+                  'multipart_params'    => array(
+                    '_wpnonce' =>  wp_create_nonce('metaslider_quickstart_upload'),
+                    'action'      => 'quickstart_upload'
+                  ),
+                );
+          ?>  
+           <script type="text/javascript">
+            jQuery(document).ready(function($){
+                var uploader = new plupload.Uploader(<?php echo json_encode($plupload_init); ?>);
+                uploader.bind('Init', function(up){
+                  var uploaddiv = $('#plupload-upload-ui');
+                  if(up.features.dragdrop){
+                    uploaddiv.addClass('drag-drop');
+                      $('#drag-drop-area')
+                        .bind('dragover.wp-uploader', function(){ uploaddiv.addClass('drag-over'); })
+                        .bind('dragleave.wp-uploader, drop.wp-uploader', function(){ uploaddiv.removeClass('drag-over'); });
+                  }else{
+                    uploaddiv.removeClass('drag-drop');
+                    $('#drag-drop-area').unbind('.wp-uploader');
+                  }
+                });
+                uploader.init();
+                uploader.bind('FilesAdded', function(up, files){
+                  var hundredmb = 100 * 1024 * 1024, max = parseInt(up.settings.max_file_size, 10);
+                  plupload.each(files, function(file){
+                    if (max > hundredmb && file.size > hundredmb && up.runtime != 'html5'){
+                     $("#quickstart-status").html("Error");
+                    }else{
+                        $("#media-items").append('<div class="media-item child-of-0 open"><div class="media-item-wrapper"><div class="attachment-details"><div class="filename new"><span class="media-list-title"><strong>'+file.name+'</strong></span><span class="media-list-subtitle"></span></div></div><div class="attachment-tools"><span class="media-item-copy-container copy-to-clipboard-container edit-attachment"></span><b id="'+file.id+'"><div class="progress"><div class="percent">100%</div><div class="bar" style="width: 200px;"></div></div></b></div></div></div>');
+                    }
+                  })
+                  up.refresh();
+                  up.start();
+                });
+                uploader.bind('FileUploaded', function(up, file, response) {
+                    $("#"+file.id).text("Upload Complete");
+                    $("#"+file.id).attr("data-slide", response.response);
+                });
+                uploader.bind("UploadComplete", function (up, files, response) {
+                    $("#media-items").append('<div class="updated below-h2" id="message"><p>Creating slideshow.</p></div>');
+                    var file_details = [];
+                    $.each(files, function(key, value) {
+                        file_details.push($("#"+value.id).data("slide"));
+                    });
+                    var data = {
+                        action: 'quickstart_slideshow',
+                        images: file_details,
+                        _wpnonce: metaslider.quickstart_slideshow_nonce
+                    };
+                    $.ajax({
+                        url: metaslider.ajaxurl,
+                        data: data,
+                        type: 'POST',
+                        success: function (response) {
+                            window.location.href = '<?php echo esc_url_raw(admin_url("admin.php?page=metaslider&id=")); ?>' + response
+                        }
+                    })
+                });
+             });   
+           </script>
+           <?php
+            }
+        }
+
+        public function ajax_quickstart_slideshow() {
+            if (! isset($_REQUEST['_wpnonce']) || ! wp_verify_nonce(
+                sanitize_key($_REQUEST['_wpnonce']),
+                'metaslider_quickstart_slideshow'
+            )) {
+                wp_send_json_error(array(
+                    'message' => __('The security check failed. Please refresh the page and try again.', 'ml-slider')
+                ), 401);
+            }
+
+            $capability = apply_filters('metaslider_capability', MetaSliderPlugin::DEFAULT_CAPABILITY_EDIT_SLIDES);
+            if (! current_user_can($capability)) {
+                wp_send_json_error(
+                    [
+                        'message' => __('Access denied', 'ml-slider')
+                    ],
+                    403
+                );
+            }
+
+            if (!isset($_POST['images'])) {
+                wp_send_json_error(
+                    [
+                        'message' => __('Bad request', 'ml-slider'),
+                    ],
+                    400
+                );
+            }
+
+            $images = $_POST['images'];
+            $slideshow_id = MetaSlider_Slideshows::create();
+            $slide = new MetaImageSlide();
+            foreach ($images as $image) {
+                $data = array('id' => (int)$image, 'type' => 'image');
+                $slide->add_slide($slideshow_id, $data);
+            }
+
+            wp_send_json($slideshow_id);
+            wp_die();
+        }
+
+        public function ajax_quickstart_upload(){
+            if (! isset($_REQUEST['_wpnonce']) || ! wp_verify_nonce(
+                sanitize_key($_REQUEST['_wpnonce']),
+                'metaslider_quickstart_upload'
+            )) {
+                wp_send_json_error(array(
+                    'message' => __('The security check failed. Please refresh the page and try again.', 'ml-slider')
+                ), 401);
+            }
+
+            $capability = apply_filters('metaslider_capability', MetaSliderPlugin::DEFAULT_CAPABILITY_EDIT_SLIDES);
+            if (! current_user_can($capability)) {
+                wp_send_json_error(
+                    [
+                        'message' => __('Access denied', 'ml-slider')
+                    ],
+                    403
+                );
+            }
+            
+            if (!isset($_FILES['async-upload'])) {
+                wp_send_json_error(
+                    [
+                        'message' => __('Bad request', 'ml-slider'),
+                    ],
+                    400
+                );
+            }
+            $file = $_FILES['async-upload'];
+            $wp_upload_dir = wp_upload_dir();
+            $uploaded = wp_handle_upload($file, array('test_form'=> false, 'action' => 'quickstart_upload'));
+            $filename = $uploaded['url'];
+            $filetype = wp_check_filetype(basename($filename), null);
+            $attachment = array(
+                'guid'           => $wp_upload_dir['url'] . '/' . basename($filename),
+                'post_mime_type' => $filetype['type'],
+                'post_title'     => preg_replace('/\.[^.]+$/', '', basename($filename)),
+                'post_content'   => '',
+                'post_excerpt'   => '',
+                'post_status'    => 'publish'
+            );
+            $attach_id = wp_insert_attachment($attachment, $filename);
+            $attach_data = wp_generate_attachment_metadata($attach_id, $filename);
+            $update_data = wp_update_attachment_metadata($attach_id, $attach_data);
+
+            $settings = MetaSlider_Slideshow_Settings::defaults();
+            $image_cropper = new MetaSliderImageHelper(
+                $attach_id,
+                $settings['width'],
+                $settings['height'],
+                isset($settings['smartCrop']) ? $settings['smartCrop'] : 'false'
+            );
+            $newurl = $image_cropper->get_image_url();
+    
+            if (is_wp_error($attach_id)) {
+                wp_send_json_error(array(
+                    'message' => $attach_id->get_error_message()
+                ), 409);
+            }
+
+            if (is_wp_error($attach_data)) {
+                wp_send_json_error(array(
+                    'message' => $attach_data->get_error_message()
+                ), 409);
+            }
+
+            if (is_wp_error($update_data)) {
+                wp_send_json_error(array(
+                    'message' => $update_data->get_error_message()
+                ), 409);
+            }
+
+            wp_send_json($attach_id);
+            wp_die(); 
+        }
     }
 
     if (! class_exists('MetaSlider_Settings')) {
@@ -2761,3 +3030,8 @@ if (! class_exists('MetaSliderPlugin')) {
 }
 
 add_action('plugins_loaded', array(MetaSliderPlugin::get_instance(), 'setup'), 10);
+
+function metaslider_activate() {
+    add_option( 'metaslider_activate', true );
+}
+register_activation_hook( __FILE__, 'metaslider_activate' );
