@@ -29616,7 +29616,7 @@ Gli avatar di chi lascia un commento sono forniti da <a href="https://it.gravata
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"left","placeholder":"Scrivi il titolo...","fontSize":"large"} -->
-<p class="has-text-align-left has-large-font-size"><strong>Impianti Elettrici</strong></p>
+<p class="has-text-align-left .wp-block-post-featured-image"><strong>Impianti Elettrici</strong></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group -->
 
