@@ -26,8 +26,9 @@
     </style>
 </head>
 <body>
+    <?php include_once('../components/item.component.php') ?>
     <div class="welcome-container">
-        <h1>Benvenuto alla nostra pagina!</h1>
+        <h1>Negozio online</h1>
         <p>Grazie per averci visitato.</p>
         <p>Questa è una pagina di benvenuto di esempio creata con PHP.</p>
     </div>
