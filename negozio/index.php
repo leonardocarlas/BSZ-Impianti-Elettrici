@@ -1,4 +1,4 @@
-<?php require_once 'items.php' ?>
+<?php include_once 'items.php' ?>
 
 <!DOCTYPE html>
 <html lang="en">

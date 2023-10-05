@@ -2,9 +2,9 @@
 
 class Item
 {
-    private string $title;
-    private string $ebayLink;
-    private string $imageLink;
+    public string $title;
+    public string $ebayLink;
+    public string $imageLink;
 
     public function __construct(string $title, string $ebayLink, string $imageLink)
     {
