@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-04-17 15:02:28+0000\n"
+"PO-Revision-Date: 2023-06-28 20:41:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -194,7 +194,7 @@ msgstr "La vita che merito"
 
 #: inc/starter-content.php:85 inc/starter-content.php:117
 msgid "October 1 -- December 1"
-msgstr "1 ottobre --  1 dicembre"
+msgstr "1 ottobre -- 1 dicembre"
 
 #: inc/starter-content.php:82
 msgid "Theatre of Operations"
@@ -237,7 +237,7 @@ msgstr "Colore del testo overlay"
 
 #: classes/class-twentytwenty-customize.php:358
 msgid "The color used for the overlay. Defaults to the accent color."
-msgstr "Il colore utilizzato per l'overlay. Predefinito per il colore di risalto."
+msgstr "Il colore utilizzato per l'overlay. Predefinito per il colore in risalto."
 
 #: classes/class-twentytwenty-customize.php:357
 msgid "Overlay Background Color"
@@ -471,7 +471,7 @@ msgstr "Sfondo delicato"
 
 #: functions.php:532
 msgid "Accent Color"
-msgstr "Colore di risalto"
+msgstr "Colore in risalto"
 
 #: functions.php:409
 msgid "Widgets in this area will be displayed in the second column in the footer."
