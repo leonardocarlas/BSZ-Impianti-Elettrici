@@ -63,15 +63,12 @@ class Item extends HTMLElement {
     }
 
     connectedCallback() {
-        console.log("connectedCallback");
-        console.log(this.template, this.title);
         this.render();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.appendChild(itemTemplate.content);
     }
 
     render() {
-        console.log("Re-rendering");
         itemTemplate.innerHTML = this.template;
     }
 }
