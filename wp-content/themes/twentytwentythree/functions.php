@@ -1,8 +1,5 @@
 <?php
 
-include_once './components/grid.php';
-
-echo Grid();
 
 // Codice PHP personalizzato qui
 function custom_shortcode_function($atts)
@@ -12,4 +9,4 @@ function custom_shortcode_function($atts)
 }
 
 add_shortcode('mio_shortcode', 'custom_shortcode_function');
-add_shortcode('items_negozio', 'Grid');
+
