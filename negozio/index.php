@@ -12,9 +12,6 @@
 </head>
 
 <body>
-    ciao
-    <!-- <?php // get_header(); 
-            ?> -->
     <div class="welcome-container">
         <h1>Negozio online</h1>
         <p>Grazie per averci visitato.</p>
@@ -22,12 +19,11 @@
         <?php
         foreach ($items as $item) {
             echo $item->title . "<br>";
+            echo '<item-component title="' . $item->title . '" imageLink="' . $item->imageLink . '" ebayLink="' . $item->ebayLink . '"></item-component>';
         }
         ?>
         <item-component title="Modulo 40w"></item-component>
     </div>
-    <!-- <?php // get_footer(); 
-            ?> -->
 </body>
 
 </html>
