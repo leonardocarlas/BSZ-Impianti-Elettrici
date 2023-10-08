@@ -9,13 +9,13 @@ class Item extends HTMLElement {
     <style>
 
         .card {
-            max-width: 10%;
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            background-color: #fff;
+            background-color: transparent;
             text-align: center;
+            width: fit-content;
         }
 
         .card:hover {
@@ -50,7 +50,7 @@ class Item extends HTMLElement {
     </style>
 
     <div class="card">
-        <img src="${this.imageLink}" alt="${this.title}">
+        <img src="${this.imageLink}" alt="${this.title}" width="100" height="100">
         <p>${this.title}</p>
         <a href="${this.ebayLink}" target="_blank">
             <button>Vai all'articolo</button>
