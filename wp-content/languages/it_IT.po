@@ -863,23 +863,23 @@ msgstr "Verifica che l'estensione PHP %s sia installata e abilitata."
 msgid "When using the %1$s constant, make sure to set these globals to an array: %2$s."
 msgstr "Quando usi la costante %1$s, assicurati di impostare queste variabili globali su un array: %2$s."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:2195
+#: wp-includes/html-api/class-wp-html-tag-processor.php:2241
 msgid "The query argument must be an array or a tag name."
 msgstr "L'argomento della query deve essere un array o il nome di un tag."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1891
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1937
 msgid "Invalid attribute name."
 msgstr "Nome dell'attributo non valido."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1544
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1590
 msgid "Too many calls to seek() - this can lead to performance issues."
 msgstr "Troppe chiamate a seek(): questo può causare problemi di prestazioni."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:1535
+#: wp-includes/html-api/class-wp-html-tag-processor.php:1581
 msgid "Unknown bookmark name."
 msgstr "Nome del segnalibro sconosciuto."
 
-#: wp-includes/html-api/class-wp-html-tag-processor.php:679
+#: wp-includes/html-api/class-wp-html-tag-processor.php:707
 msgid "Too many bookmarks: cannot create any more."
 msgstr "Troppi segnalibri: impossibile crearne altri."
 
