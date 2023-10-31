@@ -1,3 +1,4 @@
 node_modules/
 .env
 wp-content.zip
+mfe/vue-project/node_modules
