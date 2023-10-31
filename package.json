@@ -1,0 +1,25 @@
+{
+    "name": "fotoceramica-bidese",
+    "version": "1.0.0",
+    "description": "Fotoceramica bidese production website",
+    "main": "index.js",
+    "scripts": {
+      "start": "wp-env start",
+      "stop": "wp-env stop",
+      "update": "wp-env start --update",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/leonardocarlas/Fotoceramica-bidese.git"
+    },
+    "author": "Leonardo Carlassare",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/leonardocarlas/Fotoceramica-bidese/issues"
+    },
+    "homepage": "https://github.com/leonardocarlas/Fotoceramica-bidese#readme",
+    "dependencies": {
+      "@wordpress/env": "^8.0.0"
+    }
+  }
