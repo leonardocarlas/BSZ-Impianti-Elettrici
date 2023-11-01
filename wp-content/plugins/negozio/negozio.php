@@ -17,5 +17,11 @@
  */
 
 
-// add_shortcode('mio_shortcode', 'custom_shortcode_function');
+add_shortcode('wporg', 'wporg_shortcode');
+function wporg_shortcode( $atts = [], $content = null) {
+    // do something to $content
+    // always return
+    return $content;
+}
+
 // add_shortcode('items_grid', 'custom_items_grid');
