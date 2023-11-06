@@ -1,5 +1,8 @@
 <?php
 
+require_once 'public/index.php';
+
+
 /*
  * Plugin Name:       Negozio Plugin
  * Plugin URI:        https://leonardocarlassare.com
@@ -16,12 +19,40 @@
  * Domain Path:       /languages
  */
 
+if ( ! defined('ABSPATH') ) 
+{
+    exit;
+}
 
-add_shortcode('wporg', 'wporg_shortcode');
-function wporg_shortcode( $atts = [], $content = null) {
-    // do something to $content
-    // always return
+if ( ! class_exists('Negozio') ) {
+    class Negozio {
+        public static function init() {
+
+        }
+    }
+    
+    Negozio::init();
+
+}
+
+function hello_world_content($content) {
+    // Aggiungi il messaggio "Ciao, mondo!" all'inizio del contenuto della pagina
+    $message = '<p>Ciao, mondo!</p>';
+    $content = $message . $content;
     return $content;
 }
 
-// add_shortcode('items_grid', 'custom_items_grid');
+// Aggiungi il filtro al contenuto della pagina
+// add_filter('the_content', 'hello_world_content');
+
+
+
+function wporg_shortcode( $atts = [], $content = null) {
+    // do something to $content
+    // always return
+    $t = new Template();
+    return $t->get_name();
+}
+
+add_shortcode('wporg', 'wporg_shortcode');
+new Negozio;
