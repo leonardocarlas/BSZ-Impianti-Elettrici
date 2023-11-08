@@ -7,7 +7,6 @@ class Item extends HTMLElement {
     ebayLink = this.getAttribute('ebayLink');
     template = `
     <style>
-
         .card {
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -21,7 +20,7 @@ class Item extends HTMLElement {
         .card:hover {
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
             transform: scale(1.05);
-            cursor: pointer; 
+            cursor: pointer;
         }
 
         .card img {
@@ -30,7 +29,7 @@ class Item extends HTMLElement {
         }
 
         .card p {
-            color: blue;
+            color: white; /* Testo bianco */
             font-weight: bold;
         }
 
@@ -52,10 +51,12 @@ class Item extends HTMLElement {
     <div class="card">
         <img src="${this.imageLink}" alt="${this.title}" width="100" height="100">
         <p>${this.title}</p>
-        <a href="${this.ebayLink}" target="_blank">
+        <!-- Aggiungi un link "mailto" per inviare una mail -->
+        <a href="mailto:bszimpianti@bszimpianti.it">
             <button>Vai all'articolo</button>
         </a>
     </div>
+
         `;
 
     constructor() {
