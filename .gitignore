@@ -1,3 +1,5 @@
 node_modules/
 .env
 wp-content.zip
+mfe/vue-project/node_modules
+mfe/negozio/node_modules

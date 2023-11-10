@@ -23,8 +23,37 @@ function custom_shortcode_function($atts)
 
 function custom_items_grid($atts)
 {
-    $items = [new Item("Cavo rosso 1x2,5", "https://www.ebay.it/itm/285503773076", "https://i.ebayimg.com/images/g/mTcAAOSwtN9lHl0V/s-l1600.jpg")];
-    $gridTemplate = '<div class="welcome-container">';
+    $items = [
+        new Item("Modulo Megatiker me160b", "https://www.ebay.it/itm/285503773076", "https://www.bszimpianti.it/wp-content/uploads/2023/11/megatiker-me160b.jpeg"),
+        new Item("Modulo Bticino ma125", "https://www.ebay.it/itm/285503773076", "https://www.bszimpianti.it/wp-content/uploads/2023/11/bticino-ma125.jpeg"),
+        new Item("Faretto per proiettore", "https://www.ebay.it/itm/285503773076", "https://www.bszimpianti.it/wp-content/uploads/2023/11/faretto-per-proiettore.jpeg"),
+        new Item("Modulo Bticino gs125", "https://www.ebay.it/itm/285503773076", "https://www.bszimpianti.it/wp-content/uploads/2023/11/bticino-gs125.jpeg"),
+        new Item("Modulo Bticino gs125 500V", "https://www.ebay.it/itm/285503773076", "https://www.bszimpianti.it/wp-content/uploads/2023/11/bticino-gs125-500v.jpeg"),
+
+    ];
+    $gridTemplate = '
+    <style>
+        .welcome-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 items in a column */
+            gap: 20px; /* Adjust the gap between items as needed */
+        }
+        
+        /* Optional: Add media queries for responsiveness */
+        @media (max-width: 768px) {
+            .welcome-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 items in a column for smaller screens */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .welcome-container {
+                grid-template-columns: 1fr; /* 1 item in a column for even smaller screens */
+            }
+        }
+    </style>
+
+    <div class="welcome-container">';
     foreach ($items as $item) {
         $gridTemplate .= '<item-component title="' . $item->title . '" imageLink="' . $item->imageLink . '" ebayLink="' . $item->ebayLink . '"></item-component>';
     }
