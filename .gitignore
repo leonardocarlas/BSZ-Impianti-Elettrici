@@ -3,3 +3,5 @@ node_modules/
 wp-content.zip
 mfe/vue-project/node_modules
 mfe/negozio/node_modules
+components/components-library/node_modules
+components/components-library/storybook-static
