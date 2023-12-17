@@ -1,0 +1,150 @@
+<script src="https://unpkg.com/petite-vue" defer init></script>
+<script src="./Comp.vue"></script>
+
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" :class="{ active: actualImage == index ? true : false }" v-for="(image, index) in images"
+        :key="index">
+        <div class="numbertext"> {{ index + 1 }} / {{ images.length }}</div>
+        <img :src="image" alt="...">
+        <div class="buttons">
+            <a class="prev" @click="plusSlides(-1)">&#10094;</a>
+            <a class="next" @click="plusSlides(1)">&#10095;</a>
+        </div>
+        <p class="text">{{ captions[index] }}
+        </p>
+        <!-- Next and previous buttons -->
+    </div>
+
+    <!-- Slider indicators -->
+    <div class="indicators-container">
+        <svg v-for="(index) in  (images.length - 1)" :key="index" width="10" height="10" viewBox="0 0 10 10" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <circle cx="5" cy="5" r="5" :fill="actualImage === index ? '#01448B' : 'white'" />
+        </svg>
+    </div>
+    <br>
+</div>
+
+<script lang="ts" setup>
+    import { ref } from 'vue';
+
+
+    let actualImage = ref(0);
+
+    const plusSlides = () => {
+        console.log(n);
+        if (actualImage.value == 0 && n == -1)
+            return;
+        if (actualImage.value == props.images.length - 1 && n == 1)
+            return;
+        actualImage.value += n;
+    };
+
+    const props = defineProps < {
+        // label: string,
+        // size?: 'small' | 'medium' | 'large',
+        // backgroundColor?: string,
+        images: string[],
+        captions: string[];
+    } > ();
+</script>
+
+<style scoped lang="scss">
+    .slideshow-container {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 5%;
+
+        /* Fading animation */
+        .fade {
+            animation - name: fade;
+            animation-duration: 1.5s;
+        }
+
+        .active {
+            display: block !important;
+        }
+
+        .mySlides {
+            position: relative;
+            text-align: center;
+            display: none;
+
+            img {
+                border - radius: 20px;
+                width: 100%;
+                /* Fissa la larghezza al 100% per adattarsi al contenitore */
+                height: auto;
+                /* Mantieni l'aspetto originale, regolando automaticamente l'altezza */
+                object-fit: cover;
+                /* Riempie l'area mantenendo l'aspetto dell'immagine */
+            }
+        }
+
+        .numbertext {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            /* Aggiungi padding per separare dall'angolo */
+            color: white;
+        }
+
+        .buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 5px;
+
+            &:hover {
+                background - color: rgba(0, 0, 0, 0.8);
+            }
+        }
+
+        .prev {
+            margin - left: 20px;
+            padding: 10px 10px 10px 5px;
+            /* Aggiungi margine tra i pulsanti */
+        }
+
+        .next {
+            margin - right: 20px;
+            padding: 10px 5px 10px 10px;
+            /* Aggiungi margine tra i pulsanti */
+        }
+
+        .text {
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+            width: 100%;
+            // padding: 20px;
+            /* Aggiungi padding per separare dal fondo */
+            color: white;
+            /* Aggiungi sfondo semitrasparente */
+        }
+
+        .indicators-container {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            /* Aggiungi spaziatura tra gli indicatori */
+            margin-top: 20px;
+            /* Aggiungi margine superiore */
+        }
+
+    }
+</style>;
