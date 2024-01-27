@@ -1,5 +1,4 @@
 <script src="https://unpkg.com/petite-vue" defer init></script>
-<script src="./Comp.vue"></script>
 
 <div class="slideshow-container">
 
@@ -43,9 +42,6 @@
     };
 
     const props = defineProps < {
-        // label: string,
-        // size?: 'small' | 'medium' | 'large',
-        // backgroundColor?: string,
         images: string[],
         captions: string[];
     } > ();
@@ -60,7 +56,7 @@
 
         /* Fading animation */
         .fade {
-            animation - name: fade;
+            animation-name: fade;
             animation-duration: 1.5s;
         }
 
@@ -74,7 +70,7 @@
             display: none;
 
             img {
-                border - radius: 20px;
+                border-radius: 20px;
                 width: 100%;
                 /* Fissa la larghezza al 100% per adattarsi al contenitore */
                 height: auto;
@@ -110,18 +106,18 @@
             border-radius: 5px;
 
             &:hover {
-                background - color: rgba(0, 0, 0, 0.8);
+                background-color: rgba(0, 0, 0, 0.8);
             }
         }
 
         .prev {
-            margin - left: 20px;
+            margin-left: 20px;
             padding: 10px 10px 10px 5px;
             /* Aggiungi margine tra i pulsanti */
         }
 
         .next {
-            margin - right: 20px;
+            margin-right: 20px;
             padding: 10px 5px 10px 10px;
             /* Aggiungi margine tra i pulsanti */
         }
@@ -131,7 +127,6 @@
             bottom: 0;
             text-align: center;
             width: 100%;
-            // padding: 20px;
             /* Aggiungi padding per separare dal fondo */
             color: white;
             /* Aggiungi sfondo semitrasparente */
